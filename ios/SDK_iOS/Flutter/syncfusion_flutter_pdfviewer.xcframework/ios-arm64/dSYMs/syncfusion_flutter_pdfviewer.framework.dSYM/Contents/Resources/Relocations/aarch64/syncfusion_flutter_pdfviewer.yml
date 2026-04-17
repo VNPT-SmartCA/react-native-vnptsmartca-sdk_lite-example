@@ -1,0 +1,56 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/apple/Documents/SmartCA_Mobile_V2/egov.ptpm.smartca_mobile/sdk_v2_lite/vnpt_smartca_module/ios_framework/Release/iphoneos/Release-iphoneos/syncfusion_flutter_pdfviewer/syncfusion_flutter_pdfviewer.framework/syncfusion_flutter_pdfviewer'
+relocations:
+  - { offset: 0x72F3E, size: 0x8, addend: 0x0, symName: _syncfusion_flutter_pdfviewerVersionString, symObjAddr: 0x0, symBinAddr: 0xC400, symSize: 0x0 }
+  - { offset: 0x72F75, size: 0x8, addend: 0x0, symName: _syncfusion_flutter_pdfviewerVersionNumber, symObjAddr: 0x40, symBinAddr: 0xC440, symSize: 0x0 }
+  - { offset: 0x732FB, size: 0x8, addend: 0x0, symName: '_$sIegh_IeyBh_TR', symObjAddr: 0x7C4, symBinAddr: 0x47C4, symSize: 0x2C }
+  - { offset: 0x73313, size: 0x8, addend: 0x0, symName: '_$syXlSgIeyBy_ypSgIegn_TR', symObjAddr: 0x86C, symBinAddr: 0x486C, symSize: 0xE0 }
+  - { offset: 0x733AB, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginCfETo', symObjAddr: 0x2D7C, symBinAddr: 0x6D7C, symSize: 0x38 }
+  - { offset: 0x733E5, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tg5', symObjAddr: 0x2DB4, symBinAddr: 0x6DB4, symSize: 0x64 }
+  - { offset: 0x73449, size: 0x8, addend: 0x0, symName: '_$sSD8_VariantV11removeValue6forKeyq_Sgx_tFSS_So16CGPDFDocumentRefaSgTg5', symObjAddr: 0x2E18, symBinAddr: 0x6E18, symSize: 0xBC }
+  - { offset: 0x7351F, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV8setValue_6forKey8isUniqueyq_n_xSbtFSS_So16CGPDFDocumentRefaSgTg5', symObjAddr: 0x2ED4, symBinAddr: 0x6ED4, symSize: 0x158 }
+  - { offset: 0x735F5, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tg5', symObjAddr: 0x302C, symBinAddr: 0x702C, symSize: 0xB4 }
+  - { offset: 0x73657, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV4copyyyFSS_So16CGPDFDocumentRefaSgTg5', symObjAddr: 0x30E0, symBinAddr: 0x70E0, symSize: 0x16C }
+  - { offset: 0x7371D, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtFSS_So16CGPDFDocumentRefaSgTg5', symObjAddr: 0x324C, symBinAddr: 0x724C, symSize: 0x2A4 }
+  - { offset: 0x7381A, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV7_delete2atys10_HashTableV6BucketV_tFSS_So16CGPDFDocumentRefaSgTg5', symObjAddr: 0x34F0, symBinAddr: 0x74F0, symSize: 0x1AC }
+  - { offset: 0x73912, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSd_Tg5', symObjAddr: 0x369C, symBinAddr: 0x769C, symSize: 0x100 }
+  - { offset: 0x73A14, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV19_uninitializedCount15minimumCapacityAByxGSi_SitcfCs5UInt8V_Tt1gq5', symObjAddr: 0x379C, symBinAddr: 0x779C, symSize: 0x70 }
+  - { offset: 0x73A57, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC6handle_6resultySo0E10MethodCallC_yypSgctFyyYbcfU0_TA', symObjAddr: 0x4CE8, symBinAddr: 0x8CE8, symSize: 0x28 }
+  - { offset: 0x73A9D, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x4D10, symBinAddr: 0x8D10, symSize: 0x10 }
+  - { offset: 0x73AB1, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x4D20, symBinAddr: 0x8D20, symSize: 0x8 }
+  - { offset: 0x73AC5, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameV2, symObjAddr: 0x4D28, symBinAddr: 0x8D28, symSize: 0x44 }
+  - { offset: 0x73AD9, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC6handle_6resultySo0E10MethodCallC_yypSgctFyyYbcfU_TA', symObjAddr: 0x4DAC, symBinAddr: 0x8DAC, symSize: 0x28 }
+  - { offset: 0x73B1F, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginCMa', symObjAddr: 0x4E60, symBinAddr: 0x8E60, symSize: 0x20 }
+  - { offset: 0x73B33, size: 0x8, addend: 0x0, symName: '_$sSo16CGPDFDocumentRefaMa', symObjAddr: 0x4EA8, symBinAddr: 0x8EA8, symSize: 0x50 }
+  - { offset: 0x73B47, size: 0x8, addend: 0x0, symName: '_$sypWOb', symObjAddr: 0x4EF8, symBinAddr: 0x8EF8, symSize: 0x10 }
+  - { offset: 0x73B5B, size: 0x8, addend: 0x0, symName: '_$sypWOc', symObjAddr: 0x4F08, symBinAddr: 0x8F08, symSize: 0x3C }
+  - { offset: 0x73B6F, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_0, symObjAddr: 0x4F44, symBinAddr: 0x8F44, symSize: 0x20 }
+  - { offset: 0x73BAF, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV06InlineB0VyAESWcfCTf4nd_n', symObjAddr: 0x5728, symBinAddr: 0x9728, symSize: 0xB4 }
+  - { offset: 0x73C3D, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationO_5countAeA02__B7StorageC_SitcfCTf4nnd_n', symObjAddr: 0x57DC, symBinAddr: 0x97DC, symSize: 0xE0 }
+  - { offset: 0x73C9D, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationOWOe', symObjAddr: 0x5A74, symBinAddr: 0x9A74, symSize: 0x40 }
+  - { offset: 0x73CB1, size: 0x8, addend: 0x0, symName: '_$syXlSgIeyBy_ypSgIegn_TRTA', symObjAddr: 0x5AD8, symBinAddr: 0x9AD8, symSize: 0x8 }
+  - { offset: 0x73CC5, size: 0x8, addend: 0x0, symName: '_$sypSgWOc', symObjAddr: 0x5B14, symBinAddr: 0x9B14, symSize: 0x50 }
+  - { offset: 0x73CD9, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_0, symObjAddr: 0x5B64, symBinAddr: 0x9B64, symSize: 0x24 }
+  - { offset: 0x73CED, size: 0x8, addend: 0x0, symName: '_$sSo16CGPDFDocumentRefaSgSgWOe', symObjAddr: 0x5C08, symBinAddr: 0x9C08, symSize: 0x10 }
+  - { offset: 0x73DE2, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC8register4withySo0eH9Registrar_p_tFZ', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0x4 }
+  - { offset: 0x73DF6, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginCACycfC', symObjAddr: 0x4, symBinAddr: 0x4004, symSize: 0x20 }
+  - { offset: 0x73E18, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC8register4withySo0eH9Registrar_p_tFZTo', symObjAddr: 0x24, symBinAddr: 0x4024, symSize: 0x30 }
+  - { offset: 0x73F03, size: 0x8, addend: 0x0, symName: '_$sSaySayxGqd__c7ElementQyd__RszSTRd__lufCs5UInt8V_10Foundation4DataVTt0g5', symObjAddr: 0xF4C, symBinAddr: 0x4F4C, symSize: 0x130 }
+  - { offset: 0x740E8, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC6handle_6resultySo0E10MethodCallC_yypSgctF', symObjAddr: 0x54, symBinAddr: 0x4054, symSize: 0x770 }
+  - { offset: 0x742B7, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC6handle_6resultySo0E10MethodCallC_yypSgctFTo', symObjAddr: 0x7F0, symBinAddr: 0x47F0, symSize: 0x7C }
+  - { offset: 0x74374, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC010initializeF8Renderer33_4191BD5A832B648AC6FCD7719A2F5A8BLL4call6resultySo0E10MethodCallC_yypSgctF', symObjAddr: 0x94C, symBinAddr: 0x494C, symSize: 0x600 }
+  - { offset: 0x7465F, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC04loadF8FromFile33_4191BD5A832B648AC6FCD7719A2F5A8BLL4call6resultySo0E10MethodCallC_yypSgctF', symObjAddr: 0x107C, symBinAddr: 0x507C, symSize: 0x678 }
+  - { offset: 0x7488C, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC7getPage33_4191BD5A832B648AC6FCD7719A2F5A8BLL4call6resultySo0E10MethodCallC_yypSgctF', symObjAddr: 0x1A6C, symBinAddr: 0x5A6C, symSize: 0x360 }
+  - { offset: 0x74B54, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC011getImageForH033_4191BD5A832B648AC6FCD7719A2F5A8BLL5index5width6height10documentIDSo0E17StandardTypedDataCSgSi_S2iSStF', symObjAddr: 0x1DCC, symBinAddr: 0x5DCC, symSize: 0x3A0 }
+  - { offset: 0x7502A, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC12getTileImage33_4191BD5A832B648AC6FCD7719A2F5A8BLL4call6resultySo0E10MethodCallC_yypSgctF', symObjAddr: 0x216C, symBinAddr: 0x616C, symSize: 0x9A4 }
+  - { offset: 0x754F7, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginCACycfc', symObjAddr: 0x2B10, symBinAddr: 0x6B10, symSize: 0x21C }
+  - { offset: 0x75568, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginCACycfcTo', symObjAddr: 0x2D2C, symBinAddr: 0x6D2C, symSize: 0x20 }
+  - { offset: 0x7557C, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginCfD', symObjAddr: 0x2D4C, symBinAddr: 0x6D4C, symSize: 0x30 }
+  - { offset: 0x755C9, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC8register4withySo0eH9Registrar_p_tFZTf4nd_n', symObjAddr: 0x380C, symBinAddr: 0x780C, symSize: 0xD4 }
+  - { offset: 0x7565F, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC010initializeF8Renderer33_4191BD5A832B648AC6FCD7719A2F5A8BLL4call6resultySo0E10MethodCallC_yypSgctF015$syXlSgIeyBy_ypY7Iegn_TRyXlSgIeyBy_Tf1ncn_nTf4nng_n', symObjAddr: 0x38E0, symBinAddr: 0x78E0, symSize: 0x720 }
+  - { offset: 0x7594E, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC04loadF8FromFile33_4191BD5A832B648AC6FCD7719A2F5A8BLL4call6resultySo0E10MethodCallC_yypSgctF015$syXlSgIeyBy_ypZ7Iegn_TRyXlSgIeyBy_Tf1ncn_nTf4nng_n', symObjAddr: 0x4000, symBinAddr: 0x8000, symSize: 0x7AC }
+  - { offset: 0x75B8D, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC13closeDocument33_4191BD5A832B648AC6FCD7719A2F5A8BLL4call6resultySo0E10MethodCallC_yypSgctFTf4ndn_n', symObjAddr: 0x4BCC, symBinAddr: 0x8BCC, symSize: 0x118 }
+  - { offset: 0x75C8B, size: 0x8, addend: 0x0, symName: '_$s28syncfusion_flutter_pdfviewer32SyncfusionFlutterPdfViewerPluginC6handle_6resultySo0E10MethodCallC_yypSgctF015$syXlSgIeyBy_ypO7Iegn_TRyXlSgIeyBy_Tf1ncn_nTf4nng_n', symObjAddr: 0x4F64, symBinAddr: 0x8F64, symSize: 0x7C4 }
+  - { offset: 0x75E3A, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV11bytesNoCopy5count11deallocatorACSv_SiAC11DeallocatorOtcfCTf4nnnd_n', symObjAddr: 0x58BC, symBinAddr: 0x98BC, symSize: 0x1B8 }
+...

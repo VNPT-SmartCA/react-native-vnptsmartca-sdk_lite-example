@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.syncfusion.flutter.pdfviewer",
+    "module": "syncfusion_flutter_pdfviewer_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-e4b8dca3f1b4ede4c30371002441c88c12187ed6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "syncfusion_flutter_pdfviewer_release-1.0.aar",
+          "url": "syncfusion_flutter_pdfviewer_release-1.0.aar",
+          "size": 7752,
+          "sha512": "f75e6a4f5b27f4693a2dd5c2da62adadd7dfb265ef959cee4f7ec34fd5dd205d2e494afb7214b3b5419a6dde3bfee4f05067c08b4928af971d31841cfb197d9d",
+          "sha256": "19dc614dcddeb5e49b11f0faff5a9e45516be0c9d4d32a6f6566281e6b49cbb2",
+          "sha1": "54553c59340b1569dce378eb6ffb2f4466e438c3",
+          "md5": "a5b693fdc20b0e371ed7666080917bc2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-e4b8dca3f1b4ede4c30371002441c88c12187ed6"
+          }
+        },
+        {
+          "group": "dev.fluttercommunity.plus.device_info",
+          "module": "device_info_plus_release",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "syncfusion_flutter_pdfviewer_release-1.0.aar",
+          "url": "syncfusion_flutter_pdfviewer_release-1.0.aar",
+          "size": 7752,
+          "sha512": "f75e6a4f5b27f4693a2dd5c2da62adadd7dfb265ef959cee4f7ec34fd5dd205d2e494afb7214b3b5419a6dde3bfee4f05067c08b4928af971d31841cfb197d9d",
+          "sha256": "19dc614dcddeb5e49b11f0faff5a9e45516be0c9d4d32a6f6566281e6b49cbb2",
+          "sha1": "54553c59340b1569dce378eb6ffb2f4466e438c3",
+          "md5": "a5b693fdc20b0e371ed7666080917bc2"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "syncfusion_flutter_pdfviewer_release-1.0-sources.jar",
+          "url": "syncfusion_flutter_pdfviewer_release-1.0-sources.jar",
+          "size": 3365,
+          "sha512": "746955759511a6bc0983091090bf9bad28c4c8684658116b82b2f6a60cd97ffda8c26663de76ffb178c7b2f02cf530d2a0281d8cd16634f5ca902408cc36479b",
+          "sha256": "6f7c1137d3cdc2b6db47ddac19804a3ede963902920d0e7f075f6140a4192e48",
+          "sha1": "09b420dd12a3cbf36e085f27688d27993a9be781",
+          "md5": "ab0803272367a5e9da289b5f7f724fa7"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "syncfusion_flutter_pdfviewer_release-1.0-javadoc.jar",
+          "url": "syncfusion_flutter_pdfviewer_release-1.0-javadoc.jar",
+          "size": 262520,
+          "sha512": "5fa88320c7c809265897813324f607d8f8b709e26ac5d767e3679ae3f6dc9b6c921e8b4871c992ea6cdd42d4ba366cc8fb7d586eab9504d4561bd5c8d7063738",
+          "sha256": "859226eaab2ccb7272eab10745b8604af7fc0132fb8df301b2926c1cbdc8a9e9",
+          "sha1": "4491cb7e7ef3d0b7f2879261533a2d54268567c3",
+          "md5": "9f96ce85327d9c493ed37267af14d8a0"
+        }
+      ]
+    }
+  ]
+}

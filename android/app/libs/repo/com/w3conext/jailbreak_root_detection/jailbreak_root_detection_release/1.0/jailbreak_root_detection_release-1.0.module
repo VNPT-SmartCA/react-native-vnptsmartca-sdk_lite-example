@@ -1,0 +1,151 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.w3conext.jailbreak_root_detection",
+    "module": "jailbreak_root_detection_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-e4b8dca3f1b4ede4c30371002441c88c12187ed6"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "jailbreak_root_detection_release-1.0.aar",
+          "url": "jailbreak_root_detection_release-1.0.aar",
+          "size": 30281,
+          "sha512": "2910d6f7a4643c790c1bdb335dee7687b77fd9e0534552e8bfc369d69ac1a319e9cebf134978511e7117492f1702dca582df700956e7d172b04799fd7bf69c7b",
+          "sha256": "6cb4968f7e379661ec410d1bc603bd00523b020de60fffb8ff4582744c0571c2",
+          "sha1": "b5cde399d5a2a5006bd16abced1749f7948e465c",
+          "md5": "31178e1075b7b58d2d0dba86e484eb5c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-e4b8dca3f1b4ede4c30371002441c88c12187ed6"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.9.1"
+          }
+        },
+        {
+          "group": "com.scottyab",
+          "module": "rootbeer-lib",
+          "version": {
+            "requires": "0.1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.7.3"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "jailbreak_root_detection_release-1.0.aar",
+          "url": "jailbreak_root_detection_release-1.0.aar",
+          "size": 30281,
+          "sha512": "2910d6f7a4643c790c1bdb335dee7687b77fd9e0534552e8bfc369d69ac1a319e9cebf134978511e7117492f1702dca582df700956e7d172b04799fd7bf69c7b",
+          "sha256": "6cb4968f7e379661ec410d1bc603bd00523b020de60fffb8ff4582744c0571c2",
+          "sha1": "b5cde399d5a2a5006bd16abced1749f7948e465c",
+          "md5": "31178e1075b7b58d2d0dba86e484eb5c"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "jailbreak_root_detection_release-1.0-sources.jar",
+          "url": "jailbreak_root_detection_release-1.0-sources.jar",
+          "size": 11973,
+          "sha512": "f04c22d23ed55eeb01d6b51ba859284b3e0bafee36c8dbc0f403dd84ba7429b08f52d6f5ec9b520d01ffcf0723d3165d12b1304ea1f1eb56cb7a86bdb92bbc84",
+          "sha256": "169900c6fd291ffbb3ededd54f7bbaa74cc95d940830a6df45a4a67b3027755b",
+          "sha1": "5e6638077b6ca19da6efad61349bdb128168fc0f",
+          "md5": "fdce3bb9b0df58b423ed6156072b8128"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "jailbreak_root_detection_release-1.0-javadoc.jar",
+          "url": "jailbreak_root_detection_release-1.0-javadoc.jar",
+          "size": 344228,
+          "sha512": "fe64ba30893d6d2a771d931977c44bbe2b614cc8b6dd422655342c367dde549027d67957559f00dc259f72c6e0e40fe2e454ad3243a443ea9a9a4cda2cd9c4d1",
+          "sha256": "ee7e8c3bc6b964fd5de8f8e2cbd00b7e53dfe41362f646e0ca744168ff5f4eeb",
+          "sha1": "9983bd6c8c2418e6ae45dfb229a7c6f6f0634777",
+          "md5": "d3f8483a98a92c92ae34eae6fe7c79ea"
+        }
+      ]
+    }
+  ]
+}

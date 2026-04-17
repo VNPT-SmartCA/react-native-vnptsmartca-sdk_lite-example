@@ -1,0 +1,123 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "net.cubiclab.clipboard",
+    "module": "clipboard_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-e4b8dca3f1b4ede4c30371002441c88c12187ed6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "clipboard_release-1.0.aar",
+          "url": "clipboard_release-1.0.aar",
+          "size": 9080,
+          "sha512": "20431475108ff6e0bfd4d69bc9f32526bd72d0d4f427469e09658269487b9b373d368f6ae1defe0d11a88403f782b90236ec1a1ebcb622f0e29b520e91b35611",
+          "sha256": "197e3dc0d9ccc0cfdf49b592d1d3834d566a589a683a5a06745355fb07c0e954",
+          "sha1": "3cc07c8d2a05e1c59b538f3056728615920444d4",
+          "md5": "e804121c8d36cce1344aa0bf0e552165"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-e4b8dca3f1b4ede4c30371002441c88c12187ed6"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "clipboard_release-1.0.aar",
+          "url": "clipboard_release-1.0.aar",
+          "size": 9080,
+          "sha512": "20431475108ff6e0bfd4d69bc9f32526bd72d0d4f427469e09658269487b9b373d368f6ae1defe0d11a88403f782b90236ec1a1ebcb622f0e29b520e91b35611",
+          "sha256": "197e3dc0d9ccc0cfdf49b592d1d3834d566a589a683a5a06745355fb07c0e954",
+          "sha1": "3cc07c8d2a05e1c59b538f3056728615920444d4",
+          "md5": "e804121c8d36cce1344aa0bf0e552165"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "clipboard_release-1.0-sources.jar",
+          "url": "clipboard_release-1.0-sources.jar",
+          "size": 4143,
+          "sha512": "f3d22a5777f17c72a666c2496b42ed12b00f6cc8bdf34d8dd2f794d4c7bbe282fccef37b8fe2dda45063cd1c6315a65449c9186bb1cbd98b3143ebfaa460bc51",
+          "sha256": "19ab77956efeea6bfae9a5e324c6ea842cc73dbd42602d33035c69d43ebe32c5",
+          "sha1": "474b609c233bbb1fbfdfbf0879b92725806bd478",
+          "md5": "f63e47690b7ea65b369d2a6a9c8d5927"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "clipboard_release-1.0-javadoc.jar",
+          "url": "clipboard_release-1.0-javadoc.jar",
+          "size": 265230,
+          "sha512": "0b8a849f257f14c861d039e759461aafb6cb5dc5c288e1ad190786d370952ac29651392f68e49688b722a60c217e27e109c26fc231d860f4ec91d92b34787c8c",
+          "sha256": "8fe1f95faedcddb87a2ff98230cd716480bf1a450ab522756b5d4ea3f2f1001f",
+          "sha1": "e15f0c0d9a165d9fe079cfbe16ebfaeaa0d08808",
+          "md5": "ee1018ad7316cdd34155b0ed1968d9d7"
+        }
+      ]
+    }
+  ]
+}

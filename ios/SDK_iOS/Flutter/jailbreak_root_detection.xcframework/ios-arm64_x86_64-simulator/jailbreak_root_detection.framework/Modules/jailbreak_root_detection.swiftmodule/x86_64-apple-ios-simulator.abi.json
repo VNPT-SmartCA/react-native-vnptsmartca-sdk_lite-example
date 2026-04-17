@@ -1,0 +1,1066 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "jailbreak_root_detection",
+    "printedName": "jailbreak_root_detection",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CydiaChecker",
+        "printedName": "CydiaChecker",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isFound",
+            "printedName": "isFound()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection12CydiaCheckerC7isFoundSbyFZ",
+            "mangledName": "$s24jailbreak_root_detection12CydiaCheckerC7isFoundSbyFZ",
+            "moduleName": "jailbreak_root_detection",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CydiaChecker",
+                "printedName": "jailbreak_root_detection.CydiaChecker",
+                "usr": "s:24jailbreak_root_detection12CydiaCheckerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24jailbreak_root_detection12CydiaCheckerCACycfc",
+            "mangledName": "$s24jailbreak_root_detection12CydiaCheckerCACycfc",
+            "moduleName": "jailbreak_root_detection",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:24jailbreak_root_detection12CydiaCheckerC",
+        "mangledName": "$s24jailbreak_root_detection12CydiaCheckerC",
+        "moduleName": "jailbreak_root_detection",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "FridaChecker",
+        "printedName": "FridaChecker",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isFound",
+            "printedName": "isFound()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection12FridaCheckerC7isFoundSbyFZ",
+            "mangledName": "$s24jailbreak_root_detection12FridaCheckerC7isFoundSbyFZ",
+            "moduleName": "jailbreak_root_detection",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FridaChecker",
+                "printedName": "jailbreak_root_detection.FridaChecker",
+                "usr": "s:24jailbreak_root_detection12FridaCheckerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24jailbreak_root_detection12FridaCheckerCACycfc",
+            "mangledName": "$s24jailbreak_root_detection12FridaCheckerCACycfc",
+            "moduleName": "jailbreak_root_detection",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:24jailbreak_root_detection12FridaCheckerC",
+        "mangledName": "$s24jailbreak_root_detection12FridaCheckerC",
+        "moduleName": "jailbreak_root_detection",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "IOSSecuritySuite",
+        "printedName": "IOSSecuritySuite",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "JailbreakRootDetection",
+        "printedName": "JailbreakRootDetection",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "checkJailBroken",
+            "printedName": "checkJailBroken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC15checkJailBrokenSbyF",
+            "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionC15checkJailBrokenSbyF",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkJail",
+            "printedName": "checkJail()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC9checkJailSbyF",
+            "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionC9checkJailSbyF",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkDebugged",
+            "printedName": "checkDebugged()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC13checkDebuggedSbyF",
+            "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionC13checkDebuggedSbyF",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkReverseEngineered",
+            "printedName": "checkReverseEngineered()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC22checkReverseEngineeredSbyF",
+            "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionC22checkReverseEngineeredSbyF",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkProxied",
+            "printedName": "checkProxied()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC12checkProxiedSbyF",
+            "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionC12checkProxiedSbyF",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkFrida",
+            "printedName": "checkFrida()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC10checkFridaSbyF",
+            "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionC10checkFridaSbyF",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkCydia",
+            "printedName": "checkCydia()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC10checkCydiaSbyF",
+            "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionC10checkCydiaSbyF",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkRealDevice",
+            "printedName": "checkRealDevice()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC15checkRealDeviceSbyF",
+            "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionC15checkRealDeviceSbyF",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkTampered",
+            "printedName": "checkTampered(bundleId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC13checkTampered8bundleIdSbSS_tF",
+            "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionC13checkTampered8bundleIdSbSS_tF",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "JailbreakRootDetection",
+                "printedName": "jailbreak_root_detection.JailbreakRootDetection",
+                "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionCACycfc",
+            "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionCACycfc",
+            "moduleName": "jailbreak_root_detection",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC",
+        "mangledName": "$s24jailbreak_root_detection22JailbreakRootDetectionC",
+        "moduleName": "jailbreak_root_detection",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MachO",
+        "printedName": "MachO",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection"
+      },
+      {
+        "kind": "Import",
+        "name": "IOSSecuritySuite",
+        "printedName": "IOSSecuritySuite",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ReverseEngineeringChecker",
+        "printedName": "ReverseEngineeringChecker",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "ReverseEngineeringStatus",
+            "printedName": "ReverseEngineeringStatus",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "passed",
+                "printedName": "passed",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:24jailbreak_root_detection25ReverseEngineeringCheckerC0dE6StatusV6passedSbvp",
+                "mangledName": "$s24jailbreak_root_detection25ReverseEngineeringCheckerC0dE6StatusV6passedSbvp",
+                "moduleName": "jailbreak_root_detection",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 0,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:24jailbreak_root_detection25ReverseEngineeringCheckerC0dE6StatusV6passedSbvg",
+                    "mangledName": "$s24jailbreak_root_detection25ReverseEngineeringCheckerC0dE6StatusV6passedSbvg",
+                    "moduleName": "jailbreak_root_detection",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(passed:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReverseEngineeringStatus",
+                    "printedName": "jailbreak_root_detection.ReverseEngineeringChecker.ReverseEngineeringStatus",
+                    "usr": "s:24jailbreak_root_detection25ReverseEngineeringCheckerC0dE6StatusV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:24jailbreak_root_detection25ReverseEngineeringCheckerC0dE6StatusV6passedAESb_tcfc",
+                "mangledName": "$s24jailbreak_root_detection25ReverseEngineeringCheckerC0dE6StatusV6passedAESb_tcfc",
+                "moduleName": "jailbreak_root_detection",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:24jailbreak_root_detection25ReverseEngineeringCheckerC0dE6StatusV",
+            "mangledName": "$s24jailbreak_root_detection25ReverseEngineeringCheckerC0dE6StatusV",
+            "moduleName": "jailbreak_root_detection",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "BitwiseCopyable",
+                "printedName": "BitwiseCopyable",
+                "usr": "s:s15BitwiseCopyableP",
+                "mangledName": "$ss15BitwiseCopyableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "amIReverseEngineered",
+            "printedName": "amIReverseEngineered()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24jailbreak_root_detection25ReverseEngineeringCheckerC20amIReverseEngineeredSbyFZ",
+            "mangledName": "$s24jailbreak_root_detection25ReverseEngineeringCheckerC20amIReverseEngineeredSbyFZ",
+            "moduleName": "jailbreak_root_detection",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ReverseEngineeringChecker",
+                "printedName": "jailbreak_root_detection.ReverseEngineeringChecker",
+                "usr": "s:24jailbreak_root_detection25ReverseEngineeringCheckerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24jailbreak_root_detection25ReverseEngineeringCheckerCACycfc",
+            "mangledName": "$s24jailbreak_root_detection25ReverseEngineeringCheckerCACycfc",
+            "moduleName": "jailbreak_root_detection",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:24jailbreak_root_detection25ReverseEngineeringCheckerC",
+        "mangledName": "$s24jailbreak_root_detection25ReverseEngineeringCheckerC",
+        "moduleName": "jailbreak_root_detection",
+        "isOpen": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SwiftJailbreakRootDetectionPlugin",
+        "printedName": "SwiftJailbreakRootDetectionPlugin",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(jailbreakRootDetection:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftJailbreakRootDetectionPlugin",
+                "printedName": "jailbreak_root_detection.SwiftJailbreakRootDetectionPlugin",
+                "usr": "c:@M@jailbreak_root_detection@objc(cs)SwiftJailbreakRootDetectionPlugin"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "JailbreakRootDetection",
+                "printedName": "jailbreak_root_detection.JailbreakRootDetection",
+                "usr": "s:24jailbreak_root_detection22JailbreakRootDetectionC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:24jailbreak_root_detection33SwiftJailbreakRootDetectionPluginC0afG0AcA0efG0C_tcfc",
+            "mangledName": "$s24jailbreak_root_detection33SwiftJailbreakRootDetectionPluginC0afG0AcA0efG0C_tcfc",
+            "moduleName": "jailbreak_root_detection",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@jailbreak_root_detection@objc(cs)SwiftJailbreakRootDetectionPlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s24jailbreak_root_detection33SwiftJailbreakRootDetectionPluginC8register4withySo07FlutterH9Registrar_p_tFZ",
+            "moduleName": "jailbreak_root_detection",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handle",
+            "printedName": "handle(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterMethodCall",
+                "printedName": "Flutter.FlutterMethodCall",
+                "usr": "c:objc(cs)FlutterMethodCall"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@jailbreak_root_detection@objc(cs)SwiftJailbreakRootDetectionPlugin(im)handleMethodCall:result:",
+            "mangledName": "$s24jailbreak_root_detection33SwiftJailbreakRootDetectionPluginC6handle_6resultySo17FlutterMethodCallC_yypSgctF",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "objc_name": "handleMethodCall:result:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftJailbreakRootDetectionPlugin",
+                "printedName": "jailbreak_root_detection.SwiftJailbreakRootDetectionPlugin",
+                "usr": "c:@M@jailbreak_root_detection@objc(cs)SwiftJailbreakRootDetectionPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@jailbreak_root_detection@objc(cs)SwiftJailbreakRootDetectionPlugin(im)init",
+            "mangledName": "$s24jailbreak_root_detection33SwiftJailbreakRootDetectionPluginCACycfc",
+            "moduleName": "jailbreak_root_detection",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@jailbreak_root_detection@objc(cs)SwiftJailbreakRootDetectionPlugin",
+        "mangledName": "$s24jailbreak_root_detection33SwiftJailbreakRootDetectionPluginC",
+        "moduleName": "jailbreak_root_detection",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "jailbreak_root_detection"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UIDevice",
+        "printedName": "UIDevice",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isSimulator",
+            "printedName": "isSimulator",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So8UIDeviceC24jailbreak_root_detectionE11isSimulatorSbvp",
+            "mangledName": "$sSo8UIDeviceC24jailbreak_root_detectionE11isSimulatorSbvp",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIDeviceC24jailbreak_root_detectionE11isSimulatorSbvg",
+                "mangledName": "$sSo8UIDeviceC24jailbreak_root_detectionE11isSimulatorSbvg",
+                "moduleName": "jailbreak_root_detection",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isJailBroken",
+            "printedName": "isJailBroken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So8UIDeviceC24jailbreak_root_detectionE12isJailBrokenSbvp",
+            "mangledName": "$sSo8UIDeviceC24jailbreak_root_detectionE12isJailBrokenSbvp",
+            "moduleName": "jailbreak_root_detection",
+            "isOpen": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIDeviceC24jailbreak_root_detectionE12isJailBrokenSbvg",
+                "mangledName": "$sSo8UIDeviceC24jailbreak_root_detectionE12isJailBrokenSbvg",
+                "moduleName": "jailbreak_root_detection",
+                "isOpen": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIDevice",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIDevice",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

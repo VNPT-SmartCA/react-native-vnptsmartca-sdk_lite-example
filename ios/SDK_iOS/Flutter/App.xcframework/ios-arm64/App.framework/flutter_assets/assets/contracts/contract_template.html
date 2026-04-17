@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<title>
+		</title>
+		<style>
+			body { font-family:'Times New Roman'; font-size:10pt }
+			h1, h2, h3, h4, h5, h6, p { margin:0pt }
+			li, table { margin-top:0pt; margin-bottom:0pt }
+			h1 { margin-top:12pt; page-break-inside:avoid; page-break-after:avoid; font-family:Calibri; font-size:24pt; font-weight:bold; color:#2f5496 }
+			h2 { margin-top:2pt; page-break-inside:avoid; page-break-after:avoid; font-family:Calibri; font-size:18pt; font-weight:bold; color:#2f5496 }
+			h3 { margin-top:2pt; page-break-inside:avoid; page-break-after:avoid; font-family:Calibri; font-size:14pt; font-weight:bold; color:#1f3763 }
+			h4 { margin-top:2pt; page-break-inside:avoid; page-break-after:avoid; font-family:Calibri; font-size:12pt; font-weight:bold; font-style:normal; color:#2f5496 }
+			h5 { margin-top:2pt; page-break-inside:avoid; page-break-after:avoid; font-family:Calibri; font-size:10pt; font-weight:bold; color:#2f5496 }
+			h6 { margin-top:2pt; page-break-inside:avoid; page-break-after:avoid; font-family:Calibri; font-size:8pt; font-weight:bold; color:#1f3763 }
+			.CommentSubject { font-family:'Times New Roman'; font-size:10pt; font-weight:bold }
+			.CommentText { font-family:'Times New Roman'; font-size:10pt }
+			.FootnoteText { font-family:'Times New Roman'; font-size:10pt }
+			.KhngDncch1 { font-family:'Times New Roman'; font-size:11pt }
+			.NoSpacing { font-family:'Times New Roman'; font-size:12pt }
+			.NormalWeb { margin-top:5pt; margin-bottom:5pt; font-family:'Times New Roman'; font-size:12pt }
+			.divSection1 { font-family:'Times New Roman'; font-size:12pt }
+			span.CommentReference { font-size:8pt }
+			span.CommentSubjectChar { font-family:'Times New Roman'; font-weight:bold }
+			span.CommentTextChar { font-family:'Times New Roman' }
+			span.FootnoteReference { vertical-align:super }
+			span.FootnoteTextChar { font-size:10pt }
+			span.Heading1Char { font-family:'Calibri Light'; font-size:16pt; color:#2f5496 }
+			span.Heading2Char { font-family:'Calibri Light'; font-size:13pt; color:#2f5496 }
+			span.Heading3Char { font-family:'Calibri Light'; font-size:12pt; color:#1f3763 }
+			span.Heading4Char { font-family:'Calibri Light'; font-style:italic; color:#2f5496 }
+			span.Heading5Char { font-family:'Calibri Light'; color:#2f5496 }
+			span.Heading6Char { font-family:'Calibri Light'; color:#1f3763 }
+			span.Hyperlink { text-decoration:underline; color:#0563c1 }
+			span.PlaceholderText1 { color:#808080 }
+			span.UnresolvedMention { color:#605e5c; background-color:#e1dfdd }
+			.awlist1 { list-style:none; counter-reset:awlistcounter1_0 }
+			.awlist1 > li:before { content:'1.' counter(awlistcounter1_0) '.'; counter-increment:awlistcounter1_0 }
+			.awlist2 { list-style:none; counter-reset:awlistcounter5_0 }
+			.awlist2 > li:before { content:'1.' counter(awlistcounter5_0) '.'; counter-increment:awlistcounter5_0 }
+			.awlist3 { list-style:none; counter-reset:awlistcounter6_0 }
+			.awlist3 > li:before { content:'5.' counter(awlistcounter6_0) '.'; counter-increment:awlistcounter6_0 }
+			.awlist4 { list-style:none; counter-reset:awlistcounter7_0 3 }
+			.awlist4 > li:before { content:'5.' counter(awlistcounter7_0) '.'; counter-increment:awlistcounter7_0 }
+			.awlist5 { list-style:none; counter-reset:awlistcounter8_0 }
+			.awlist5 > li:before { content:'7.' counter(awlistcounter8_0) '.'; counter-increment:awlistcounter8_0 }
+			.awlist6 { list-style:none; counter-reset:awlistcounter9_0 1 }
+			.awlist6 > li:before { content:'7.' counter(awlistcounter9_0) '.'; counter-increment:awlistcounter9_0 }
+			.awlist7 { list-style:none; counter-reset:awlistcounter12_0 }
+			.awlist7 > li:before { content:'-'; counter-increment:awlistcounter12_0 }
+@media (max-width: 900px) { 
+img { 
+	max-width: 30% !important;
+	height: auto !important;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+table {
+    width: 100% !important;
+    border-collapse: collapse;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
+
+table tbody {
+	display: table;
+	width: 100%;
+}
+
+td, th {
+    /* padding: 2px !important; */
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+    /* min-width: 60px; */
+    max-width: none !important;
+    width: auto !important;
+}
+
+/* Fix cho table có border */
+table[style*="border"] td,
+table[style*="border"] th {
+	font-size: 10pt !important;
+}
+
+/* Đảm bảo nội dung trong cell có thể wrap */
+td p, th p {
+	word-wrap: break-word;
+	white-space: normal;
+	margin: 0;
+	padding: 2px;
+}
+}
+
+	/* Table không có border */
+    table.no-border {
+        border: none !important;
+    }
+
+    table.no-border td, 
+    table.no-border th {
+        border: none !important;
+    }
+
+		</style>
+	</head>
+	<body>
+		<div>
+			<table class="no-border" style="width:100%; padding:0pt; border-collapse:collapse">
+				<tr style="height:36.75pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-align:center; line-height:115%">
+							<img  width="23" alt="" style="margin-top:7.09pt;margin-left:-2pt;margin-right:5.37pt;display:block; position:absolute; z-index:1" src="data:image/png;base64,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" />
+							<strong>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</strong></a>
+						</p>
+						<p style="text-indent:0.3pt; text-align:center;">
+							<!-- <span style="text-align:left; display:block; position:absolute; z-index:0;">
+								<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAABCAYAAABuQWpSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYSURBVDhPY4ieffX/KB7FoxiCY+ZciQYAFJYk7jlCVvEAAAAASUVORK5CYII=" width="197" height="1" alt="" style="margin-top:15.5pt; margin-left:156.51pt; position:absolute" />
+							</span> -->
+							<strong>Độc lập – Tự do – Hạnh Phúc</strong>
+						</p>
+						<p style="text-align:center; line-height:115%">
+							${noiKy}, Ngày ${ngayKy} tháng ${thangKy} năm ${namKy}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:38.85pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-indent:0.3pt; text-align:center; line-height:115%">
+							<strong>&#xa0;</strong>
+						</p>
+						<p style="text-indent:0.3pt; text-align:center; line-height:115%">
+							<strong>HỢP ĐỒNG CUNG CẤP VÀ SỬ DỤNG DỊCH VỤ CHỨNG THỰC </strong>
+						</p>
+						<p style="text-indent:0.3pt; text-align:center; line-height:115%">
+							<strong>CHỮ KÝ SỐ CÔNG CỘNG VNPT-CA </strong>
+						</p>
+						<p style="text-align:center; line-height:115%">
+							<strong>Số ${soHopDong}/HĐDV</strong> 
+						</p>
+					</td>
+				</tr>
+				<tr style="height:48.55pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-align:justify; line-height:115%">
+							&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Hợp đồng cung cấp và sử dụng dịch vụ chứng thực chữ ký số công cộng VNPT-CA (dưới đây gọi tắt là “Hợp đồng”) được ký kết vào ngày ${ngayKy} tháng ${thangKy} năm ${namKy} giữa và bởi:
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							<strong>BÊN SỬ DỤNG DỊCH VỤ (Gọi tắt là Bên A):</strong>
+						</p>
+						<ol class="awlist1" style="margin:0pt; padding-left:0pt">
+							<li style="margin-left:23pt; text-indent:-22.7pt; line-height:115%; font-weight:bold">
+								<span style="width:4.7pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0; </span>Đối với Cơ quan/Tổ chức
+							</li>
+						</ol>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Tên Cơ quan/Tổ chức/Hộ kinh doanh: ${tenDoanhNghiepA} 
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Người đại diện: ${tenA}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Chức vụ: ${chucVuA}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							(Theo giấy ủy quyền số: ${giayUyQuyenSoA} ngày ${ngayCapGiayUyQuyenA})
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							CCCD/Căn cước/Hộ chiếu số: ${soGiayToA}. Ngày cấp: ${ngayCapGiayToA}. Nơi cấp: ${noiCapGiayToA}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Quốc tịch (áp dụng với người nước ngoài): ${quocTichA}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Địa chỉ/trụ sở giao dịch: ${diaChiA}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Điện thoại: ${sdtA}&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Website: ${websitaA}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Fax: ${faxA}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Tài khoản: ${stkA}&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Tại Ngân hàng: ${diaChiStkA}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Mã số thuế: ${maSoThueA}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Giấy chứng nhận ĐKDN/Giấy chứng nhận ĐKHKD/QĐ thành lập: ${sogiaychungnhanDKDN} 
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Các thông tin khác (nếu có): ${thongtinkhacA}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							<strong>1.2. Đối với Cá nhân</strong>
+						</p>
+						<p style="text-indent:0.3pt">
+							Họ và tên: ${tenKhachHang}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							CCCD/Căn cước/Hộ chiếu số: ${soGiayToKH}. Ngày cấp: ${ngayCapGiayToKH}. Nơi cấp: ${noiCapGiayToKH}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Quốc tịch (áp dụng với người nước ngoài): ${quoctichKH}
+						</p>
+						<p style="text-indent:0.3pt">
+							Địa chỉ: ${diaChiKhachHang}
+						</p>
+						<p style="text-indent:0.3pt">
+							Điện thoại: ${sdtKhachHang}.&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Email: ${emailGiaoDichKH}
+						</p>
+						<p style="text-indent:0.3pt">
+							Fax: ${faxKhachHang}
+						</p>
+						<p style="text-indent:0.3pt">
+							Tài khoản: ${taiKhoanSoKH}. Tại Ngân hàng: ${taiNganHangKH}
+						</p>
+						<p style="text-indent:0.3pt">
+							Mã số thuế: ${mstToChucKH}
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							Các thông tin khác (nếu có): ${thongTinKhacKH}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:middle">
+						<p style="text-indent:0.3pt; line-height:115%">
+							<strong>BÊN CUNG CẤP DỊCH VỤ (Gọi tắt là Bên B): </strong>
+						</p>
+						<p style="text-indent:0.3pt; line-height:115%">
+							<strong>Tổ chức cung cấp dịch vụ chứng thực chữ ký số công cộng: </strong><strong><span style="letter-spacing:-0.5pt">${tenDoanhNghiepB} </span></strong>
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							Người đại diện: ${nguoiDaiDienB}.&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Chức vụ: ${chucVuB}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							(Theo giấy ủy quyền số ${giayUyQuyenSoB} ngày ${ngayCapGiayUyQuyenB})
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							Điện thoại: ${sdtB}.&#xa0; E-mail: ${emailB}.&#xa0;&#xa0; Website: ${websiteB}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							Địa chỉ/trụ sở giao dịch: ${diaChiTruSoNhaB}, ${diaChiTruSoDuongB}, ${diaChiTruSoXaB}, ${diaChiTruSoHuyenB}, ${diaChiTruSoTinhB}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							Tài khoản số: ${taiKhoanSoB}. Tại Ngân hàng: ${taiNganHangB}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							Mã số thuế: ${maSoThueB}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:34.85pt">
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:justify; line-height:115%">
+							<strong>Điều 1</strong>. <strong>Điều khoản chi tiết</strong>
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:justify; line-height:115%">
+							Bên B cung cấp cho Bên A dịch vụ chứng thực chữ ký số công cộng và thời hạn sử dụng cụ thể trong Phiếu đề nghị cung cấp dịch vụ chứng thực chữ ký số công cộng VNPT-CA hoặc Phiếu đề nghị gia hạn sử dụng dịch vụ chứng thực chữ ký số công cộng VNPT-CA do Bên A yêu cầu.
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:justify; line-height:115%">
+							<a id="_Hlk193121993"><strong>Điều 2.</strong> <strong>Điều khoản thi hành</strong></a>
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:justify; line-height:115%">
+							Sau khi Bên A đã đọc kỹ nội dung Hợp đồng, Điều khoản sử dụng Dịch vụ và Phiếu đề nghị cung cấp dịch vụ, các bên thống nhất:
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:justify; line-height:115%">
+							2.1. Điều khoản sử dụng dịch vụ là một phần của Hợp đồng này, cùng với Phiếu đề nghị cung cấp dịch vụ cấu thành nên Hợp đồng cung cấp và sử dụng dịch vụ chứng thực chữ ký số công cộng VNPT-CA giữa các bên. Hai bên cam kết tuân thủ các nội dung quy định tại Hợp đồng, Điều khoản sử dụng Dịch vụ, Phiếu đề nghị cung cấp dịch vụ và các nội dung khác được các bên thống nhất (nếu có). Điều khoản sử dụng Dịch vụ được đính kèm theo Hợp đồng này và/hoặc đăng tải tại website dịch vụ: <a href="https://vnpt-ca.vn" style="text-decoration:none"><span class="Hyperlink" style="color:#0000ff">https://vnpt-ca.vn</span></a>; <a href="https://smartca.vnpt.vn" style="text-decoration:none"><span class="Hyperlink" style="color:#0000ff">https://smartca.vnpt.vn</span></a> (Bên A đã đọc và tải về), được niêm yết tại các điểm giao dịch của Bên B và cung cấp thêm cho Bên A nếu có yêu cầu.
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:justify; line-height:115%; widows:0; orphans:0">
+							<a id="bookmark63">2.2</a>. Bên B cam kết cung cấp các dịch vụ cho Bên A như đã quy định tại Hợp đồng, Điều khoản sử dụng Dịch vụ, Phiếu đề nghị cung cấp dịch vụ. 
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:justify; line-height:115%">
+							2.3. Bên A cam kết thanh toán cước phí dịch vụ đúng quy định (bao gồm cả trường hợp gia hạn dịch vụ). Trường hợp Bên A chậm thanh toán, Bên B có quyền tạm ngừng cung cấp/chấm dứt dịch vụ theo quy định của Điều khoản sử dụng dịch vụ.
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:justify; line-height:115%">
+							2.4. Bên A cam kết đã đọc, hiểu, đồng ý toàn bộ nội dung Hợp đồng và tự nguyện giao kết Hợp đồng này thông qua việc xác nhận đồng ý giao kết theo quy trình giao dịch điện tử trên hệ thống của Bên B.
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:justify; line-height:115%">
+							2.5. Bên A cam kết các thông tin cung cấp, phương tiện mà Bên A sử dụng bao gồm nhưng không giới hạn bởi số điện thoại, tài khoản ngân hàng, tài khoản email để xác thực thông tin, giao kết, thực hiện Hợp đồng thuộc quyền sở hữu hoặc sử dụng hợp pháp của Bên A, do Bên A tự thực hiện và chịu mọi trách nhiệm trước Bên B, pháp luật nếu vi phạm cam kết này. 
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:justify; line-height:115%">
+							2.6. Quy trình quản lý Hợp đồng điện tử, bao gồm nhưng không giới hạn bởi, việc khởi tạo, gửi/nhận thông điệp dữ liệu, ký kết, lưu trữ thực hiện theo quy định của Bên B và quy định của pháp luật Việt Nam. Bên A có trách nhiệm tự lưu trữ Hợp đồng này sau khi đã hoàn tất ký kết Hợp đồng và thanh toán.
+						</p>
+						<p style="font-size:10pt">
+							<span style="color:#ffffff">*{anchor1}*</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td >
+						<table class="no-border" style="padding:0pt; border-collapse:collapse">
+							<tr >
+								<td style="width:50% !important; padding:0pt 0.65pt; vertical-align:top">
+									<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+										<strong>BÊN A</strong>
+									</p>
+									<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+										<em>(Ký tên, đóng dấu nếu là pháp nhân tổ chức/</em>
+									</p>
+									<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+										<em>Ký tên, ghi rõ họ tên nếu là cá nhân)</em>
+									</p>
+									<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+										<em>&#xa0;</em>
+									</p>
+									<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+										<em>&#xa0;</em>
+									</p>
+								</td>
+								<td style="width:50% !important; padding:0pt 5.65pt; vertical-align:top">
+									<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+										<strong>BÊN B</strong>
+									</p>
+									<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+										<em>(Ký tên, đóng dấu)</em>
+									</p>
+									<p style="margin-top:2pt; margin-bottom:2pt; line-height:115%">
+										<strong>&#xa0;</strong>
+									</p>
+								</td>
+							</tr>
+							<tr >
+								<td style="width:50% !important; padding:0pt 0.65pt; vertical-align:top">
+									<p style="margin-top:2pt; margin-bottom:2pt; text-align:center; line-height:115%; font-size:65pt">
+										<em><span style="color:#ffffff">@{A}</span></em>
+									</p>
+								</td>
+								<td style="width:50% !important; padding:0pt 0.65pt; vertical-align:top">
+									<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+										<strong>&#xa0;</strong>
+									</p>
+								</td>	
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:100%; padding:0pt 5.65pt; vertical-align:middle">
+						<p style="font-size:10pt">
+							<span style="color:#ffffff">*{anchor2}*</span>
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; line-height:115%">
+							<strong>&#xa0;</strong>
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p>
+				<br style="page-break-before:always; clear:both" />
+			</p>
+			<p>
+				<strong><u>BM 01: </u></strong><strong>Phiếu Đề nghị cung cấp dịch vụ chứng thực CKS công cộng VNPT-CA </strong>
+			</p>
+			<p style="text-align:center">
+				&#xa0;
+			</p>
+			<table class="no-border" style="width:100%; padding:0pt; border-collapse:collapse">
+				<tr style="height:42.55pt">
+					<td style="width:38.22%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="text-align:center; line-height:115%">
+							<img  width="23" alt="" style="margin-top:7.09pt;margin-left:-2pt;margin-right:5.37pt;display:block; position:absolute; z-index:1" src="data:image/png;base64,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" />
+						</p>
+					</td>
+					<td style="width:61.78%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.25pt; text-align:center; line-height:110%">
+							<strong>CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM</strong>
+						</p>
+						<p style="margin-right:2.25pt; text-align:center; line-height:110%">
+							<strong>Độc lập - Tự do - Hạnh phúc</strong>
+						</p>
+						<p style="margin-right:2.25pt; text-align:center; line-height:110%">
+							--------<span>***</span>--------
+						</p>
+					</td>
+				</tr>
+				<tr style="height:14.4pt">
+					<td style="width:38.22%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; line-height:115%">
+							&#xa0;
+						</p>
+					</td>
+					<td style="width:61.78%; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; margin-bottom:6pt; text-align:center; line-height:115%">
+							<em>&#xa0;</em>
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p style="margin-right:2.4pt; margin-bottom:2pt; text-align:center; line-height:115%">
+				<strong>PHIẾU ĐỀ NGHỊ CUNG CẤP DỊCH VỤ CHỨNG THỰC</strong>
+			</p>
+			<p style="margin-right:2.4pt; margin-bottom:2pt; text-align:center; line-height:115%">
+				<strong>CHỮ KÝ SỐ CÔNG CỘNG VNPT-CA</strong>
+			</p>
+			<p style="margin-right:2.4pt; margin-bottom:2pt; text-align:center; line-height:115%">
+				<strong><em>Kèm theo Hợp đồng số: ${soHopDong}</em></strong><strong><em>&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </em></strong>
+			</p>
+			<p style="margin-right:2.4pt; margin-bottom:2pt; line-height:115%">
+				<strong>Đối tượng Khách hàng sử dụng: </strong>
+			</p>
+			<table class="no-border" style="padding:0pt; border-collapse:collapse">
+				<tr>
+					<td style="width:102.6pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; margin-bottom:2pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">${dtkh1} </span>Tổ chức
+						</p>
+					</td>
+					<td style="width:237.05pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; margin-bottom:2pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">${dtkh2} </span>Cá nhân thuộc tổ chức - doanh nghiệp
+						</p>
+					</td>
+					<td style="width:100.85pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; margin-bottom:2pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">${dtkh3} </span>Cá nhân
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p style="margin-right:2.4pt; margin-bottom:2pt; line-height:115%">
+				<strong>Hình thức cung cấp dịch vụ:</strong><strong>&#xa0;&#xa0;&#xa0; </strong>
+			</p>
+			<table class="no-border" style="padding:0pt; border-collapse:collapse">
+				<tr>
+					<td style="width:225.65pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; margin-bottom:2pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">✓ </span>Cấp mới&#xa0; 
+						</p>
+					</td>
+					<td style="width:225.65pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; margin-bottom:2pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">☐ </span>Gia hạn
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p style="margin-right:2.4pt; margin-bottom:2pt; line-height:115%">
+				<strong>I. THÔNG TIN BÊN SỬ DỤNG DỊCH VỤ (Gọi tắt là Bên A):</strong>
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Tên cơ quan/tổ chức/cá nhân: ${tenKhachHang}
+			</p>
+			<p style="text-indent:0.3pt; line-height:115%; padding: 2px;">
+				Địa chỉ/trụ sở giao dịch: <a id="OLE_LINK140"></a><a id="OLE_LINK141">${diaChiKhachHang}</a>
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Điện thoại: ${sdtKhachHang}. Email giao dịch: ${emailGiaoDichKH}
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Email giao dịch: ${emailGiaoDichKH} 
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Mã số thuế (tổ chức): ${mstToChucKH}
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Tài khoản số: ${taiKhoanSoKH}. Tại Ngân hàng: ${taiNganHangKH}
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Giấy chứng nhận ĐKDN/Giấy chứng nhận ĐKHKD/QĐ thành lập/CCCD/Căn cước/Hộ chiếu số: ${soGiayToKH}.
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Quốc tịch (áp dụng với người nước ngoài): ${quocTichKH}
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Nơi cấp: ${noiCapGiayToKH}.&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Ngày cấp: ${ngayCapGiayToKH}.
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Người đại diện (Tổ chức): ${nguoiDaiDienKH}.&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Chức vụ: ${chucVuNguoiDaiDien}
+			</p>
+			<p style="text-indent:0.3pt; text-align:justify; line-height:115%; padding: 2px;">
+				(Theo giấy ủy quyền số ${giayUyQuyenSoKH} ngày ${ngayCapGiayUyQuyenKH})
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Số CCCD/Căn cước/Hộ chiếu của người đại diện (Tổ chức): ${cmndDaiDienKH}
+			</p>
+			<p style="text-indent:0.3pt; padding: 2px;">
+				Ngày cấp: ${ngayCapCmndDaiDienKH}.&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Nơi cấp: ${noiCapCmndDaiDienKH}
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%; padding: 2px;">
+				Các thông tin khác (nếu có): ${thongTinKhacKH}
+			</p>
+			<p style="text-indent:0.3pt; line-height:115%">
+				<strong>II. THÔNG TIN BÊN CUNG CẤP DỊCH VỤ (Gọi tắt là Bên B): </strong><a id="OLE_LINK59"></a><a id="OLE_LINK60"><strong><span style="letter-spacing:-0.5pt">${tenDoanhNghiepB}</span></strong></a><strong><span style="letter-spacing:-0.5pt"> </span></strong>
+			</p>
+			<table class="no-border" style="width:100%; padding:0pt; border-collapse:collapse">
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							Người đại diện: ${nguoiDaiDienB}.&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; Chức vụ: ${chucVuB}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							(Theo giấy ủy quyền số ${giayUyQuyenSoB} ngày ${ngayCapGiayUyQuyenB})
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							Điện thoại: ${sdtB}.&#xa0; E-mail: ${emailB}.&#xa0;&#xa0; Website: ${websiteB}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							Địa chỉ/trụ sở giao dịch: ${diaChiTruSoNhaB}, ${diaChiTruSoDuongB}, ${diaChiTruSoXaB}, ${diaChiTruSoHuyenB}, ${diaChiTruSoTinhB}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							Tài khoản số: ${taiKhoanSoB}. Tại Ngân hàng: ${taiNganHangB}
+						</p>
+					</td>
+				</tr>
+				<tr style="height:7.05pt">
+					<td style="width:100%; padding:0pt; vertical-align:top">
+						<p style="text-indent:0.3pt; line-height:115%">
+							Mã số thuế: ${maSoThueB}
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				Bên A đã đọc, hiểu, đồng ý và cam kết thực hiện đúng <strong>Điều khoản sử dụng dịch vụ</strong> <strong>chứng thực chữ ký số công cộng VNPT-CA </strong>được đăng tải tại website dịch vụ: <a href="https://vnpt-ca.vn" style="text-decoration:none"><span class="Hyperlink">https://vnpt-ca.vn</span></a>; <a href="https://smartca.vnpt.vn" style="text-decoration:none"><span class="Hyperlink">https://smartca.vnpt.vn</span></a>.
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				Phiếu đề nghị cung cấp dịch vụ chứng thực chữ ký số công cộng VNPT-CA này là một phần gắn liền với <strong>Điều khoản sử dụng dịch vụ</strong> <strong>chứng thực chữ ký số công cộng VNPT-CA và Hợp đồng cung cấp và sử dụng dịch vụ chứng thực chữ ký số công cộng VNPT-CA </strong>được ký kết giữa hai Bên. 
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				&#xa0;
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				Bên A quyết định đăng ký sử dụng dịch vụ với các thông tin thuê bao như sau:
+			</p>
+			<p style="margin-top:3pt; margin-right:2.4pt; line-height:115%">
+				<strong>III</strong>. <strong>THÔNG TIN YÊU CẦU CẤP DỊCH VỤ CHỨNG THỰC CHỮ KÝ SỐ VNPT-CA</strong>
+			</p>
+			<ol style="margin:0pt; padding-left:0pt">
+				<li style="margin-right:2.4pt; margin-left:14pt; line-height:115%; padding-left:0.2pt; font-weight:bold; letter-spacing:-1pt">
+					<span style="letter-spacing:normal">Loại hình dịch vụ đăng ký: </span><span style="font-weight:normal; letter-spacing:normal">&#xa0;</span><span style="font-family:'Segoe UI Symbol'; font-weight:normal; letter-spacing:normal">☐ </span><span style="font-weight:normal">VNPT-CA (Token/HSM)</span><span style="font-weight:normal">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="font-family:'Segoe UI Symbol'; font-weight:normal; letter-spacing:normal">✓ </span><span style="font-weight:normal; letter-spacing:normal">VNPT</span><span style="font-weight:normal"> SmartCA</span><span style="font-weight:normal">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span>
+				</li>
+			</ol>
+			<p style="margin-right:2.4pt; line-height:115%">
+				&#xa0;<strong>- Dịch vụ VNPT-CA:</strong>
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				<span style="font-family:'Segoe UI Symbol'">☐ </span>Bên A yêu cầu Bên B tạo cặp khóa cho Bên A. Trong trường hợp này, Bên B sẽ đảm bảo chuyển giao/lưu trữ khóa bí mật đến Bên A một cách an toàn.
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				<span style="font-family:'Segoe UI Symbol'">☐ </span>Bên A tự tạo cặp khóa. Trong trường hợp này, Bên A xác nhận đã đọc, hiểu và cam kết tuân thủ, thực hiện đúng các tiêu chuẩn quy định về việc tạo ra và lưu trữ cặp khóa. Bên A chịu trách nhiệm bồi thường cho Bên B nếu không tuân thủ các tiêu chuẩn quy định về việc tạo ra và lưu trữ cặp khóa và gây thiệt hại cho Bên B.
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				<strong><span style="letter-spacing:-0.5pt">- Dịch vụ VNPT SmartCA: </span></strong>
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				<span style="font-family:'Segoe UI Symbol'">✓ </span>Bên A cam kết và đảm bảo mọi thao tác với Khóa bí mật đều phải do người có thẩm quyền của Bên A tự thực hiện và chịu trách nhiệm tại thời điểm ký.
+			</p>
+			<ol start="2" style="margin:0pt; padding-left:0pt">
+				<li style="margin-right:2.4pt; margin-left:14pt; line-height:115%; padding-left:0.2pt; font-weight:bold">
+					Thời hạn sử dụng:&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+				</li>
+			</ol>
+			<table class="no-border" style="padding:0pt; border-collapse:collapse">
+				<tr style="height:11.75pt">
+					<td style="width:232.45pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">☐</span> Gói cước 1 năm<span style="width:17.5pt; display:inline-block">&#xa0;</span>
+						</p>
+					</td>
+					<td style="width:219.35pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">☐ </span>Gói cước 2 năm
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:232.45pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">☐ </span>Gói cước 3 năm&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+						</p>
+					</td>
+					<td style="width:219.35pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">✓ </span>Gói cước ${thsdThang} tháng
+						</p>
+					</td>
+				</tr>
+			</table>
+			<ol start="3" style="margin:0pt; padding-left:0pt">
+				<li style="margin-right:2.4pt; margin-left:14pt; line-height:115%; padding-left:0.2pt; font-weight:bold">
+					Thông tin dịch vụ yêu cầu:
+				</li>
+			</ol>
+			<p style="margin-right:2.4pt; line-height:115%">
+				<strong>3.1 Dịch vụ VNPT-CA: </strong>
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				- Độ dài khóa: ${doDaiKhoa}
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				- Tự tạo cặp khóa và CSR:<strong> </strong><strong><span style="width:13.19pt; display:inline-block">&#xa0;</span></strong>
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				&#xa0; <span style="font-family:'Segoe UI Symbol'">☐ </span>VNPT<span style="width:21.04pt; display:inline-block">&#xa0;</span>
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				&#xa0; <span style="font-family:'Segoe UI Symbol'">☐ </span>Khách hàng tự tạo (kèm Biên bản tạo khóa và yêu cầu ký chứng thư)
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				<strong>3.2 Dịch vụ VNPT SmartCA:</strong>
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				<strong>- Tổ chức/Cá nhân thuộc tổ chức - doanh nghiệp: </strong>
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				&#xa0; <span style="font-family:'Segoe UI Symbol'">☐ </span>Cơ bản - 500 lượt ký/24h&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; 
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				&#xa0; <span style="font-family:'Segoe UI Symbol'">☐ </span>Nâng cao - 10,000 lượt ký/24h
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				<strong>- Cá nhân: </strong>
+			</p>
+			<table class="no-border" style="padding:0pt; border-collapse:collapse">
+				<tr style="height:19pt">
+					<td style="width:225.65pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; line-height:115%">
+							<a id="OLE_LINK52"></a><a id="OLE_LINK53"></a><a id="OLE_LINK54"><span style="font-family:'Segoe UI Symbol'">☐ </span>Cơ bản - 500 lượt ký/24h&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </a>
+						</p>
+					</td>
+					<td style="width:225.65pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">☐</span> Nâng cao - 10,000 lượt ký/24h&#xa0;&#xa0;&#xa0; 
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" style="width:462.1pt; padding:0pt 5.65pt; vertical-align:top">
+						<p style="margin-right:2.4pt; line-height:115%">
+							<span style="font-family:'Segoe UI Symbol'">☐ </span>Dùng 01 lần - 10 lượt ký
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p style="margin-right:2.4pt; line-height:115%">
+				- Gói dịch vụ VNPT SmartCA khác: ${goidichvu}
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				Thời điểm bắt đầu sử dụng dịch vụ được tính từ ngày hai bên ký kết Biên bản bàn giao Chứng thư chữ ký số.
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				<strong>IV. THANH TOÁN CƯỚC PHÍ DỊCH VỤ VNPT CA/SMARTCA:</strong>
+			</p>
+			<table style="width:109.36%; border:0.75pt solid #000000; padding:0pt; border-collapse:collapse">
+				<tr style="height:13.9pt">
+					<td style="width:6.8%; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:center">
+							<strong><span style="letter-spacing:-1pt">STT</span></strong>
+						</p>
+					</td>
+					<td style="width:13.34%; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:center">
+							<strong><span style="letter-spacing:-1pt">Tên dịch vụ</span></strong>
+						</p>
+					</td>
+					<td style="width:9.42%; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:center">
+							<strong><span style="letter-spacing:-1pt">ĐVT</span></strong>
+						</p>
+					</td>
+					<td style="width:13.04%; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:center">
+							<strong>Số lượng</strong>
+						</p>
+					</td>
+					<td style="width:12.2%; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:center">
+							<strong>Đơn giá</strong>
+						</p>
+					</td>
+					<td style="width:14.06%; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:center">
+							<strong>Thành tiền</strong>
+						</p>
+					</td>
+					<td style="width:13.32%; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:center">
+							<strong>Tiền thuế GTGT</strong>
+						</p>
+					</td>
+					<td style="width:10.96%; border-right:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:center">
+							<strong>Cộng</strong>
+						</p>
+					</td>
+					<td style="width:6.86%; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:center">
+							<strong>Ghi chú</strong>
+						</p>
+					</td>
+				</tr>
+				<tr style="height:13.9pt">
+					<td style="width:6.8%; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:center">
+							<span style="letter-spacing:-1pt">${dstt}</span>
+						</p>
+					</td>
+					<td style="width:13.34%; border:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dsdichvu}</span>
+						</p>
+					</td>
+					<td style="width:9.42%; border:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dsdvt}</span>
+						</p>
+					</td>
+					<td style="width:13.04%; border:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dssoluong}</span>
+						</p>
+					</td>
+					<td style="width:12.2%; border:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dsdongia}</span>
+						</p>
+					</td>
+					<td style="width:14.06%; border:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dsthanhtien}</span>
+						</p>
+					</td>
+					<td style="width:13.32%; border:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dstienthue}</span>
+						</p>
+					</td>
+					<td style="width:10.96%; border:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dscong}</span>
+						</p>
+					</td>
+					<td style="width:6.86%; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dsghichu}</span>
+						</p>
+					</td>
+				</tr>
+				<tr style="height:13.9pt">
+					<td colspan="5" style="border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt; text-align:right">
+							<strong>Tổng tiền:</strong>
+						</p>
+					</td>
+					<td style="width:14.06%; border:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dstong1}</span>
+						</p>
+					</td>
+					<td style="width:13.32%; border:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dstong2}</span>
+						</p>
+					</td>
+					<td style="width:10.96%; border:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<span style="letter-spacing:-1pt">${dstong3}</span>
+						</p>
+					</td>
+					<td style="width:6.86%; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<strong><span style="letter-spacing:-1pt">&#xa0;</span></strong>
+						</p>
+					</td>
+				</tr>
+				<tr style="height:13.9pt">
+					<td colspan="9" style="border-top:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:middle">
+						<p style="margin-right:2.4pt">
+							<em>&#xa0;</em><em>Bằng chữ: ${tongTienBangChu}</em>
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p style="margin-top:3pt; margin-right:2.4pt; text-align:justify; line-height:115%">
+				<strong>V. ĐẦU MỐI TIẾP NHẬN BÀN GIAO DỊCH VỤ: </strong>
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				Thông tin tiếp nhận và người xác nhận thông tin trên chứng thư chữ ký số:
+			</p>
+			<p style="margin-right:2.4pt; line-height:115%">
+				Họ và tên*: ${tenCTS}.<span style="color:#ff0000">&#xa0;&#xa0; </span>Chức vụ: ${chucVuCTS}
+			</p>
+			<p style="margin-top:2pt; margin-bottom:2pt; line-height:115%">
+				Số điện thoại*: ${sdtKhachHang}
+			</p>
+			<p>
+				Email nhận bàn giao tài khoản dịch vụ*: ${emailGiaoDichKH}
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				<em><span style="letter-spacing:-0.5pt">* Số điện thoại, Email trên dùng để tiếp nhận bàn giao tài khoản dịch vụ và nhận thông báo kích hoạt dịch vụ VNPT SmartCA. Khuyến nghị Bên A sử dụng số điện thoại, email cá nhân, đảm bảo chính chủ và bảo mật thông tin tài khoản dịch vụ, không cung cấp thông tin tài khoản dịch vụ cho người không có thẩm quyền.</span></em>
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				<em><span style="letter-spacing:-0.5pt">*** Bên A đồng ý ủy quyền cho Ông/bà có tên nêu trên tiếp nhận bàn giao dịch vụ và xác nhận thông tin chứng thư số.</span></em>
+			</p>
+			<p style="margin-right:2.4pt; text-align:justify; line-height:115%">
+				<em><span style="letter-spacing:-0.5pt">Bằng việc ký Phiếu đề nghị này, Bên A xác nhận cho phép Bên B sử dụng các thông tin trong Phiếu đề nghị cung cấp dịch vụ, hồ sơ kèm theo với mục đích khởi tạo, cung cấp dịch vụ đồng thời cam kết các thông tin cung cấp là đúng sự thật và hoàn toàn chịu trách nhiệm về tính xác thực của các thông tin này, sẵn sàng cung cấp bản sao hợp lệ của hồ sơ kèm theo khi có yêu cầu của Bên B hoặc cơ quan quản lý nhà nước có thẩm quyền./.</span></em>
+			</p>
+			<p style="font-size:10pt">
+				<a id="OLE_LINK114"></a><a id="OLE_LINK115"><span style="color:#ffffff">*{anchor3}*</span></a>
+			</p>
+			<table class="no-border" style="width:463.95pt; padding:0pt; border-collapse:collapse">
+				<tr>
+					<td style="width:50% !important; padding:0pt 0.9pt; vertical-align:top">
+						<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+							<strong>BÊN A </strong>
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+							<em>(Ký tên, đóng dấu nếu là pháp nhân tổ chức/</em>
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+							<em>Ký tên, ghi rõ họ tên nếu là cá nhân)</em>
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+							<em>&#xa0;</em>
+						</p>
+					</td>
+					<td style="width:50% !important; padding:0pt 0.9pt; vertical-align:top">
+						<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+							<strong>BÊN B </strong>
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; text-align:center; line-height:115%">
+							<em>(Ký tên, đóng dấu)</em>
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; line-height:115%">
+							<strong>&#xa0;</strong>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td rowspan="2" style="width:229pt; padding:0pt 5.9pt; vertical-align:top">
+						<p style="margin-top:2pt; margin-bottom:2pt; text-align:center; line-height:115%; font-size:70pt">
+							<em><span style="color:#ffffff">@{A}</span></em>
+						</p>
+					</td>
+					<td style="width:213.35pt; padding:0pt 5.9pt; vertical-align:top">
+						<p style="margin-top:2pt; margin-bottom:2pt; line-height:115%">
+							<strong>&#xa0;</strong>
+						</p>
+						<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; line-height:115%">
+							<strong>&#xa0;</strong>
+						</p>
+						<p>
+							<strong>&#xa0;</strong>
+						</p>
+						<p>
+							<span style="color:#ffffff">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><span style="color:#ffffff">@{2,1}</span>
+						</p>
+					</td>
+				</tr>
+				<tr style="height:36pt">
+					<td style="width:213.35pt; padding:0pt 5.9pt; vertical-align:top">
+						<p style="margin-top:2pt; margin-bottom:2pt; text-indent:0.3pt; line-height:115%">
+							<strong><span style="color:#ffffff">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span></strong><a id="OLE_LINK46"></a><a id="OLE_LINK47"><strong><span style="color:#ffffff">@{2,2}</span></strong></a>
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p>
+				&#xa0;
+			</p>
+			<p style="font-size:10pt">
+				<span style="color:#ffffff">*{</span><a id="OLE_LINK118"></a><a id="OLE_LINK119"></a><a id="OLE_LINK90"></a><a id="OLE_LINK91"><span style="color:#ffffff">anchor4}*</span></a>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:center">
+				<br style="page-break-before:always; clear:both" />
+			</p>
+			<p id="dieu-khoan-su-dung" style="margin-top:6pt; margin-bottom:6pt; text-align:center">
+				<strong>ĐIỀU KHOẢN SỬ DỤNG DỊCH VỤ CHỨNG THỰC </strong>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:center">
+				<strong>CHỮ KÝ SỐ CÔNG CỘNG VNPT-CA</strong>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:center">
+				<em>(Ban hành kèm theo Hợp đồng số: ${soHopDong} ngày ${ngayKy} tháng ${thangKy} năm ${namKy})</em>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-indent:36pt; text-align:justify">
+				Điều khoản sử dụng Dịch vụ chứng thực chữ ký số công cộng VNPT-CA (sau đây gọi tắt là “<strong>Điều khoản sử dụng Dịch vụ</strong>”) là Điều kiện giao dịch chung áp dụng với các Khách hàng/Thuê bao đăng ký sử dụng dịch vụ chứng thực chữ ký số công cộng VNPT-CA. 
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 1: Giải thích từ ngữ</strong>
+			</p>
+			<ol class="awlist2" style="margin:0pt; padding-left:0pt">
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span><strong>Dịch vụ VNPT-CA</strong>: Là dịch vụ chứng thực chữ ký số công cộng do Tổng Công ty Dịch vụ Viễn thông cung cấp theo giấy phép cung cấp Dịch vụ do Cơ quan quản lý nhà nước có thẩm quyền cấp.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span><strong>Dịch vụ VNPT SmartCA: </strong>Là dịch vụ chứng thực chữ ký số công cộng theo mô hình ký số từ xa do Tổng Công ty Dịch vụ Viễn thông cung cấp theo giấy phép cung cấp Dịch vụ do Cơ quan quản lý nhà nước có thẩm quyền cấp.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span><strong>Dịch vụ: </strong>Là Dịch vụ VNPT-CA và/hoặc Dịch vụ VNPT SmartCA.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span><strong>Khách hàng hoặc Thuê bao</strong>: Là cá nhân và/hoặc tổ chức đăng ký sử dụng Dịch vụ và ký kết Hợp đồng. 
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span><strong>VNPT hoặc Bên cung cấp dịch vụ</strong>: Là Tập đoàn Bưu chính Viễn thông Việt Nam và các đơn vị trực thuộc Tập đoàn Bưu chính Viễn thông Việt Nam. 
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span><strong>Điều khoản sử dụng Dịch vụ</strong>: Là những điều khoản được quy định tại Văn bản này, kèm theo Phiếu đề nghị cung cấp dịch vụ được ký kết giữa Khách hàng và VNPT tạo nên các thỏa thuận về việc cung cấp và sử dụng Dịch vụ. 
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span><strong>Phiếu đề nghị cung cấp dịch vụ</strong>: Là Phiếu đề nghị cung cấp dịch vụ chứng thực chữ ký số công cộng VNPT-CA được ký kết giữa Khách hàng và VNPT theo mẫu do VNPT ban hành. 
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span><strong>Khóa</strong>: Là một chuỗi các số nhị phân (0 và 1) dùng trong các hệ thống mật mã.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span><strong>Khóa bí mật</strong>: Là một khóa trong cặp khóa thuộc hệ thống mật mã không đối xứng, được dùng để tạo chữ ký số. 
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:4.35pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0; </span><strong>Khóa công khai</strong>: Là một khóa trong cặp khóa thuộc hệ thống mật mã không đối xứng, được sử dụng để kiểm tra chữ ký số được tạo bởi khóa thiết bị tương ứng trong cặp khóa.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:4.35pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0; </span><strong>Thiết bị</strong>: Là thiết bị phần cứng dùng để tạo ra cặp khóa công khai và bí mật, đáp ứng tiêu chuẩn an toàn thông tin theo quy định.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:4.35pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0; </span><strong>Người nhận</strong>: Là tổ chức, cá nhân nhận được thông điệp dữ liệu được ký số bởi Khách hàng, sử dụng chứng thư chữ ký số công cộng của Khách hàng đó để kiểm tra chữ ký số trong thông điệp dữ liệu nhận được.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:4.35pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0; </span><strong>Ngày làm việc</strong>: Là những ngày từ thứ 2 đến thứ 6, trừ ngày nghỉ lễ, tết theo quy định của Nhà nước Việt Nam.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:4.35pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0; </span><strong>Hợp đồng</strong>: Là Hợp đồng cung cấp và sử dụng dịch vụ chứng thực chữ ký số công cộng VNPT-CA được ký kết giữa Khách hàng và VNPT. 
+				</li>
+			</ol>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 2: Phạm vi cung cấp và sử dụng Dịch vụ</strong>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				Khách hàng đồng ý sử dụng và VNPT đồng ý cung cấp Dịch vụ theo Hợp đồng, Phiếu đề nghị cung cấp dịch vụ.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 3: Mức độ bảo mật</strong>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				Hệ thống phân phối khóa cho Khách hàng phải đảm bảo sự toàn vẹn và bảo mật của cặp khoá. Trong trường hợp phân phối khoá thông qua môi trường mạng máy tính thì hệ thống phân phối khoá phải sử dụng các giao thức bảo mật đảm bảo không lộ thông tin trên đường truyền.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 4: Thanh toán cước phí Dịch vụ</strong>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				4.1. Khách hàng có trách nhiệm thanh toán cho VNPT 100% cước phí tương ứng với gói Dịch vụ đã đăng ký ngay sau khi giao kết Hợp đồng. 
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				4.2. Các khoản cước phí Khách hàng đã thanh toán cho VNPT sẽ không được hoàn trả trong trường hợp Khách hàng đơn phương chấm dứt Hợp đồng trước thời hạn hoặc có hành vi vi phạm pháp luật và/hoặc vi phạm các nghĩa vụ nêu tại Điều khoản sử dụng Dịch vụ này, Hợp đồng, Phiếu đề nghị cung cấp dịch vụ. Giá trị thanh toán có thể bù trừ với khoản công nợ khác giữa các bên (nếu có).
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 5: Quyền và nghĩa vụ của Khách hàng</strong>
+			</p>
+			<ol class="awlist3" style="margin:0pt; padding-left:0pt">
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Có quyền yêu cầu VNPT về việc gia hạn, tạm dừng, thu hồi chứng thư chữ ký số công cộng đã cấp, thay đổi cặp khóa Thuê bao và tự chịu trách nhiệm về yêu cầu đó. Việc gia hạn, tạm dừng, thu hồi chứng thư chữ ký số đã cấp, thay đổi cặp khóa Thuê bao thực hiện theo thủ tục do VNPT ban hành tại từng thời điểm. 
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Khách hàng cung cấp thông tin theo quy định một cách <a id="_Hlk192509534">trung thực, chính xác cho VNPT và chịu trách nhiệm bồi thường thiệt hại và phạt vi phạm nếu vi phạm quy định này. Trường hợp có sự thay đổi về các thông tin này phải thông báo ngay cho VNPT để thay đổi nội dung chứng thư chữ ký số của Khách hàng</a>.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Đối với việc tạo khóa bí mật và phân phối khóa bí mật cho Khách hàng:
+				</li>
+			</ol>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				a. Trường hợp Khách hàng yêu cầu VNPT tạo cặp khóa cho Khách hàng, VNPT đảm bảo chuyển giao khóa bí mật tới Khách hàng một cách an toàn.&#xa0; 
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				b. Trường hợp Khách hàng tự tạo cặp khóa cho mình, Khách hàng phải đảm bảo thiết bị tạo cặp khóa sử dụng đúng quy chuẩn kỹ thuật và tiêu chuẩn bắt buộc áp dụng. Khách hàng chịu trách nhiệm bồi thường cho VNPT nếu không tuân thủ quy định này và gây thiệt hại cho VNPT.
+			</p>
+			<ol start="4" class="awlist4" style="margin:0pt; padding-left:0pt">
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Trong suốt quá trình sử dụng và/hoặc tạm dừng Dịch vụ, Khách hàng chịu trách nhiệm về việc bảo mật thông tin tài khoản, mật khẩu tài khoản dịch vụ, quản lý và sử dụng tài khoản, khóa bí mật và thiết bị lưu trữ chứng thư chữ ký số công cộng của mình (bao gồm nhưng không giới hạn bởi điện thoại thông minh, máy tính, máy tính bảng, laptop); các thiết bị lưu trữ chứng thư chữ ký số công cộng&#xa0; này thuộc quyền sở hữu hoặc sử dụng hợp pháp của Khách hàng, hoặc do người có thẩm quyền của Khách hàng sử dụng và tự chịu mọi trách nhiệm khi quản lý và sử dụng thiết bị của Khách hàng.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Thông báo trong vòng 24 giờ cho VNPT nếu phát hiện thấy dấu hiệu khóa bí mật của mình đã bị lộ, bị đánh cắp hoặc sử dụng trái phép để có các biện pháp xử lý.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Khách hàng hoàn toàn chịu trách nhiệm trước pháp luật về mục đích sử dụng Dịch vụ cũng như mọi thiệt hại xảy ra với VNPT và/hoặc với bên thứ ba do lỗi của Khách hàng trong việc sử dụng/quản lý tài khoản, khóa bí mật và thiết bị lưu trữ chứng thư chữ ký số công cộng.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Tuân thủ điều kiện bảo hành đối với thiết bị theo quy định của VNPT. 
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Khách hàng có trách nhiệm tuân thủ nghiêm ngặt các quy định về xử lý dữ liệu cá nhân theo quy định của Hợp đồng, Chính sách bảo vệ thông tin Khách hàng của VNPT và các quy định của pháp luật Việt Nam.
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Các quyền và nghĩa vụ khác theo quy định của pháp luật. 
+				</li>
+			</ol>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 6: Quyền và nghĩa vụ của VNPT</strong>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				6.1. Đảm bảo cung cấp Dịch vụ đáp ứng các điều kiện và tiêu chuẩn theo quy định của pháp luật sau khi Khách hàng đã hoàn thành các trách nhiệm đăng ký Dịch vụ theo quy định của VNPT. 
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				6.2. VNPT được loại trừ trách nhiệm với Khách hàng và Bên thứ ba trong trường hợp Khách hàng bị lộ/mất mật khẩu Dịch vụ hoặc mất/thất lạc thiết bị lưu trữ chứng thư chữ ký số công cộng dẫn đến người không có thẩm quyền tự ý sử dụng Dịch vụ hoặc hệ thống, mạng máy tính, mạng viễn thông và các phương tiện điện tử bị xâm nhập trái phép bởi bên thứ ba mặc dù VNPT đã thực hiện đầy đủ các biện pháp để bảo vệ hệ thống.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				6.3. Thực hiện trách nhiệm công bố thông tin, cập nhật thông tin, cung cấp thông tin, lưu trữ thông tin theo quy định của pháp luật. <a id="_Hlk192510475"></a>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				6.4. Liên quan đến hoạt động quản lý khoá:
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				- Thông báo ngay cho Khách hàng, đồng thời áp dụng những biện pháp ngăn chặn và khắc phục kịp thời trong trường hợp phát hiện thấy dấu hiệu khóa bí mật của Khách hàng đã bị lộ, không còn toàn vẹn hoặc bất cứ sự sai sót nào khác có nguy cơ ảnh hưởng xấu đến quyền lợi của Khách hàng. 
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				- Khuyến cáo cho Khách hàng việc thay đổi cặp khóa khi cần thiết nhằm đảm bảo tính tin cậy và an toàn cao nhất cho cặp khóa.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				- Khôi phục phương tiện lưu khóa bí mật theo đề nghị của Thuê bao.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				6.5. Trong trường hợp bị tạm đình chỉ, VNPT có trách nhiệm duy trì hệ thống cơ sở dữ liệu liên quan đến chứng thư chữ ký số công cộng đã cấp, duy trì cơ sở dữ liệu thông tin liên quan đến hoạt động cung cấp Dịch vụ cho đến khi được phục hồi chứng thư chữ ký số.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				6.6. Tạo khóa và phân phối khóa cho Khách hàng:
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				a. Khách hàng có thể tự tạo cặp khóa hoặc yêu cầu VNPT tạo cặp khóa cho Khách hàng bằng văn bản (theo mẫu do VNPT ban hành, nếu có).
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				b. Đảm bảo sử dụng các phương thức an toàn để chuyển giao khóa bí mật đến Khách hàng và chỉ được lưu bản sao của khóa bí mật khi Khách hàng có yêu cầu bằng văn bản (theo mẫu do VNPT ban hành, nếu có). Thời gian bàn giao cho Khách hàng không quá 03 ngày làm việc kể từ khi hai bên ký kết Hợp đồng và Khách hàng hoàn thành trách nhiệm thanh toán các khoản phí cho VNPT.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				c. Đảm bảo an toàn trong suốt quá trình tạo và chuyển giao chứng thư chữ ký số công cộng cho Khách hàng.&#xa0; 
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				d. Có trách nhiệm sử dụng thiết bị, phần mềm theo đúng tiêu chuẩn quy định để khởi tạo và lưu trữ cặp khóa.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				e. Sau khi nhận được xác nhận tính chính xác của thông tin trên chứng thư chữ ký số công cộng do Khách hàng xác nhận, trong vòng 24 giờ VNPT công bố chứng thư chữ ký số công cộng đã cấp cho Thuê bao trên hệ thống cơ dữ dữ liệu về chứng thư chữ ký số công cộng của VNPT và thông báo cho Khách hàng chính thức sử dụng Dịch vụ.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				6.7. VNPT có trách nhiệm thực hiện gia hạn chứng thư chữ ký số công cộng; thay đổi cặp khóa Thuê bao; tạm dừng hoặc thu hồi chứng thư chữ ký số công cộng của Khách hàng nếu Khách hàng có yêu cầu bằng Phiếu đề nghị hoặc khi có căn cứ theo quy định của pháp luật.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				6.8.&#xa0; VNPT, trong khả năng của mình, sẽ tuân thủ nghiêm ngặt các quy định về xử lý dữ liệu cá nhân theo quy định của Hợp đồng này, Chính sách bảo vệ thông tin Khách hàng của VNPT tại từng thời điểm và các quy định của pháp luật Việt Nam.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				6.9. Các quyền và nghĩa vụ khác theo quy định của pháp luật. 
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 7: Tạm dừng, phục hồi chứng thư chữ ký số công cộng </strong>
+			</p>
+			<ol class="awlist5" style="margin:0pt; padding-left:0pt">
+				<li style="margin-top:6pt; margin-left:21.3pt; margin-bottom:6pt; text-indent:-21.3pt; text-align:justify">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Chứng thư chữ ký số của Khách hàng bị tạm dừng khi xảy ra một trong các trường hợp sau:
+				</li>
+			</ol>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				a. Khi Khách hàng yêu cầu bằng văn bản, yêu cầu này đã được VNPT xác minh là chính xác và chấp thuận.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				b. Khi phát hiện có rủi ro, sai lệch hoặc có dấu hiệu bất thường giữa các thông tin nhận biết tổ chức, cá nhân với các yếu tố sinh trắc học của tổ chức, cá nhân hoặc phát hiện giao dịch đáng ngờ trong quá trình ký số hoặc phát hiện ra bất cứ sai sót nào có ảnh hưởng đến quyền lợi của Thuê bao và người nhận trong quá trình sử dụng Dịch vụ hoặc tổ chức nâng cấp, tu bổ, sửa chữa hệ thống, mạng lưới viễn thông theo kế hoạch.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				c. Khi có sự cố khẩn cấp hoặc có yêu cầu bằng văn bản của Cơ quan tiến hành tố tụng, Cơ quan công an hoặc Cơ quan quản lý nhà nước có thẩm quyền hoặc theo quy định của pháp luật.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				d. Khi Khách hàng vi phạm các nghĩa vụ được quy định tại Điều khoản sử dụng Dịch vụ, Hợp đồng, Chính sách bảo vệ thông tin Khách hàng của VNPT. Trong trường hợp này, Dịch vụ chỉ được khôi phục sau khi Khách hàng chấm dứt hành vi vi phạm, nộp đầy đủ các khoản phạt vi phạm, bồi thường thiệt hại theo yêu cầu của VNPT.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				e. Khi Thuê bao là tổ chức tạm ngừng toàn bộ hoạt động kinh doanh.
+			</p>
+			<ol start="2" class="awlist6" style="margin:0pt; padding-left:0pt">
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Khi có căn cứ tạm dừng chứng thư chữ ký số công cộng, VNPT phải tiến hành tạm dừng, đồng thời, thông báo cho Khách hàng trong thời gian sớm nhất và công bố trên cơ sở dữ liệu về chứng thư chữ ký số công cộng việc tạm dừng, thời gian bắt đầu và kết thúc việc tạm dừng. 
+				</li>
+				<li style="margin-top:6pt; margin-bottom:6pt; text-align:justify; list-style-position:inside">
+					<span style="width:3.3pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0; </span>Khi không còn căn cứ để tạm dừng hoặc thời hạn tạm dừng theo yêu cầu đã hết hoặc theo yêu cầu của Cơ quan nhà nước có thẩm quyền, VNPT sẽ phục hồi chứng thư chữ ký số công cộng cho Khách hàng tiếp tục sử dụng theo đúng quy định pháp luật.
+				</li>
+			</ol>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 8: Thu hồi chứng thư chữ ký số công cộng, chấm dứt và thanh lý Dịch vụ</strong>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				8.1. Chứng thư chữ ký số công cộng của Khách hàng bị thu hồi trong các trường hợp sau:
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				VNPT sẽ thu hồi chứng thư chữ ký số công cộng của Khách hàng khi có đủ căn cứ, đồng thời, thông báo ngay cho Khách hàng và công bố trên cơ sở dữ liệu về chứng thư chữ ký số công cộng việc thu hồi này.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				a. Khi Khách hàng có yêu cầu thu hồi chứng thư chữ ký số công cộng bằng văn bản và yêu cầu này được VNPT xác minh là chính xác.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				b. Khi VNPT nhận được thông tin từ Tòa án/các Cơ quan quản lý nhà nước, người thân thích của Khách hàng về việc Khách hàng là cá nhân đã chết hoặc mất tích, Khách hàng là tổ chức giải thể hoặc phá sản.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				c. Khi có yêu cầu bằng văn bản của Cơ quan tiến hành tố tụng, Cơ quan công an hoặc Cơ quan quản lý nhà nước có thẩm quyền.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				d. Khi Khách hàng vi phạm nghĩa vụ thanh toán và các nghĩa vụ khác được quy định tại Hợp đồng, Điều khoản sử dụng Dịch vụ và Phiếu đề nghị cung cấp dịch vụ, đã được VNPT thông báo nhưng Khách hàng không khắc phục được hậu quả.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				8.2. Chấm dứt Dịch vụ trong các trường hợp sau:
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				a. Hết thời hạn sử dụng Dịch vụ của gói Dịch vụ mà Khách hàng đã đăng ký mà các bên không gia hạn thêm.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				b. Các bên thỏa thuận chấm dứt Dịch vụ trước hạn.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				c. Khi có yêu cầu của Cơ quan nhà nước có thẩm quyền.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				d. Do Khách hàng có hành vi vi phạm pháp luật, hoặc vi phạm Hợp đồng, Điều khoản sử dụng Dịch vụ hoặc không thanh toán giá trị gói cước.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				e. Khách hàng hoặc người sử dụng Dịch vụ do Khách hàng chỉ định rút lại sự chấp thuận xử lý dữ liệu cá nhân theo Chính sách bảo vệ thông tin Khách hàng của VNPT. 
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				8.3. Thanh lý Hợp đồng: Hợp đồng được coi như là tự động thanh lý khi chấm dứt Hợp đồng mà hai bên không xảy ra tranh chấp.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 9: Khiếu nại và giải quyết tranh chấp</strong>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				9.1. Khách hàng có quyền khiếu nại VNPT về giá cước, chất lượng Dịch vụ. VNPT có trách nhiệm giải quyết khiếu nại của Khách hàng theo quy định của VNPT, Cơ quan quản lý nhà nước có thẩm quyền và tuân thủ quy định của pháp luật.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				9.2. Điều khoản sử dụng Dịch vụ này được giải thích, hướng dẫn và điều chỉnh theo pháp luật nước Cộng hòa xã hội chủ nghĩa Việt Nam. Mọi tranh chấp phát sinh từ Điều khoản sử dụng Dịch vụ này được ưu tiên giải quyết thông qua thương lượng, hoà giải. Trong trường hợp các bên không thể thương lượng, hòa giải được với nhau thì tranh chấp sẽ được giải quyết tại Toà án có thẩm quyền. Phán quyết của Toà án là cuối cùng và các bên phải có nghĩa vụ thi hành. Mọi chi phí phát sinh bên thua kiện chịu.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<a id="_Hlk193115333"><strong>Điều 10: Thông báo</strong></a>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				10.1. Các bên có trách nhiệm thông báo cho bên còn lại về đầu mối có thẩm quyền liên hệ công việc liên quan đến Hợp đồng, Điều khoản sử dụng Dịch vụ và/hoặc Phiếu đề nghị cung cấp dịch vụ đã được ký kết giữa hai bên.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				10.2. Mọi thông báo, yêu cầu, đề nghị hoặc hình thức truyền đạt thông tin khác của một bên liên quan đến Hợp đồng, Điều khoản sử dụng Dịch vụ và/hoặc Phiếu đề nghị cung cấp dịch vụ (“Thông báo”) chỉ có giá trị pháp lý với bên còn lại khi thể hiện bằng văn bản và chuyển cho bên còn lại theo một trong các hình thức: văn bản trao tay/thư bảo đảm (văn bản giấy), fax hoặc hình thức thư điện tử (email) của người có thẩm quyền. Bên thông báo theo hình thức thư điện tử phải cung cấp văn bản giấy cho Bên nhận thông báo ngay sau đó để xác thực thông tin.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				10.3. Trường hợp các bên gửi nhiều thông báo, thông báo cuối cùng theo thời gian sẽ được áp dụng. Nếu thông báo nhận được cùng thời gian sẽ áp dụng theo thứ tự ưu tiên: hình thức thư điện tử, fax, văn bản trao tay/thư bảo đảm.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				10.4. Mỗi bên sẽ thông báo cho bên kia về bất kỳ thay đổi nào đối với đầu mối liên hệ, địa chỉ, số điện thoại, email của mình. VNPT được loại trừ mọi trách nhiệm trong trường hợp không thể thông báo, liên lạc với các đầu mối có thẩm quyền của Khách hàng.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 11: Trường hợp Bất khả kháng</strong>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				11.1. Sự kiện bất khả kháng là sự kiện xảy ra một cách khách quan không thể lường trước được và không thể khắc phục được mặc dù đã áp dụng mọi biện pháp cần thiết và khả năng cho phép, bao gồm nhưng không giới hạn các sự kiện sau: chiến tranh, bạo loạn, đình công, hỏa hoạn, bão, lũ lụt, động đất, sóng thần, dịch bệnh, cách ly kiểm dịch, sự thay đổi trong chính sách, pháp luật, dẫn đến việc một bên hoặc các bên không thực hiện được đầy đủ các quyền và nghĩa vụ quy định tại Điều khoản sử dụng Dịch vụ này.&#xa0; 
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				11.2. Một bên không thực hiện đúng nghĩa vụ do sự kiện bất khả kháng sẽ được loại trừ trách nhiệm dân sự và không phải là cơ sở để bên còn lại chấm dứt Điều khoản sử dụng Dịch vụ này hoặc áp dụng chế tài phạt vi phạm, bồi thường thiệt hại. Tuy nhiên bên bị ảnh hưởng bởi sự kiện bất khả kháng có nghĩa vụ phải:
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				a. Tiến hành các biện pháp ngăn ngừa hợp lý và các biện pháp thay thế cần thiết để hạn chế tối đa ảnh hưởng của sự kiện bất khả kháng gây ra.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				b. Thông báo cho phía bên còn lại về sự kiện bất khả kháng ngay sau khi xảy ra sự kiện bất khả kháng. Tùy từng trường hợp cụ thể, thu thập chứng cứ và/hoặc giấy xác nhận/thông báo của cơ quan, tổ chức có thẩm quyền tại nơi xảy ra sự kiện bất khả kháng để cung cấp cho bên còn lại.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				c. Thực hiện các nghĩa vụ không bị ảnh hưởng bởi sự kiện bất khả kháng.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				d. Tiếp tục thực hiện các nghĩa vụ bị tạm ngừng ảnh hưởng bởi sự kiện bất khả kháng ngay sau khi tác động của sự kiện bất khả kháng chấm dứt.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				11.3. Các bên có thể thoả thuận kéo dài thời gian cung cấp Dịch vụ, nếu việc thực hiện Điều khoản sử dụng Dịch vụ này bị chậm trễ do sự kiện bất khả kháng. Nếu sự kiện bất khả kháng kéo dài hoặc gây hậu quả nghiêm trọng dẫn đến việc tiếp tục thực hiện Điều khoản sử dụng Dịch vụ này sẽ không có lợi cho các bên thì các bên có thể thỏa thuận chấm dứt việc thực hiện Điều khoản sử dụng Dịch vụ này.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				&#xa0;
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				<strong>Điều 12: Điều khoản chung</strong>
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				12.1. Điều khoản sử dụng Dịch vụ này được đăng tải tại website Dịch vụ: <a href="https://vnpt-ca.vn" style="text-decoration:none"><span class="Hyperlink" style="color:#0000ff">https://vnpt-ca.vn</span></a>;&#xa0; <a href="https://smartca.vnpt.vn" style="text-decoration:none"><span class="Hyperlink" style="color:#0000ff">https://smartca.vnpt.vn</span></a>.
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				12.2. VNPT và Khách hàng cam kết tuân thủ đầy đủ Điều khoản sử dụng Dịch vụ này và những sửa đổi/bổ sung (nếu có) tại từng thời điểm trong quá trình cung cấp và sử dụng Dịch vụ. 
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:justify">
+				&#xa0;
+			</p>
+			<p style="margin-top:6pt; margin-bottom:6pt; text-align:center">
+				<strong>TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM</strong>
+			</p>
+			<p>
+				&#xa0;
+			</p>
+			<p style="margin-right:6.5pt; margin-left:7.1pt">
+				<br style="page-break-before:always; clear:both" />
+			</p>
+			<p style="text-align:center">
+				<strong>VĂN BẢN LẤY CHẤP THUẬN CỦA KHÁCH HÀNG ĐỐI VỚI CHÍNH SÁCH BẢO VỆ THÔNG TIN KHÁCH HÀNG CỦA VNPT</strong>
+			</p>
+			<p style="text-align:justify">
+				&#xa0;
+			</p>
+			<p style="text-align:justify">
+				Bằng việc đánh dấu vào các ô chấp thuận trong bảng dưới đây, Khách hàng xác nhận chấp thuận cho Tập đoàn Bưu chính Viễn thông Việt Nam (sau đây gọi tắt là “VNPT”) xử lý Thông tin Khách hàng cho các mục đích/phạm vi sử dụng như sau:
+			</p>
+			<p style="text-align:justify">
+				&#xa0;
+			</p>
+			<table style="width:491.25pt; border:0.75pt solid #000000; padding:0pt; border-collapse:collapse">
+				<tr>
+					<td style="width:376.05pt; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:center">
+							<strong>Mục đích/Phạm vi sử dụng Thông tin Khách hàng (</strong><em>Quy định chi tiết tại Điều 3 và Điều 6 Chính sách bảo vệ thông tin khách hàng của VNPT)</em>
+						</p>
+					</td>
+					<td style="width:92.85pt; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:center">
+							<strong>Chấp thuận của Khách hàng</strong>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:376.05pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:justify">
+							a. VNPT sử dụng Thông tin Khách hàng phục vụ mục đích kinh doanh các dịch vụ phân tích dữ liệu, dịch vụ xác thực, dịch vụ định danh.
+						</p>
+					</td>
+					<td style="width:92.85pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:center">
+							<span style="font-family:'Segoe UI Symbol'">✓</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:376.05pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:justify">
+							b. VNPT sử dụng Thông tin Khách hàng phục vụ mục đích kinh doanh các dịch vụ quảng cáo, dịch vụ tiếp thị, nghiên cứu thị trường, thăm dò dư luận, môi giới.
+						</p>
+					</td>
+					<td style="width:92.85pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:center">
+							<span style="font-family:'Segoe UI Symbol'">✓</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:376.05pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:justify">
+							c. VNPT sử dụng Thông tin Khách hàng phục vụ mục đích tổ chức chương trình quảng cáo, giới thiệu sản phẩm, hàng hóa, dịch vụ và thực hiện các hoạt động xúc tiến thương mại đối với sản phẩm, hàng hóa, dịch vụ do VNPT cung cấp cho Khách hàng.
+						</p>
+					</td>
+					<td style="width:92.85pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:center">
+							<span style="font-family:'Segoe UI Symbol'">✓</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:376.05pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:justify">
+							d. VNPT chia sẻ Thông tin Khách hàng cho bên thứ ba không thuộc các trường hợp theo quy định của pháp luật
+						</p>
+					</td>
+					<td style="width:92.85pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; border-bottom:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:center">
+							<span style="font-family:'Segoe UI Symbol'">✓</span>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:376.05pt; border-top:0.75pt solid #000000; border-right:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:justify">
+							e. VNPT chia sẻ Thông tin Khách hàng với Công ty con của VNPT, công ty liên kết của VNPT, công ty liên kết của Công ty con của VNPT.
+						</p>
+					</td>
+					<td style="width:92.85pt; border-top:0.75pt solid #000000; border-left:0.75pt solid #000000; padding:0pt 5.03pt; vertical-align:top">
+						<p style="margin-top:3pt; margin-bottom:3pt; text-align:center">
+							<span style="font-family:'Segoe UI Symbol'">✓</span>
+						</p>
+					</td>
+				</tr>
+			</table>
+			<p style="margin-right:6.5pt; margin-left:7.1pt; text-align:center">
+				<strong>&#xa0;</strong>
+			</p>
+			<p style="margin-right:6.5pt; margin-left:7.1pt; text-align:center">
+				<strong>&#xa0;</strong>
+			</p>
+			<p style="margin-right:6.5pt; margin-left:7.1pt; text-align:center">
+				<strong>&#xa0;</strong>
+			</p>
+			<p style="text-align:center">
+				<em>(Chi tiết CHÍNH SÁCH BẢO VỆ THÔNG TIN KHÁCH HÀNG CỦA VNPT được cung cấp cho Khách hàng văn bản dưới đây và được niêm yết theo quy định pháp luật)</em>
+			</p>
+			<p style="margin-right:6.5pt; margin-left:7.1pt; text-align:center">
+				<strong>&#xa0;</strong>
+			</p>
+			<p style="margin-right:6.5pt; margin-left:7.1pt; text-align:center">
+				<br style="page-break-before:always; clear:both" />
+			</p>
+			<p style="margin-right:6.5pt; margin-left:7.1pt; text-align:center">
+				<strong>CHÍNH SÁCH BẢO VỆ THÔNG TIN KHÁCH HÀNG</strong>
+			</p>
+			<p style="text-align:center">
+				<strong>CỦA TẬP ĐOÀN BƯU CHÍNH VIỄN THÔNG VIỆT NAM</strong>
+			</p>
+			<p class="KhngDncch1" style="text-align:justify; font-size:12pt">
+				Căn cứ 
+			</p>
+			<ul class="awlist7" style="margin:0pt; padding-left:0pt">
+				<li style="margin-left:14.2pt; text-indent:-14.2pt; text-align:justify">
+					<span style="width:10.2pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><em>Luật Bảo vệ quyền lợi người tiêu dùng số 19/2023/QH15 do Quốc hội ban hành ngày 20/06/2023; </em>
+				</li>
+				<li style="margin-left:14.2pt; text-indent:-14.2pt; text-align:justify">
+					<span style="width:10.2pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><em>Luật Viễn thông số 24/2023/QH15 do Quốc hội ban hành ngày 24/11/2023 và các văn bản hướng dẫn thi hành;</em>
+				</li>
+				<li style="margin-left:14.2pt; text-indent:-14.2pt; text-align:justify">
+					<span style="width:10.2pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><em>Nghị định số 163/2024/NĐ-CP do Chính phủ ban hành ngày 24/12/2024 quy định chi tiết một số điều và biện pháp thi hành Luật viễn thông;</em>
+				</li>
+				<li style="margin-left:14.2pt; text-indent:-14.2pt; text-align:justify">
+					<span style="width:10.2pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><em>Nghị định số 55/2024/NĐ-CP do Chính phủ ban hành ngày 16/05/2024 quy định chi tiết một số điều của Luật bảo vệ quyền lợi người tiêu dùng; </em>
+				</li>
+				<li style="margin-left:14.2pt; text-indent:-14.2pt; text-align:justify">
+					<span style="width:10.2pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><em>Nghị định số 13/2023/NĐ-CP do Chính phủ ban hành ngày 17/04/2023 về bảo vệ dữ liệu cá nhân;</em>
+				</li>
+				<li style="margin-left:14.2pt; text-indent:-14.2pt; text-align:justify">
+					<span style="width:10.2pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><em>Nghị định số 06/2016/NĐ-CP do Chính phủ ban hành ngày 18/01/2016 quy định quản lý, cung cấp và sử dụng dịch vụ phát thanh, truyền hình sửa đổi bổ sung bởi Nghị định 71/2022/NĐ-CP;</em>
+				</li>
+				<li style="margin-left:14.2pt; text-indent:-14.2pt; text-align:justify">
+					<span style="width:10.2pt; font:7pt 'Times New Roman'; display:inline-block">&#xa0;&#xa0;&#xa0;&#xa0;&#xa0;&#xa0; </span><em>Quyết định số 07/2024/QĐ-TTg do Thủ tướng Chính phủ ban hành ngày 20/06/2024 ban hành Danh mục sản phẩm, hàng hóa, dịch vụ phải đăng ký hợp đồng theo mẫu, điều kiện giao dịch chung.</em>
+				</li>
+			</ul>
+			<p style="text-align:justify">
+				Chính sách bảo vệ thông tin khách hàng của Tập đoàn Bưu chính Viễn thông Việt Nam (sau đây gọi tắt là “<strong>Chính sách</strong>”) nhằm mục đích thông báo với Khách hàng về các Thông tin Khách hàng do Tập đoàn Bưu chính Viễn thông Việt Nam <strong>(“VNPT</strong>”) xử lý, mục đích xử lý, cách thức xử lý, thời gian lưu trữ, quyền, nghĩa vụ của Khách hàng đối với Thông tin Khách hàng theo quy định của pháp luật Việt Nam về bảo vệ Thông tin Khách hàng. Chính sách này đồng thời đưa ra các khuyến nghị để giúp Khách hàng nâng cao nhận thức về bảo vệ Thông tin Khách hàng.
+			</p>
+			<p style="text-align:justify">
+				Chính sách này là Điều kiện giao dịch chung được áp dụng cho toàn bộ hoạt động cung cấp Sản phẩm, dịch vụ của VNPT và áp dụng trên toàn bộ các nền tảng có tương tác với Khách hàng cá nhân trên môi trường số.
+			</p>
+			<p style="text-align:justify">
+				VNPT có trách nhiệm cung cấp đầy đủ Chính sách này cho khách hàng trước khi ký hợp đồng hoặc giao dịch và lấy chấp thuận của Khách hàng đối với Chính sách này trước khi thực hiện hoạt động xử lý Thông tin Khách hàng theo quy định của pháp luật. Bằng việc tích vào ô "Chấp thuận" trên các website (trang mạng)/ứng dụng cung cấp dịch vụ của VNPT có đăng tải công khai Chính sách này; hoặc bằng việc ký kết hợp đồng với VNPT có dẫn chiếu và đính kèm Chính sách này; Khách hàng xác nhận rằng đã đọc kỹ, hiểu rõ và chấp thuận toàn bộ nội dung Chính sách này. 
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 1.</strong> <strong>Giải thích từ ngữ và các từ viết tắt</strong>
+			</p>
+			<p style="text-align:justify">
+				Trong phạm vi Chính sách này, các thuật ngữ dưới đây được hiểu và giải thích như sau: 
+			</p>
+			<p style="text-align:justify">
+				1.1.<strong> VNPT</strong> là Tập Đoàn Bưu Chính Viễn Thông Việt Nam và các đơn vị trực thuộc Tập Đoàn Bưu Chính Viễn Thông Việt Nam. 
+			</p>
+			<p style="text-align:justify">
+				1.2.<strong> Khách hàng </strong>là:<strong> </strong>
+			</p>
+			<p style="text-align:justify">
+				- Cá nhân hoặc người đại diện hợp pháp của cá nhân sử dụng và/hoặc quan tâm tới các Sản phẩm, dịch vụ của VNPT; 
+			</p>
+			<p style="text-align:justify">
+				- Cá nhân hoặc người đại diện hợp pháp của cá nhân đã truy cập và/hoặc đăng ký tài khoản tại các website/ứng dụng cung cấp dịch vụ của VNPT. 
+			</p>
+			<p style="text-align:justify">
+				1.3. <strong>Sản phẩm, dịch vụ của VNPT là</strong>: 
+			</p>
+			<p class="NoSpacing">
+				- Dịch vụ viễn thông di động mặt đất (dịch vụ thoại, dịch vụ nhắn tin, dịch vụ truy nhập Internet);
+			</p>
+			<p class="NoSpacing">
+				- Dịch vụ viễn thông cố định mặt đất (dịch vụ thoại, dịch vụ truy nhập Internet);
+			</p>
+			<p class="NoSpacing">
+				- Dịch vụ truyền hình trả tiền.
+			</p>
+			<p class="NoSpacing">
+				- Các sản phẩm, dịch vụ khác do VNPT cung cấp cho Khách hàng theo quy định của pháp luật. 
+			</p>
+			<p style="text-align:justify">
+				1.4. <strong>Thông tin Khách hàng </strong>bao gồm (i) Dữ liệu cá nhân của Khách hàng theo quy định của pháp luật về bảo vệ dữ liệu cá nhân và (ii) Thông tin về quá trình mua, sử dụng sản phẩm, hàng hóa, dịch vụ của Khách hàng và thông tin khác liên quan đến giao dịch giữa Khách hàng và VNPT. 
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 2. Xử lý Thông tin Khách hàng </strong>
+			</p>
+			<p style="text-align:justify">
+				1.<strong> </strong>VNPT có trách nhiệm thông báo Chính sách này cho Khách hàng và lấy chấp thuận của Khách hàng trước khi tiến hành xử lý Thông tin Khách hàng trong những trường hợp dưới đây: 
+			</p>
+			<p style="text-align:justify">
+				a) Khi Khách hàng hoặc người đại diện hợp pháp của Khách hàng liên hệ với VNPT để yêu cầu tư vấn Sản phẩm, dịch vụ của VNPT hoặc bày tỏ sự quan tâm tới các Sản phẩm, dịch vụ của VNPT; 
+			</p>
+			<p style="text-align:justify">
+				b) Khi Khách hàng dùng thử, ký kết hợp đồng, đăng ký, sử dụng Sản phẩm, dịch vụ của VNPT;
+			</p>
+			<p style="text-align:justify">
+				c) Khi Khách hàng truy cập và/hoặc đăng ký tài khoản tại các website/ứng dụng cung cấp dịch vụ của VNPT;
+			</p>
+			<p style="text-align:justify">
+				d) Khi Khách hàng đồng thuận cung cấp Thông tin Khách hàng cho VNPT qua các nguồn công khai như: website/ứng dụng cung cấp dịch vụ; cuộc họp, sự kiện, hội thảo, hội nghị, các mạng xã hội, hay chương trình đối thoại, thảo luận do VNPT tổ chức, tài trợ hoặc tham dự và/hoặc từ các tệp lưu trữ (cookies) ghi nhận được trên website/ứng dụng cung cấp dịch vụ của VNPT;
+			</p>
+			<p style="text-align:justify">
+				e) Khi khách hàng của một tổ chức, doanh nghiệp cho phép tổ chức, doanh nghiệp đó chia sẻ Thông tin Khách hàng của khách hàng với VNPT;
+			</p>
+			<p style="text-align:justify">
+				g) Là khách hàng của một tổ chức, doanh nghiệp được VNPT thực hiện góp vốn, mua cổ phần; hoặc là khách hàng của một tổ chức, doanh nghiệp có hoạt động hợp tác cung cấp sản phẩm, dịch vụ với VNPT.
+			</p>
+			<p style="text-align:justify">
+				h) Khi có yêu cầu của các cơ quan nhà nước có thẩm quyền. 
+			</p>
+			<p style="text-align:justify">
+				i) Khi VNPT tiến hành các công việc theo mục đích xử lý Thông tin Khách hàng được quy định tại Điều 3 Chính sách này. 
+			</p>
+			<p style="text-align:justify">
+				j) Các trường hợp khác theo quy định của pháp luật.
+			</p>
+			<p style="text-align:justify">
+				2. Dữ liệu cá nhân của Khách hàng được VNPT tiến hành xử lý (sau đây gọi tắt là “<strong>Dữ liệu cá nhân</strong>”) bao gồm:
+			</p>
+			<p style="text-align:justify">
+				2.1. Dữ liệu cá nhân cơ bản
+			</p>
+			<p style="text-align:justify">
+				a) Họ, chữ đệm và tên khai sinh, tên gọi khác (nếu có);
+			</p>
+			<p style="text-align:justify">
+				b) Ngày, tháng, năm sinh;&#xa0;ngày, tháng, năm chết hoặc mất tích;
+			</p>
+			<p style="text-align:justify">
+				c) Giới tính;
+			</p>
+			<p style="text-align:justify">
+				d) Nơi sinh, nơi đăng ký khai sinh, nơi thường trú, nơi tạm trú, nơi ở hiện tại, quê quán, địa chỉ liên hệ;
+			</p>
+			<p style="text-align:justify">
+				đ) Quốc tịch;
+			</p>
+			<p style="text-align:justify">
+				e) Hình ảnh của cá nhân;
+			</p>
+			<p style="text-align:justify">
+				g) Số điện thoại, số chứng minh nhân dân, số định danh cá nhân, số hộ chiếu, số giấy phép lái xe, số biển số xe, số mã số thuế cá nhân, số bảo hiểm xã hội, số thẻ bảo hiểm y tế;
+			</p>
+			<p style="text-align:justify">
+				h) Tình trạng hôn nhân;
+			</p>
+			<p style="text-align:justify">
+				i)&#xa0;Thông tin về mối quan hệ gia đình (cha mẹ, con cái);
+			</p>
+			<p style="text-align:justify">
+				k) Thông tin về tài khoản số của cá nhân; dữ liệu cá nhân phản ánh hoạt động, lịch sử hoạt động trên không gian mạng;
+			</p>
+			<p style="text-align:justify">
+				l) Các thông tin khác gắn liền với một con người cụ thể hoặc giúp xác định một con người cụ thể. 
+			</p>
+			<p style="text-align:justify">
+				2.2. Dữ liệu cá nhân nhạy cảm 
+			</p>
+			<p style="text-align:justify">
+				a) Dữ liệu cá nhân của tổ chức tín dụng, chi nhánh ngân hàng nước ngoài, tổ chức cung ứng dịch vụ trung gian thanh toán, các tổ chức được phép khác, gồm: thông tin định danh Khách hàng theo quy định của pháp luật, thông tin về tài khoản, thông tin về tiền gửi, thông tin về tài sản gửi, thông tin về giao dịch, thông tin về tổ chức, cá nhân là bên bảo đảm tại tổ chức tín dụng, chi nhánh ngân hàng, tổ chức cung ứng dịch vụ trung gian thanh toán;
+			</p>
+			<p style="text-align:justify">
+				b) Dữ liệu về vị trí của cá nhân được xác định qua dịch vụ định vị.
+			</p>
+			<p style="text-align:justify">
+				c) Dữ liệu cá nhân khác được pháp luật quy định là đặc thù và cần có biện pháp bảo mật cần thiết.
+			</p>
+			<p style="text-align:justify">
+				2.3. VNPT sẽ thông báo cho Khách hàng các Thông tin Khách hàng bắt buộc phải cung cấp (“<strong>Thông tin Khách hàng bắt buộc cung cấp</strong>”) và các Thông tin Khách hàng được lựa chọn đồng ý hoặc không đồng ý cung cấp (“<strong>Thông tin Khách hàng tùy chọn cung cấp</strong>”) tại thời điểm Khách hàng liên hệ, trao đổi hoặc đăng ký, ký kết hợp đồng với VNPT. Trong đó, Thông tin Khách hàng bắt buộc phải cung cấp được hiểu là các Thông tin Khách hàng mà VNPT cần phải thu thập từ Khách hàng theo quy định của pháp luật hoặc các Thông tin Khách hàng mà VNPT bắt buộc phải sử dụng để triển khai cung cấp một phần hoặc toàn bộ Sản phẩm, dịch vụ của VNPT theo yêu cầu của Khách hàng. Thông tin Khách hàng tùy chọn cung cấp được hiểu là các Thông tin Khách hàng mà VNPT thu thập để nâng cao trải nghiệm khách hàng, dự đoán hành vi tiêu dùng hoặc nghiên cứu thị trường dịch vụ viễn thông, việc không cung cấp Thông tin Khách hàng tùy chọn cung cấp không làm ảnh hưởng tới việc cung cấp Sản phẩm, dịch vụ của VNPT theo yêu cầu của Khách hàng. 
+			</p>
+			<p style="text-align:justify">
+				Nếu các Thông tin Khách hàng bắt buộc cung cấp không được cung cấp theo yêu cầu của VNPT, Khách hàng sẽ không thể sử dụng Sản phẩm, dịch vụ của VNPT. Trong trường hợp này, VNPT có thể từ chối cung cấp sản phẩm, dịch vụ cho Khách hàng mà không phải chịu bất kì một khoản bồi thường và/hoặc phạt vi phạm nào (trừ trường hợp do lỗi của VNPT hoặc pháp luật có quy định khác).
+			</p>
+			<p style="text-align:justify">
+				2.4. VNPT có thể tự mình hoặc ủy quyền, thuê bên thứ ba thực hiện xử lý Thông tin Khách hàng với điều kiện là việc xử lý Thông tin Khách hàng phải bảo đảm an toàn, an ninh Thông tin Khách hàng theo quy định của pháp luật. Trường hợp VNPT ủy quyền hoặc thuê bên thứ ba thực hiện việc xử lý Thông tin Khách hàng thì phải được sự đồng ý của Khách hàng. Việc ủy quyền hoặc thuê bên thứ ba phải được thực hiện bằng văn bản, trong đó quy định rõ phạm vi, trách nhiệm của mỗi bên trong việc bảo vệ Thông tin Khách hàng theo quy định của pháp luật. Trường hợp Khách hàng thực hiện giao dịch thông qua bên thứ ba thì bên thứ ba có trách nhiệm bảo vệ Thông tin Khách hàng theo quy định của pháp luật. 
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 3.</strong> <strong>Mục đích xử lý Thông tin Khách hàng </strong>
+			</p>
+			<p style="text-align:justify">
+				3.1. VNPT được phép tiến hành xử lý Thông tin Khách hàng trong các trường hợp sau (“<strong>Mục đích bắt buộc</strong>”): 
+			</p>
+			<p style="text-align:justify">
+				a) Cung cấp sản phẩm, dịch vụ của VNPT theo yêu cầu của Khách hàng và chỉ trong phạm vi thông tin mà Khách hàng đã đồng ý <em>(Theo Điểm b Khoản 3 Điều 18 Luật bảo vệ quyền lợi người tiêu dùng 2023)</em>, bao gồm: 
+			</p>
+			<p style="text-align:justify">
+				- Xác minh tính chính xác, đầy đủ của các thông tin được Khách hàng cung cấp theo quy định của pháp luật; xác định hoặc xác thực danh tính của Khách hàng và thực hiện quy trình xác thực Khách hàng; Xử lý việc đăng ký sử dụng Sản phẩm, dịch vụ của VNPT;
+			</p>
+			<p style="text-align:justify">
+				- Thẩm định hồ sơ và khả năng đủ điều kiện của Khách hàng đối với việc sử dụng Sản phẩm, dịch vụ của VNPT. VNPT có thể sử dụng các phương pháp chấm điểm, gán ngưỡng cước nóng, kiểm tra lịch sử Khách hàng sử dụng Sản phẩm, dịch vụ của VNPT để đánh giá và quản trị rủi ro tín dụng, đảm bảo khả năng thanh toán đối với các nghĩa vụ thanh toán và các nghĩa vụ khác có liên quan trong suốt quá trình cung cấp Sản phẩm, dịch vụ của VNPT cho Khách hàng;
+			</p>
+			<p style="text-align:justify">
+				- Thực hiện các quyền của Khách hàng liên quan đến Thông tin Khách hàng theo quy định pháp luật, thỏa thuận giữa Khách hàng và VNPT.
+			</p>
+			<p style="text-align:justify">
+				- Thông báo tới Khách hàng thông tin về kế hoạch tác động mạng lưới liên quan đến Sản phẩm, dịch vụ của VNPT. 
+			</p>
+			<p style="text-align:justify">
+				- Quản lý tài khoản Khách hàng và các chương trình Khách hàng thân thiết; 
+			</p>
+			<p style="text-align:justify">
+				- Tiếp nhận giải quyết các yêu cầu, khiếu nại, khiếu kiện của Khách hàng; gửi các thông báo cho Khách hàng nhằm khảo sát sự hài lòng của Khách hàng đối với chất lượng sản phẩm, dịch vụ, quy trình giải quyết yêu cầu, khiếu nại, khiếu kiện do VNPT thực hiện;
+			</p>
+			<p style="text-align:justify">
+				- Liên hệ với Khách hàng nhằm tư vấn, trao đổi thông tin, giải quyết yêu cầu, khiếu nại, giao các hóa đơn, các sao kê, các báo cáo hoặc các tài liệu khác liên quan tới Sản phẩm, dịch vụ của VNPT thông qua các kênh khác nhau (ví dụ: email, chat) và để trả lời yêu cầu của Khách hàng. Liên hệ với Khách hàng (hoặc các bên do Khách hàng chỉ định hoặc yêu cầu) để thông báo cho Khách hàng về thông tin liên quan đến việc sử dụng Sản phẩm, dịch vụ của VNPT.
+			</p>
+			<p style="text-align:justify">
+				- Đánh giá hiệu quả sản xuất kinh doanh của các đơn vị; vận hành hệ thống quản trị nội bộ, hệ thống đánh giá hiệu quả công việc và các hệ thống giám sát hoạt động sản xuất kinh doanh; 
+			</p>
+			<p style="text-align:justify">
+				- Lập hồ sơ phục vụ công tác mời thầu hoặc tham dự thầu hoặc; Lập báo cáo, thống kê, phân tích dữ liệu nội bộ để nghiên cứu, xây dựng, phát triển, quản lý, đo lường, cung cấp và cải tiến Sản phẩm, hàng hóa, dịch vụ cũng như điều hành hoạt động kinh doanh của VNPT;
+			</p>
+			<p style="text-align:justify">
+				- Đánh giá khả năng mua, sử dụng sản phẩm, hàng hóa, dịch vụ của VNPT thông qua điểm xếp hạng viễn thông của Khách hàng nhằm hỗ trợ tốt nhất trong việc cung cấp các sản phẩm, hàng hóa, dịch vụ cho Khách hàng; 
+			</p>
+			<p style="text-align:justify">
+				- Cung cấp thông tin mà Khách hàng yêu cầu hoặc nhận định rằng Khách hàng có thể thấy hữu ích, bao gồm thông tin về các Sản phẩm, dịch vụ của VNPT theo quy định pháp luật; 
+			</p>
+			<p style="text-align:justify">
+				- Cải tiến công nghệ, giao diện website/ứng dụng cung cấp dịch vụ đảm bảo tối ưu hóa trải nghiệm của Khách hàng; 
+			</p>
+			<p style="text-align:justify">
+				b) Thực hiện các nghĩa vụ theo quy định của pháp luật <em>(Theo Điểm c Khoản 3 Điều 18 Luật bảo vệ quyền lợi người tiêu dùng 2023)</em>, bao gồm: 
+			</p>
+			<p style="text-align:justify">
+				- Lập các loại báo cáo theo quy định của pháp luật về viễn thông, truyền hình hoặc theo yêu cầu bằng văn bản của cơ quan quản lý nhà nước có thẩm quyền; 
+			</p>
+			<p style="text-align:justify">
+				- Trong trường hợp khẩn cấp, cần xử lý ngay Thông tin Khách hàng có liên quan để bảo vệ tính mạng, sức khỏe của chủ thể dữ liệu hoặc người khác với điều kiện là việc xử lý thông tin này phải phù hợp với quy định của pháp luật;
+			</p>
+			<p style="text-align:justify">
+				- Việc công khai Thông tin Khách hàng theo quy định của luật; tuân thủ các nghĩa vụ của doanh nghiệp cung cấp dịch vụ viễn thông, truyền hình theo quy định của pháp luật;
+			</p>
+			<p style="text-align:justify">
+				- Việc xử lý dữ liệu của cơ quan nhà nước có thẩm quyền trong trường hợp tình trạng khẩn cấp về quốc phòng, an ninh quốc gia, trật tự an toàn xã hội, thảm họa lớn, dịch bệnh nguy hiểm; khi có nguy cơ đe dọa an ninh, quốc phòng nhưng chưa đến mức ban bố tình trạng khẩn cấp; phòng, chống bạo loạn, khủng bố, phòng, chống tội phạm và vi phạm pháp luật theo quy định của luật;
+			</p>
+			<p style="text-align:justify">
+				- Để thực hiện nghĩa vụ theo hợp đồng của chủ thể dữ liệu với cơ quan, tổ chức, cá nhân có liên quan theo quy định của pháp luật;
+			</p>
+			<p style="text-align:justify">
+				- Phục vụ hoạt động của cơ quan nhà nước đã được quy định theo pháp luật chuyên ngành.
+			</p>
+			<p style="text-align:justify">
+				3.2. Trừ trường hợp quy định tại Điều 3.1, VNPT phải thực hiện thông báo và lấy chấp thuận của Khách hàng trước khi xử lý Thông tin Khách hàng của Khách hàng đối với các mục đích được liệt kê dưới đây (sau đây gọi tắt là “<strong>Mục đích tùy chọn</strong>”). Thông tin Khách hàng thu thập, cập nhật, bổ sung phải phù hợp và giới hạn trong phạm vi, mục đích cần xử lý theo quy định tại Chính sách này. 
+			</p>
+			<p style="text-align:justify">
+				a) Mục đích kinh doanh các dịch vụ phân tích dữ liệu, dịch vụ xác thực, dịch vụ định danh, dịch vụ quảng cáo, dịch vụ tiếp thị, nghiên cứu thị trường, thăm dò dư luận, môi giới. Đối với dịch vụ tiếp thị, phương thức, hình thức, tần suất giới thiệu sản phẩm thực hiện theo quy định của pháp luật về bảo vệ dữ liệu cá nhân. 
+			</p>
+			<p style="text-align:justify">
+				b) Tổ chức chương trình quảng cáo, giới thiệu sản phẩm, hàng hóa, dịch vụ và thực hiện các hoạt động xúc tiến thương mại đối với sản phẩm, hàng hóa, dịch vụ do Bên A cung cấp cho Bên B, bao gồm các hoạt động sử dụng Thông tin Khách hàng để quảng cáo, tiếp thị với Khách hàng về các chương trình khuyến mại, nghiên cứu, khảo sát, tin tức, thông tin cập nhật, các sự kiện, cuộc thi có thưởng, trao các phần thưởng có liên quan, các quảng cáo và nội dung có liên quan về Sản phẩm, dịch vụ của VNPT. Trường hợp Khách hàng không muốn tiếp tục nhận email, tin nhắn và/hoặc bản tin định kỳ với mục đích quảng cáo, tiếp thị của VNPT với tần suất tùy thuộc vào Chính sách của VNPT theo từng thời kỳ và phù hợp với quy định pháp luật, Khách hàng có thể từ chối theo cách thức đã được VNPT hướng dẫn trên các kênh, phương tiện như tin nhắn, cuộc gọi, dấu tích trên website/ứng dụng cung cấp dịch vụ hoặc liên hệ với tổng đài chăm sóc Khách hàng của VNPT;
+			</p>
+			<p style="text-align:justify">
+				3.3. VNPT không thực hiện hoạt động mua bán Thông tin Khách hàng dưới bất kỳ hình thức nào. 
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 4. Cách thức xử lý Thông tin Khách hàng</strong>
+			</p>
+			<p style="text-align:justify">
+				VNPT áp dụng một hoặc nhiều hoạt động tác động tới Thông tin Khách hàng như: thu thập, ghi, phân tích, xác nhận, lưu trữ, chỉnh sửa, công khai, kết hợp, truy cập, truy xuất, thu hồi, mã hóa, giải mã, sao chép, chia sẻ, truyền đưa, cung cấp, chuyển giao, xóa, hủy Thông tin Khách hàng hoặc các hành động khác có liên quan phù hợp với quy định của pháp luật.
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 5. Thời gian bắt đầu, thời gian kết thúc xử lý dữ liệu </strong>
+			</p>
+			<p style="text-align:justify; background-color:#ffffff">
+				1. Thời gian bắt đầu xử lý dữ liệu: Kể từ thời điểm phát sinh các Mục Đích quy định tại Điều 3 Chính sách này.
+			</p>
+			<p style="text-align:justify; background-color:#ffffff">
+				2. Thời gian kết thúc xử lý dữ liệu: VNPT chấm dứt việc xử lý Thông tin Khách hàng khi đã hoàn thành Mục Đích quy định tại Chính sách này, trừ trường hợp pháp luật có quy định khác hoặc Khách hàng rút lại sự đồng ý việc xử lý Thông tin Khách hàng hoặc khi cơ quan nhà nước có thẩm quyền yêu cầu bằng văn bản.
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 6. Phạm vi sử dụng Thông tin Khách hàng</strong>
+			</p>
+			<p style="text-align:justify">
+				6.1. VNPT được phép chia sẻ Thông tin Khách hàng của Khách hàng cho các tổ chức, cá nhân dưới đây để thực hiện các<strong> </strong>Mục Đích quy định tại Chính sách (“<strong>Phạm vi sử dụng bắt buộc”)</strong>, cụ thể:
+			</p>
+			<p style="text-align:justify">
+				1. Chia sẻ thông tin với Công ty con của VNPT, công ty liên kết của VNPT, công ty liên kết của Công ty con của VNPT (<em>Theo Nghị định 25/2016/NĐ-CP</em>);
+			</p>
+			<p style="text-align:justify">
+				2. Chia sẻ thông tin với Bên thứ ba cung cấp dịch vụ cho VNPT hoặc các đối tác trong các hợp đồng hợp tác kinh doanh nhằm phát triển sản phẩm, dịch vụ của VNPT và hai bên đã có thỏa thuận bằng văn bản về việc bên thứ ba có trách nhiệm bảo vệ Thông tin Khách hàng (<em>Theo Điểm a Khoản 4 Điều 18 Luật bảo vệ quyền lợi người tiêu dùng 2023</em>), cụ thể: VNPT sử dụng và/hoặc hợp tác với các công ty và cá nhân khác để thực hiện một số công việc và chương trình như chương trình quảng cáo, khuyến mại dành cho Khách hàng, nghiên cứu thị trường, phân tích và phát triển sản phẩm, tư vấn chiến lược, cung cấp dịch vụ thu cước. Các Bên thứ ba cung cấp dịch vụ và/hoặc các đối tác này có quyền truy cập, thu thập, sử dụng và xử lý Thông tin Khách hàng của Khách hàng trong phạm vi Khách hàng đã đồng ý và VNPT cho phép để thực hiện các chức năng của họ và phải tuân thủ quy định của pháp luật về bảo vệ Thông tin Khách hàng với tư cách là Bên Xử lý Dữ Liệu, có văn bản/thỏa thuận về xử lý Thông tin Khách hàng xác định rõ phạm vi, mục đích, loại Thông tin Khách hàng được chia sẻ, các quyền nghĩa vụ của các bên và trách nhiệm của Bên Xử lý Thông tin Khách hàng đối với việc bảo vệ Thông tin Khách hàng. 
+			</p>
+			<p style="text-align:justify">
+				3. Chia sẻ thông tin với các doanh nghiệp viễn thông có thỏa thuận bằng văn bản với Bên B về việc trao đổi, cung cấp thông tin thuê bao viễn thông, thông tin về việc sử dụng dịch vụ viễn thông của người sử dụng dịch vụ để phục vụ cho việc tính giá, lập hóa đơn (<em>Theo quy định tại Điểm b Khoản 4 Điều 6 Luật Viễn thông 2023</em>);
+			</p>
+			<p style="text-align:justify">
+				4. Cung cấp thông tin thuê bao viễn thông có hành vi trốn tránh thực hiện nghĩa vụ thanh toán tiền sử dụng dịch vụ viễn thông theo quy định của Bộ trưởng Bộ Thông tin và Truyền thông (<em>Theo quy định tại Điểm c Khoản 4 Điều 6 Luật Viễn thông 2023</em>);
+			</p>
+			<p style="text-align:justify">
+				5. Khi có yêu cầu của cơ quan nhà nước có thẩm quyền, theo quy định của pháp luật (<em>Theo quy định tại Điểm d Khoản 4 Điều 6 Luật Viễn thông 2023</em>). 
+			</p>
+			<p style="text-align:justify">
+				6.2. Ngoài các đối tượng quy định tại Điều 6.1 Chính sách này, việc chia sẻ Thông tin Khách hàng cho bất kì bên thứ ba nào khác phải được sự chấp thuận của Khách hàng (“<strong>Phạm vi sử dụng tùy chọn”)</strong>.
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 7. Quyền của Khách hàng</strong>
+			</p>
+			<p style="text-align:justify">
+				1. Quyền được biết và Quyền đồng ý
+			</p>
+			<p style="text-align:justify">
+				Khách hàng có quyền được biết về hoạt động xử lý Thông tin Khách hàng của mình, trừ trường hợp pháp luật có quy định khác. Khách hàng có quyền đồng ý hoặc không đồng ý với các điều khoản và điều kiện của Chính sách này theo cách thức đã được VNPT hướng dẫn trên các kênh, phương tiện như tin nhắn SMS, cuộc gọi, dấu tích trên website/ứng dụng cung cấp dịch vụ hoặc liên hệ với tổng đài chăm sóc khách hàng của VNPT phù hợp với quy định của pháp luật. VNPT chỉ thực hiện xử lý Thông tin Khách hàng khi đã có chấp thuận của Khách hàng. 
+			</p>
+			<p style="text-align:justify">
+				2. Quyền truy cập và yêu cầu cung cấp Thông tin Khách hàng 
+			</p>
+			<p style="text-align:justify">
+				Khách hàng có quyền truy cập vào các ứng dụng cung cấp dịch vụ/website của VNPT và/hoặc liên hệ trực tiếp với VNPT để xem, chỉnh sửa, trích xuất các Thông tin Khách hàng của Khách hàng, trừ trường hợp pháp luật có quy định khác. 
+			</p>
+			<p style="text-align:justify">
+				Trường hợp Khách hàng không thể tự truy cập để xem, chỉnh sửa, trích xuất hoặc gặp khó khăn trong việc truy cập để xem, chỉnh sửa hoặc trích xuất các Thông tin Khách hàng, Khách hàng vui lòng liên hệ với VNPT để được hỗ trợ.
+			</p>
+			<p style="text-align:justify">
+				3. Quyền chỉnh sửa
+			</p>
+			<p style="text-align:justify">
+				Khách hàng có quyền chỉnh sửa các Thông tin Khách hàng của mình với điều kiện việc chỉnh sửa này không vi phạm các quy định của pháp luật. Trường hợp Khách hàng không thể tự chỉnh sửa hoặc gặp khó khăn trong việc chỉnh sửa các Thông tin Khách hàng, Khách hàng có thể liên hệ với VNPT để được hỗ trợ.
+			</p>
+			<p style="text-align:justify">
+				4. Quyền phản đối, hạn chế, rút lại sự đồng ý xử lý dữ liệu
+			</p>
+			<p style="text-align:justify">
+				a) Khách hàng có quyền phản đối, yêu cầu hạn chế xử lý Thông tin Khách hàng hoặc rút lại sự đồng ý xử lý Thông tin Khách hàng. Tuy nhiên, việc phản đối, hạn chế hoặc rút lại sự đồng ý xử lý Thông tin Khách hàng bắt buộc cung cấp tại Điều 2 hoặc phản đối, hạn chế hoặc rút lại sự đồng ý xử lý Thông tin Khách hàng phục vụ các Mục đích bắt buộc tại Điều 3 hoặc phản đối, hạn chế hoặc rút lại sự đồng ý đối với Phạm vi sử dụng bắt buộc tại Điều 6 sẽ dẫn tới việc VNPT không thể cung cấp Sản phẩm, dịch vụ cho Khách hàng, điều này đồng nghĩa với việc VNPT có thể đơn phương chấm dứt hợp đồng mà không cần phải bồi thường cho Khách hàng do các điều kiện để thực hiện hợp đồng đã thay đổi (trừ trường hợp do lỗi của VNPT). 
+			</p>
+			<p style="text-align:justify">
+				b) Trường hợp Khách hàng muốn phản đối, hạn chế, rút lại sự đồng ý xử lý Thông tin Khách hàng phục vụ các Mục đích tùy chọn quy định tại Điều 3 Chính sách này hoặc phản đối, hạn chế, rút lại sự đồng ý xử lý Thông tin Khách hàng tùy chọn cung cấp hoặc hoặc phản đối, hạn chế, rút lại sự đồng ý xử lý đối với Phạm vi sử dụng tùy chọn, Khách hàng thực hiện theo hướng dẫn của VNPT tại thời điểm VNPT thu thập Thông tin Khách hàng hoặc liên hệ với VNPT theo các thông tin được cung cấp tại Chính sách này. Nếu Khách hàng không muốn nhận thông báo từ ứng dụng cung cấp dịch vụ của VNPT, vui lòng điều chỉnh cài đặt thông báo trong ứng dụng cung cấp dịch vụ hoặc thiết bị của mình. 
+			</p>
+			<p style="text-align:justify">
+				5. Quyền xóa Thông tin Khách hàng 
+			</p>
+			<p style="text-align:justify">
+				Khách hàng có quyền yêu cầu VNPT thực hiện xóa Thông tin Khách hàng của Khách hàng với điều kiện là yêu cầu của Khách hàng phải phù hợp với quy định của pháp luật. Tuy nhiên, yêu cầu xóa Thông tin Khách hàng bắt buộc cung cấp theo quy định pháp luật sẽ dẫn tới việc VNPT không thể cung cấp Sản phẩm, dịch vụ cho Khách hàng, điều này đồng nghĩa với việc VNPT có thể đơn phương chấm dứt hợp đồng mà không cần phải bồi thường cho Khách hàng do các điều kiện để thực hiện hợp đồng đã thay đổi (trừ trường hợp do lỗi của VNPT hoặc pháp luật có quy định khác). 
+			</p>
+			<p style="text-align:justify">
+				6. Quyền khiếu nại, tố cáo, khởi kiện 
+			</p>
+			<p style="text-align:justify">
+				Khách hàng có quyền khiếu nại, tố cáo hoặc khởi kiện theo quy định của pháp luật.
+			</p>
+			<p style="text-align:justify">
+				7. Quyền yêu cầu bồi thường thiệt hại
+			</p>
+			<p style="text-align:justify">
+				Khách hàng có quyền yêu cầu bồi thường thiệt hại theo quy định của pháp luật khi xảy ra vi phạm quy định về bảo vệ Thông tin Khách hàng của mình, trừ trường hợp các bên có thỏa thuận khác hoặc luật có quy định khác.
+			</p>
+			<p style="text-align:justify">
+				8. Quyền tự bảo vệ 
+			</p>
+			<p style="text-align:justify">
+				Khách hàng có quyền tự bảo vệ theo quy định của Bộ luật Dân sự, luật khác có liên quan và Nghị định 13/2023/NĐ-CP về bảo vệ Thông tin Khách hàng (và các bản sửa đổi kèm theo), hoặc yêu cầu cơ quan, tổ chức có thẩm quyền thực hiện các phương thức bảo vệ quyền dân sự theo quy định tại Điều 11 Bộ luật Dân sự.
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 8. Nghĩa vụ của Khách hàng</strong>
+			</p>
+			<p style="text-align:justify">
+				Khách hàng có trách nhiệm bảo vệ Thông tin Khách hàng của mình như sau: 
+			</p>
+			<p style="text-align:justify">
+				1. Chủ động thực hiện các biện pháp bảo vệ, quản lý và sử dụng an toàn tài khoản, thiết bị công nghệ cá nhân (bao gồm các thiết bị như điện thoại thông minh, máy tính, máy tính bảng, laptop) bằng cách đăng xuất tài khoản sau khi sử dụng, đặt một mật khẩu mạnh<a id="_ftnref1"></a><a href="#_ftn1" style="text-decoration:none"><span class="FootnoteReference" style="font-size:8pt; color:#000000">[1]</span></a> và giữ bí mật thông tin đăng nhập cũng như mật khẩu của mình. Các biện pháp bảo vệ và quản lý sử dụng an toàn tài khoản, thiết bị di động nói trên giúp ngăn chặn việc truy cập trái phép vào tài khoản của Khách hàng. VNPT được loại trừ trách nhiệm với các thiệt hại của Khách hàng trong trường hợp Khách hàng bị lộ/mất, bị đánh cắp mật khẩu, dẫn tới việc bị truy cập trái phép vào tài khoản, hoặc bất kỳ hoạt động nào trên tài khoản của Khách hàng sử dụng trên thiết bị di động bị mất, thất lạc dẫn đến người không có thẩm quyền tự ý sử dụng dịch vụ, hoặc hệ thống của VNPT bị xâm phạm bất hợp pháp bởi bên thứ ba mặc dù VNPT đã thực hiện đầy đủ các biện pháp để bảo vệ hệ thống (trừ trường hợp do lỗi của VNPT); 
+			</p>
+			<p style="text-align:justify">
+				2. Khi đã chấp thuận toàn bộ điều khoản và điều kiện của của Chính sách này, Khách hàng có trách nhiệm cung cấp Thông tin Khách hàng đầy đủ, chính xác theo yêu cầu của VNPT và có trách nhiệm thông báo cho VNPT ngay khi phát hiện hành vi vi phạm quy định về bảo vệ Thông tin Khách hàng;
+			</p>
+			<p style="text-align:justify">
+				3. Khách hàng có trách nhiệm tôn trọng Thông tin Khách hàng của chủ thể khác và thực hiện quy định của pháp luật về bảo vệ Thông tin Khách hàng, tham gia phòng, chống các hành vi vi phạm quy định về bảo vệ Thông tin Khách hàng.
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 9. Lưu trữ Thông tin Khách hàng/Phạm vi sử dụng Thông tin Khách hàng</strong>
+			</p>
+			<p style="text-align:justify; background-color:#ffffff">
+				1. Địa điểm lưu trữ Thông tin Khách hàng: Trong phạm vi pháp luật cho phép, VNPT có thể lưu trữ Thông tin Khách hàng của Khách hàng tại Việt Nam và ở nước ngoài, kể cả trên giải pháp lưu trữ điện toán đám mây. VNPT áp dụng các tiêu chuẩn về bảo mật dữ liệu phù hợp với quy định pháp luật hiện hành. Việc chuyển Thông tin Khách hàng ra nước ngoài phải phù hợp với quy định tại Điều 25 Nghị định 13/2023/NĐ-CP (và các bản sửa đổi kèm theo) và các quy định của pháp luật.&#xa0; 
+			</p>
+			<p style="text-align:justify; background-color:#ffffff">
+				2. Thời gian lưu trữ Thông tin Khách hàng: Trừ trường hợp pháp luật có quy định khác, VNPT chỉ thực hiện lưu trữ Thông tin Khách hàng của Khách hàng để hoàn thành các Mục Đích bắt buộc (và các Mục đích tùy chọn trong trường hợp được Khách hàng đồng ý) quy định tại Chính sách này. 
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 10. Nghĩa vụ của VNPT </strong>
+			</p>
+			<p style="text-align:justify">
+				1. Thông tin Khách hàng của Khách hàng được cam kết bảo mật theo quy định của pháp luật, Chính sách bảo vệ Thông tin Khách hàng của VNPT. VNPT phải có các biện pháp bảo vệ Thông tin Khách hàng theo quy định của pháp luật, trong đó các biện pháp ngăn chặn các hành vi sau đây: 
+			</p>
+			<p style="text-align:justify">
+				a) Đánh cắp hoặc tiếp cận thông tin trái phép;
+			</p>
+			<p style="text-align:justify">
+				b) Sử dụng thông tin trái phép;
+			</p>
+			<p style="text-align:justify">
+				c) Chỉnh sửa, cập nhật, hủy bỏ thông tin trái phép.
+			</p>
+			<p style="text-align:justify">
+				2. VNPT áp dụng những biện pháp vật lý, điện tử và quản lý để bảo vệ Thông tin Khách hàng, bao gồm: 
+			</p>
+			<p style="text-align:justify">
+				a) Các máy chủ trang thông tin điện tử chính thức của VNPT và các hệ thống thông tin chứa Thông tin Khách hàng của VNPT đều được bảo vệ bởi các biện pháp, công nghệ bảo mật như tường lửa, mã hóa, chống xâm nhập trái phép; ban hành các biện pháp kiểm soát về con người, xây dựng quy trình kiểm tra, đánh giá, rà soát để phòng tránh các hành vi vi phạm quy định về bảo vệ Thông tin Khách hàng.
+			</p>
+			<p style="text-align:justify">
+				b) VNPT sẽ thực hiện tất cả các biện pháp cần thiết để đảm bảo rằng Thông tin Khách hàng của Khách hàng được xử lý đúng với Mục Đích đã thông báo và được Khách hàng đồng ý. VNPT sẽ luôn tuân thủ những yêu cầu của pháp luật liên quan đến việc xử lý Thông tin Khách hàng.
+			</p>
+			<p style="text-align:justify">
+				3. Thực hiện các yêu cầu của Khách hàng liên quan đến Thông tin Khách hàng của Khách hàng với điều kiện các yêu cầu của Khách hàng phải phù hợp với quy định của pháp luật.
+			</p>
+			<p style="text-align:justify">
+				4. Trong trường hợp hệ thống thông tin bị tấn công làm phát sinh nguy cơ mất an toàn, an ninh Thông tin Khách hàng, VNPT hoặc bên lưu trữ thông tin liên quan phải thông báo cho cơ quan quản lý nhà nước có thẩm quyền trong thời hạn theo quy định của pháp luật và thực hiện các biện pháp cần thiết để bảo đảm an toàn, an ninh Thông tin Khách hàng theo quy định của pháp luật về an ninh mạng, an toàn thông tin mạng, giao dịch điện tử và quy định khác của pháp luật có liên quan.
+			</p>
+			<p style="text-align:justify">
+				5. Các nghĩa vụ khác theo quy định của pháp luật và của Chính sách này.
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 11. Hậu quả, thiệt hại không mong muốn có khả năng xảy ra</strong>
+			</p>
+			<p style="text-align:justify">
+				1. VNPT sử dụng nhiều biện pháp, công nghệ bảo mật thông tin khác nhau nhằm bảo vệ Thông tin Khách hàng của Khách hàng không bị sử dụng hoặc chia sẻ ngoài ý muốn trong quá trình xử lý Thông tin Khách hàng (bao gồm cả dữ liệu sinh trắc học của Khách hàng). VNPT cam kết sẽ bảo mật một cách tối đa Thông tin Khách hàng. Một số hậu quả, thiệt hại, rủi ro không mong muốn có thể xảy ra bao gồm: 
+			</p>
+			<p style="text-align:justify">
+				a) Lỗi phần cứng, phần mềm trong quá trình xử lý Thông tin Khách hàng gây ảnh hưởng không mong muốn (lỗi, hỏng, mất) Thông tin Khách hàng của Khách hàng; 
+			</p>
+			<p style="text-align:justify">
+				b) Lỗ hổng bảo mật nằm ngoài khả năng kiểm soát của VNPT, hệ thống bị hacker tấn công gây lộ lọt Thông tin Khách hàng của Khách hàng; 
+			</p>
+			<p style="text-align:justify">
+				c) Khách hàng tự làm lộ lọt Thông tin Khách hàng của Khách hàng do: bất cẩn hoặc bị lừa đảo; truy cập các website/tải các ứng dụng cung cấp dịch vụ có chứa phần mềm độc hại; tự ý chia sẻ thông tin với người khác.
+			</p>
+			<p style="text-align:justify">
+				2. VNPT khuyến cáo Khách hàng thực hiện nghiêm ngặt các trách nhiệm bảo vệ Thông tin Khách hàng theo quy định tại Điều 8 Chính sách này và theo quy định của pháp luật. 
+			</p>
+			<p style="text-align:justify">
+				3. Trong trường hợp xảy ra lỗi phần cứng, phần mềm trong quá trình xử lý Thông tin Khách hàng theo quy định tại Điểm a Khoản 1 Điều này, VNPT có trách nhiệm bồi thường thiệt hại cho Khách hàng theo quy định tại Hợp đồng và theo quy định pháp luật.
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 12. Quảng cáo trên internet và bên thứ ba</strong>
+			</p>
+			<p style="text-align:justify; background-color:#ffffff">
+				Các website/ứng dụng cung cấp dịch vụ của VNPT có thể bao gồm quảng cáo của bên thứ ba và liên kết tới các website/ứng dụng cung cấp dịch vụ khác. Các đối tác quảng cáo bên thứ ba có thể thu thập thông tin về Khách hàng khi Khách hàng tương tác với nội dung, quảng cáo hoặc dịch vụ của họ. Mọi quyền truy cập và sử dụng các liên kết hoặc trang website của bên thứ ba không bị điều chỉnh bởi Chính sách này, mà thay vào đó được điều chỉnh bởi chính sách quyền riêng tư của các bên thứ ba đó. 
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 13. Luật áp dụng</strong>
+			</p>
+			<p style="text-align:justify">
+				Chính sách này được soạn thảo và điều chỉnh bởi pháp luật Việt Nam.<strong> </strong>
+			</p>
+			<p style="text-align:justify">
+				<strong>Điều 14. Thông tin liên lạc</strong>
+			</p>
+			<p style="text-align:justify; background-color:#ffffff">
+				Trường hợp Khách hàng có bất kỳ câu hỏi nào về Chính sách này hoặc muốn thực hiện các quyền của Khách hàng liên quan tới Thông tin Khách hàng, vui lòng liên hệ với VNPT theo các phương thức và thông tin dưới đây: 
+			</p>
+			<p style="text-align:justify">
+				1. Liên hệ tới tổng đài theo thông tin tại các website/ứng dụng cung cấp dịch vụ chính thức của VNPT tại từng thời điểm. 
+			</p>
+			<p style="text-align:justify">
+				2. Liên hệ trực tiếp tại các điểm giao dịch của VNPT trên phạm vi toàn quốc. 
+			</p>
+			<p style="text-align:justify">
+				3. Các cách thức liên hệ khác như Livechat (phần mềm trò chuyện trực tuyến), liên hệ qua fanpage (trang thông tin điện tử) chính thức của VNPT, email chăm sóc Khách hàng được cung cấp cho Khách hàng tại mọi thời điểm.
+			</p>
+			<div style="clear:both">
+				<p style="text-align:right">
+					1
+				</p>
+				<p style="text-align:right; font-size:8pt">
+					&#xa0;
+				</p>
+				<p>
+					&#xa0;
+				</p>
+			</div>
+		</div>
+		<hr style="width:33%; height:1px; text-align:left" />
+		<div id="_ftn1">
+			<p class="NormalWeb" style="margin-top:0pt; margin-bottom:0pt; text-align:justify">
+				<a href="#_ftnref1" style="text-decoration:none"><span class="FootnoteReference" style="font-size:8pt; color:#000000">[1]</span></a> <span style="font-size:11pt">Mật khẩu mạnh phải đảm bảo các yếu tố sau:</span>
+			</p>
+			<ul style="margin:0pt; padding-left:0pt">
+				<li style="text-align:justify; font-family:serif; font-size:10pt; list-style-position:inside">
+					<span style="font-family:'Times New Roman'; font-size:11pt">Sử dụng tối thiểu 8 ký tự, và tối đa 15 ký tự.</span>
+				</li>
+				<li style="text-align:justify; font-family:serif; font-size:10pt; list-style-position:inside">
+					<span style="font-family:'Times New Roman'; font-size:11pt">Bao gồm số, chữ thường, chữ in hoa và ký tự đặc biệt.</span>
+				</li>
+				<li style="text-align:justify; font-family:serif; font-size:10pt; list-style-position:inside">
+					<span style="font-family:'Times New Roman'; font-size:11pt">Duy nhất, không dùng chung cho các tài khoản khác.</span>
+				</li>
+				<li style="text-align:justify; font-family:serif; font-size:10pt; list-style-position:inside">
+					<span style="font-family:'Times New Roman'; font-size:11pt">Không được mang ý nghĩa đi kèm (số điện thoại, ngày sinh, tên địa danh...).</span>
+				</li>
+				<li style="text-align:justify; font-family:serif; font-size:10pt; list-style-position:inside">
+					<span style="font-family:'Times New Roman'; font-size:11pt">Không sử dụng tên riêng.</span>
+				</li>
+				<li style="text-align:justify; font-family:serif; font-size:10pt; list-style-position:inside">
+					<span style="font-family:'Times New Roman'; font-size:11pt">Không sử dụng các con số nổi tiếng, ví dụ: 113, 115, 12345678...</span>
+				</li>
+				<li style="text-align:justify; font-family:serif; font-size:10pt; list-style-position:inside">
+					<span style="font-family:'Times New Roman'; font-size:11pt">Không sử dụng các thông tin trong mật khẩu cho câu hỏi bí mật (câu hỏi bí mật là phương pháp giúp người dùng đặt lại mật khẩu khi quên).</span>
+				</li>
+			</ul>
+			<p class="FootnoteText" style="font-size:12pt">
+				&#xa0;
+			</p>
+		</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+framework module jailbreak_root_detection {
+  umbrella header "jailbreak_root_detection-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module jailbreak_root_detection.Swift {
+  header "jailbreak_root_detection-Swift.h"
+  requires objc
+}

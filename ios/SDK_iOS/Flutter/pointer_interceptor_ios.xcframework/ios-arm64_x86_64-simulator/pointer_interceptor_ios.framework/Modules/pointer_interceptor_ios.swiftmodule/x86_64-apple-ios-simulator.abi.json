@@ -1,0 +1,592 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "pointer_interceptor_ios",
+    "printedName": "pointer_interceptor_ios",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "pointer_interceptor_ios",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PointerInterceptorFactory",
+        "printedName": "PointerInterceptorFactory",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create(withFrame:viewIdentifier:arguments:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPlatformView",
+                "printedName": "any Flutter.FlutterPlatformView",
+                "usr": "c:objc(pl)FlutterPlatformView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorFactory(im)createWithFrame:viewIdentifier:arguments:",
+            "mangledName": "$s23pointer_interceptor_ios25PointerInterceptorFactoryC6create9withFrame14viewIdentifier9argumentsSo19FlutterPlatformView_pSo6CGRectV_s5Int64VypSgtF",
+            "moduleName": "pointer_interceptor_ios",
+            "isOpen": true,
+            "objc_name": "createWithFrame:viewIdentifier:arguments:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createArgsCodec",
+            "printedName": "createArgsCodec()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "any Flutter.FlutterMessageCodec & ObjectiveC.NSObjectProtocol"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorFactory(im)createArgsCodec",
+            "mangledName": "$s23pointer_interceptor_ios25PointerInterceptorFactoryC15createArgsCodecSo014FlutterMessageI0_So8NSObjectpyF",
+            "moduleName": "pointer_interceptor_ios",
+            "isOpen": true,
+            "objc_name": "createArgsCodec",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PointerInterceptorFactory",
+                "printedName": "pointer_interceptor_ios.PointerInterceptorFactory",
+                "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorFactory"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorFactory(im)init",
+            "mangledName": "$s23pointer_interceptor_ios25PointerInterceptorFactoryCACycfc",
+            "moduleName": "pointer_interceptor_ios",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorFactory",
+        "mangledName": "$s23pointer_interceptor_ios25PointerInterceptorFactoryC",
+        "moduleName": "pointer_interceptor_ios",
+        "isOpen": true,
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "pointer_interceptor_ios",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "pointer_interceptor_ios"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PointerInterceptorIosPlugin",
+        "printedName": "PointerInterceptorIosPlugin",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "any Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorIosPlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s23pointer_interceptor_ios27PointerInterceptorIosPluginC8register4withySo07FlutterG9Registrar_p_tFZ",
+            "moduleName": "pointer_interceptor_ios",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PointerInterceptorIosPlugin",
+                "printedName": "pointer_interceptor_ios.PointerInterceptorIosPlugin",
+                "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorIosPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorIosPlugin(im)init",
+            "mangledName": "$s23pointer_interceptor_ios27PointerInterceptorIosPluginCACycfc",
+            "moduleName": "pointer_interceptor_ios",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorIosPlugin",
+        "mangledName": "$s23pointer_interceptor_ios27PointerInterceptorIosPluginC",
+        "moduleName": "pointer_interceptor_ios",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "pointer_interceptor_ios",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "pointer_interceptor_ios"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PointerInterceptorView",
+        "printedName": "PointerInterceptorView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "interceptorView",
+            "printedName": "interceptorView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23pointer_interceptor_ios22PointerInterceptorViewC0bF0So6UIViewCvp",
+            "mangledName": "$s23pointer_interceptor_ios22PointerInterceptorViewC0bF0So6UIViewCvp",
+            "moduleName": "pointer_interceptor_ios",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23pointer_interceptor_ios22PointerInterceptorViewC0bF0So6UIViewCvg",
+                "mangledName": "$s23pointer_interceptor_ios22PointerInterceptorViewC0bF0So6UIViewCvg",
+                "moduleName": "pointer_interceptor_ios",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:debug:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PointerInterceptorView",
+                "printedName": "pointer_interceptor_ios.PointerInterceptorView",
+                "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23pointer_interceptor_ios22PointerInterceptorViewC5frame5debugACSo6CGRectV_Sbtcfc",
+            "mangledName": "$s23pointer_interceptor_ios22PointerInterceptorViewC5frame5debugACSo6CGRectV_Sbtcfc",
+            "moduleName": "pointer_interceptor_ios",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "view",
+            "printedName": "view()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorView(im)view",
+            "mangledName": "$s23pointer_interceptor_ios22PointerInterceptorViewC4viewSo6UIViewCyF",
+            "moduleName": "pointer_interceptor_ios",
+            "isOpen": true,
+            "objc_name": "view",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PointerInterceptorView",
+                "printedName": "pointer_interceptor_ios.PointerInterceptorView",
+                "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorView(im)init",
+            "mangledName": "$s23pointer_interceptor_ios22PointerInterceptorViewCACycfc",
+            "moduleName": "pointer_interceptor_ios",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@pointer_interceptor_ios@objc(cs)PointerInterceptorView",
+        "mangledName": "$s23pointer_interceptor_ios22PointerInterceptorViewC",
+        "moduleName": "pointer_interceptor_ios",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}

@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.jrai.flutter_keyboard_visibility",
+    "module": "flutter_keyboard_visibility_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.14"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-e4b8dca3f1b4ede4c30371002441c88c12187ed6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_keyboard_visibility_release-1.0.aar",
+          "url": "flutter_keyboard_visibility_release-1.0.aar",
+          "size": 2759,
+          "sha512": "7127dad9f21e9cef710da711a3694e4f54d9926cfdd8733104589ae1f8b14efb7251872b8a6515ce7ce712cf7f35029e33efd6ee6ab5a518725f3149843f11ee",
+          "sha256": "915de709fc448a304191b3deb121537186b8c1aff01f852097d6b3a9ac036cd0",
+          "sha1": "d52e45ddb77cca8b4a461e5024137702966ee8e4",
+          "md5": "f40cb58cef508755b21f5a3f191752b6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-e4b8dca3f1b4ede4c30371002441c88c12187ed6"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_keyboard_visibility_release-1.0.aar",
+          "url": "flutter_keyboard_visibility_release-1.0.aar",
+          "size": 2759,
+          "sha512": "7127dad9f21e9cef710da711a3694e4f54d9926cfdd8733104589ae1f8b14efb7251872b8a6515ce7ce712cf7f35029e33efd6ee6ab5a518725f3149843f11ee",
+          "sha256": "915de709fc448a304191b3deb121537186b8c1aff01f852097d6b3a9ac036cd0",
+          "sha1": "d52e45ddb77cca8b4a461e5024137702966ee8e4",
+          "md5": "f40cb58cef508755b21f5a3f191752b6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "flutter_keyboard_visibility_release-1.0-sources.jar",
+          "url": "flutter_keyboard_visibility_release-1.0-sources.jar",
+          "size": 1668,
+          "sha512": "f76438b0bc531c61d46284233eb476b202f9bd0c6e433c66d5526abb060ee014fe48d14d2986834a2447ad59066d02fa874ebd1f632a211072c855dec67f5535",
+          "sha256": "71a2aa882b9f3c3c2adf575564255caee0a70b2c84887e5abae89631d886a3b5",
+          "sha1": "032f75c211cdb85a83b364a38c46e7b48c7c8668",
+          "md5": "8e03a33895ec710f0290075f7a877777"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "flutter_keyboard_visibility_release-1.0-javadoc.jar",
+          "url": "flutter_keyboard_visibility_release-1.0-javadoc.jar",
+          "size": 263126,
+          "sha512": "100986d0180c162819d3df97bd71adfe3623b8b07eba7bc15922104fb34e44c3adf9569a9fd1ed49250beab49e9c796581130dc712d9f6493de7d0f2022520b1",
+          "sha256": "33110d16bb739b599b2024ca6f0a7af219c1be856583b91be788d8e80945e224",
+          "sha1": "50d2b5eed8739d3a047ad4fc2261f57d51fdbef1",
+          "md5": "0847a031a473151fa55d75161d896600"
+        }
+      ]
+    }
+  ]
+}

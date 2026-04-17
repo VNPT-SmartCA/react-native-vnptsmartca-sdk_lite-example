@@ -1,0 +1,52 @@
+buildscript {
+    ext {
+        buildToolsVersion = "33.0.1"
+        minSdkVersion = 24
+        compileSdkVersion = 34
+        targetSdkVersion = 33
+        ndkVersion = "25.1.8937393"
+        kotlinVersion = "1.8.22"
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+
+        flatDir {
+            dirs 'libs'
+        }
+
+
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+    }
+}
+
+String storageUrl = System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com"
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven {
+            //Đường dẫn thư mục chứa **repo** ở bước 1
+           // url '/Users/vnptsi/Desktop/ReactApp/ReactNativeApp/android/app/libs/repo'
+            url '../app/libs/repo'
+        }
+        // bỏ qua nếu project phát triển bằng Flutter
+        maven {
+            url "$storageUrl/download.flutter.io"
+        }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"

@@ -1,0 +1,120 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name camera_avfoundation
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AVFoundation
+import CoreMedia
+import CoreMotion
+import Dispatch
+import Flutter
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import camera_avfoundation
+@objc @_hasMissingDesignatedInitializers final public class CameraPlugin : ObjectiveC.NSObject, Flutter.FlutterPlugin {
+  @objc public static func register(with registrar: any Flutter.FlutterPluginRegistrar)
+  @objc final public func detachFromEngine(for registrar: any Flutter.FlutterPluginRegistrar)
+  @objc deinit
+}
+extension camera_avfoundation.CameraPlugin : camera_avfoundation.FCPCameraApi {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func availableCameras(completion: @escaping ([camera_avfoundation.FCPPlatformCameraDescription]?, Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func createCamera(withName cameraName: Swift.String, settings: camera_avfoundation.FCPPlatformMediaSettings, completion: @escaping (Foundation.NSNumber?, Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func initializeCamera(_ cameraId: Swift.Int, withImageFormat imageFormat: camera_avfoundation.FCPPlatformImageFormatGroup, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func startImageStream(completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func stopImageStream(completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func receivedImageStreamData(completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func disposeCamera(_ cameraId: Swift.Int, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func lockCapture(_ orientation: camera_avfoundation.FCPPlatformDeviceOrientation, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func unlockCaptureOrientation(completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func takePicture(completion: @escaping (Swift.String?, Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func prepareForVideoRecording(completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func startVideoRecording(withStreaming enableStream: Swift.Bool, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func stopVideoRecording(completion: @escaping (Swift.String?, Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func pauseVideoRecording(completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func resumeVideoRecording(completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func setFlashMode(_ mode: camera_avfoundation.FCPPlatformFlashMode, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func setExposureMode(_ mode: camera_avfoundation.FCPPlatformExposureMode, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func setExposurePoint(_ point: camera_avfoundation.FCPPlatformPoint?, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getMinimumExposureOffset(_ completion: @escaping (Foundation.NSNumber?, Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getMaximumExposureOffset(_ completion: @escaping (Foundation.NSNumber?, Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func setExposureOffset(_ offset: Swift.Double, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func setFocusMode(_ mode: camera_avfoundation.FCPPlatformFocusMode, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func setFocus(_ point: camera_avfoundation.FCPPlatformPoint?, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getMinimumZoomLevel(_ completion: @escaping (Foundation.NSNumber?, Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func getMaximumZoomLevel(_ completion: @escaping (Foundation.NSNumber?, Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func setZoomLevel(_ zoom: Swift.Double, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func pausePreview(completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func resumePreview(completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func updateDescriptionWhileRecordingCameraName(_ cameraName: Swift.String, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public func setImageFileFormat(_ format: camera_avfoundation.FCPPlatformImageFileFormat, completion: @escaping (Flutter.FlutterError?) -> Swift.Void)
+  #endif
+}
+@_inheritsConvenienceInitializers @objc public class DefaultDeviceOrientationProvider : ObjectiveC.NSObject {
+  @objc public var orientation: UIKit.UIDeviceOrientation {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}

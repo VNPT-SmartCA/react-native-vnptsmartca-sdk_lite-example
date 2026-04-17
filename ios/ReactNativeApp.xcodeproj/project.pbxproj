@@ -1,0 +1,956 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E356F31AD99517003FC87E /* ReactNativeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeAppTests.m */; };
+		0C80B921A6F3F58F76C31292 /* libPods-ReactNativeApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-ReactNativeApp.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		300060CA2B2AB20500648C25 /* SmartCAModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 300060C92B2AB20500648C25 /* SmartCAModule.m */; };
+		300060CB2B2AB20500648C25 /* SmartCAModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 300060C92B2AB20500648C25 /* SmartCAModule.m */; };
+		3072F9162CCA30A000D4600D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DC2CCA307F00D4600D /* Alamofire.framework */; };
+		3072F9172CCA30A000D4600D /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DC2CCA307F00D4600D /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9222CCA30A100D4600D /* eKYCLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8D52CCA307F00D4600D /* eKYCLib.xcframework */; };
+		3072F9232CCA30A100D4600D /* eKYCLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8D52CCA307F00D4600D /* eKYCLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F92E2CCA30A200D4600D /* ICSdkEKYC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8E12CCA307F00D4600D /* ICSdkEKYC.xcframework */; };
+		3072F92F2CCA30A200D4600D /* ICSdkEKYC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8E12CCA307F00D4600D /* ICSdkEKYC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9322CCA30A200D4600D /* JWTDecode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DF2CCA307F00D4600D /* JWTDecode.framework */; };
+		3072F9332CCA30A200D4600D /* JWTDecode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DF2CCA307F00D4600D /* JWTDecode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9362CCA30A300D4600D /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DA2CCA307F00D4600D /* Moya.framework */; };
+		3072F9372CCA30A300D4600D /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DA2CCA307F00D4600D /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9382CCA30A300D4600D /* NVActivityIndicatorView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8D72CCA307F00D4600D /* NVActivityIndicatorView.framework */; };
+		3072F9392CCA30A300D4600D /* NVActivityIndicatorView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8D72CCA307F00D4600D /* NVActivityIndicatorView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F93A2CCA30A300D4600D /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DD2CCA307F00D4600D /* ObjectMapper.framework */; };
+		3072F93B2CCA30A300D4600D /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DD2CCA307F00D4600D /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9422CCA30A400D4600D /* RxAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8D62CCA307F00D4600D /* RxAlamofire.framework */; };
+		3072F9432CCA30A400D4600D /* RxAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8D62CCA307F00D4600D /* RxAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9442CCA30A400D4600D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DE2CCA307F00D4600D /* RxCocoa.framework */; };
+		3072F9452CCA30A400D4600D /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DE2CCA307F00D4600D /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9462CCA30A400D4600D /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DB2CCA307F00D4600D /* RxRelay.framework */; };
+		3072F9472CCA30A400D4600D /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8DB2CCA307F00D4600D /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9482CCA30A400D4600D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8E02CCA307F00D4600D /* RxSwift.framework */; };
+		3072F9492CCA30A400D4600D /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8E02CCA307F00D4600D /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F94C2CCA30A400D4600D /* SignaturePad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8D82CCA307F00D4600D /* SignaturePad.framework */; };
+		3072F94D2CCA30A400D4600D /* SignaturePad.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8D82CCA307F00D4600D /* SignaturePad.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F94E2CCA30A400D4600D /* SmartCASDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8E22CCA307F00D4600D /* SmartCASDK.framework */; };
+		3072F94F2CCA30A400D4600D /* SmartCASDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F8E22CCA307F00D4600D /* SmartCASDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9C42CCA4AE500D4600D /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A02CCA4ACE00D4600D /* App.xcframework */; };
+		3072F9C52CCA4AE500D4600D /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A02CCA4ACE00D4600D /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9C62CCA4AE500D4600D /* connectivity_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9AD2CCA4ACE00D4600D /* connectivity_plus.xcframework */; };
+		3072F9C72CCA4AE500D4600D /* connectivity_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9AD2CCA4ACE00D4600D /* connectivity_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9C82CCA4AE500D4600D /* device_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9AC2CCA4ACE00D4600D /* device_info_plus.xcframework */; };
+		3072F9C92CCA4AE500D4600D /* device_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9AC2CCA4ACE00D4600D /* device_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9CA2CCA4AE600D4600D /* device_info.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A22CCA4ACE00D4600D /* device_info.xcframework */; };
+		3072F9CB2CCA4AE600D4600D /* device_info.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A22CCA4ACE00D4600D /* device_info.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9CC2CCA4AE600D4600D /* flutter_jailbreak_detection.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A52CCA4ACE00D4600D /* flutter_jailbreak_detection.xcframework */; };
+		3072F9CD2CCA4AE600D4600D /* flutter_jailbreak_detection.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A52CCA4ACE00D4600D /* flutter_jailbreak_detection.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9CE2CCA4AE600D4600D /* flutter_keyboard_visibility.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A62CCA4ACE00D4600D /* flutter_keyboard_visibility.xcframework */; };
+		3072F9CF2CCA4AE600D4600D /* flutter_keyboard_visibility.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A62CCA4ACE00D4600D /* flutter_keyboard_visibility.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9D02CCA4AE600D4600D /* flutter_secure_storage.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A12CCA4ACE00D4600D /* flutter_secure_storage.xcframework */; };
+		3072F9D12CCA4AE600D4600D /* flutter_secure_storage.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A12CCA4ACE00D4600D /* flutter_secure_storage.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9D22CCA4AE600D4600D /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9B12CCA4ACE00D4600D /* Flutter.xcframework */; };
+		3072F9D32CCA4AE600D4600D /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9B12CCA4ACE00D4600D /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9D42CCA4AE600D4600D /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9AA2CCA4ACE00D4600D /* FlutterPluginRegistrant.xcframework */; };
+		3072F9D62CCA4AE700D4600D /* IOSSecuritySuite.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9AE2CCA4ACE00D4600D /* IOSSecuritySuite.xcframework */; };
+		3072F9D72CCA4AE700D4600D /* IOSSecuritySuite.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9AE2CCA4ACE00D4600D /* IOSSecuritySuite.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9D82CCA4AE700D4600D /* local_auth_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A42CCA4ACE00D4600D /* local_auth_ios.xcframework */; };
+		3072F9D92CCA4AE700D4600D /* local_auth_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A42CCA4ACE00D4600D /* local_auth_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9DA2CCA4AE700D4600D /* package_info_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A92CCA4ACE00D4600D /* package_info_plus.xcframework */; };
+		3072F9DB2CCA4AE700D4600D /* package_info_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A92CCA4ACE00D4600D /* package_info_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9DC2CCA4AE700D4600D /* path_provider_foundation.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9AB2CCA4ACE00D4600D /* path_provider_foundation.xcframework */; };
+		3072F9DD2CCA4AE700D4600D /* path_provider_foundation.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9AB2CCA4ACE00D4600D /* path_provider_foundation.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9DE2CCA4AE700D4600D /* permission_handler_apple.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9AF2CCA4ACE00D4600D /* permission_handler_apple.xcframework */; };
+		3072F9E02CCA4AE700D4600D /* share_plus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A82CCA4ACE00D4600D /* share_plus.xcframework */; };
+		3072F9E12CCA4AE800D4600D /* share_plus.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A82CCA4ACE00D4600D /* share_plus.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9E22CCA4AE800D4600D /* syncfusion_flutter_pdfviewer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A32CCA4ACE00D4600D /* syncfusion_flutter_pdfviewer.xcframework */; };
+		3072F9E32CCA4AE800D4600D /* syncfusion_flutter_pdfviewer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A32CCA4ACE00D4600D /* syncfusion_flutter_pdfviewer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9E42CCA4AE800D4600D /* url_launcher_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9B02CCA4ACE00D4600D /* url_launcher_ios.xcframework */; };
+		3072F9E52CCA4AE800D4600D /* url_launcher_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9B02CCA4ACE00D4600D /* url_launcher_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3072F9E62CCA4AE800D4600D /* webview_flutter_wkwebview.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A72CCA4ACE00D4600D /* webview_flutter_wkwebview.xcframework */; };
+		3072F9E72CCA4AE800D4600D /* webview_flutter_wkwebview.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3072F9A72CCA4ACE00D4600D /* webview_flutter_wkwebview.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30DE8CA42B2AD1A500F0CEE2 /* SmartCAModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE8CA32B2AD1A500F0CEE2 /* SmartCAModule.swift */; };
+		7699B88040F8A987B510C191 /* libPods-ReactNativeApp-ReactNativeAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeApp-ReactNativeAppTests.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
+			remoteInfo = ReactNativeApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30DE8CA12B2ABB4500F0CEE2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3072F9D72CCA4AE700D4600D /* IOSSecuritySuite.xcframework in Embed Frameworks */,
+				3072F94F2CCA30A400D4600D /* SmartCASDK.framework in Embed Frameworks */,
+				3072F9CD2CCA4AE600D4600D /* flutter_jailbreak_detection.xcframework in Embed Frameworks */,
+				3072F9432CCA30A400D4600D /* RxAlamofire.framework in Embed Frameworks */,
+				3072F9C52CCA4AE500D4600D /* App.xcframework in Embed Frameworks */,
+				3072F9E32CCA4AE800D4600D /* syncfusion_flutter_pdfviewer.xcframework in Embed Frameworks */,
+				3072F9172CCA30A000D4600D /* Alamofire.framework in Embed Frameworks */,
+				3072F9392CCA30A300D4600D /* NVActivityIndicatorView.framework in Embed Frameworks */,
+				3072F9C72CCA4AE500D4600D /* connectivity_plus.xcframework in Embed Frameworks */,
+				3072F9CB2CCA4AE600D4600D /* device_info.xcframework in Embed Frameworks */,
+				3072F9492CCA30A400D4600D /* RxSwift.framework in Embed Frameworks */,
+				3072F9232CCA30A100D4600D /* eKYCLib.xcframework in Embed Frameworks */,
+				3072F94D2CCA30A400D4600D /* SignaturePad.framework in Embed Frameworks */,
+				3072F9D32CCA4AE600D4600D /* Flutter.xcframework in Embed Frameworks */,
+				3072F9452CCA30A400D4600D /* RxCocoa.framework in Embed Frameworks */,
+				3072F9D92CCA4AE700D4600D /* local_auth_ios.xcframework in Embed Frameworks */,
+				3072F92F2CCA30A200D4600D /* ICSdkEKYC.xcframework in Embed Frameworks */,
+				3072F9DB2CCA4AE700D4600D /* package_info_plus.xcframework in Embed Frameworks */,
+				3072F9E72CCA4AE800D4600D /* webview_flutter_wkwebview.xcframework in Embed Frameworks */,
+				3072F9E12CCA4AE800D4600D /* share_plus.xcframework in Embed Frameworks */,
+				3072F9DD2CCA4AE700D4600D /* path_provider_foundation.xcframework in Embed Frameworks */,
+				3072F9E52CCA4AE800D4600D /* url_launcher_ios.xcframework in Embed Frameworks */,
+				3072F9C92CCA4AE500D4600D /* device_info_plus.xcframework in Embed Frameworks */,
+				3072F9472CCA30A400D4600D /* RxRelay.framework in Embed Frameworks */,
+				3072F93B2CCA30A300D4600D /* ObjectMapper.framework in Embed Frameworks */,
+				3072F9D12CCA4AE600D4600D /* flutter_secure_storage.xcframework in Embed Frameworks */,
+				3072F9372CCA30A300D4600D /* Moya.framework in Embed Frameworks */,
+				3072F9332CCA30A200D4600D /* JWTDecode.framework in Embed Frameworks */,
+				3072F9CF2CCA4AE600D4600D /* flutter_keyboard_visibility.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00E356EE1AD99517003FC87E /* ReactNativeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* ReactNativeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeAppTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ReactNativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativeApp/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ReactNativeApp/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeApp/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeApp/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeApp/main.m; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeApp-ReactNativeAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeApp-ReactNativeAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		300060C92B2AB20500648C25 /* SmartCAModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SmartCAModule.m; path = "  RCTCalendarModule.h #import <React/SmartCAModule.m"; sourceTree = "<group>"; };
+		3072F8D52CCA307F00D4600D /* eKYCLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = eKYCLib.xcframework; sourceTree = "<group>"; };
+		3072F8D62CCA307F00D4600D /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxAlamofire.framework; sourceTree = "<group>"; };
+		3072F8D72CCA307F00D4600D /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NVActivityIndicatorView.framework; sourceTree = "<group>"; };
+		3072F8D82CCA307F00D4600D /* SignaturePad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SignaturePad.framework; sourceTree = "<group>"; };
+		3072F8DA2CCA307F00D4600D /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Moya.framework; sourceTree = "<group>"; };
+		3072F8DB2CCA307F00D4600D /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxRelay.framework; sourceTree = "<group>"; };
+		3072F8DC2CCA307F00D4600D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		3072F8DD2CCA307F00D4600D /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ObjectMapper.framework; sourceTree = "<group>"; };
+		3072F8DE2CCA307F00D4600D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
+		3072F8DF2CCA307F00D4600D /* JWTDecode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JWTDecode.framework; sourceTree = "<group>"; };
+		3072F8E02CCA307F00D4600D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
+		3072F8E12CCA307F00D4600D /* ICSdkEKYC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = ICSdkEKYC.xcframework; sourceTree = "<group>"; };
+		3072F8E22CCA307F00D4600D /* SmartCASDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmartCASDK.framework; sourceTree = "<group>"; };
+		3072F9A02CCA4ACE00D4600D /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = App.xcframework; sourceTree = "<group>"; };
+		3072F9A12CCA4ACE00D4600D /* flutter_secure_storage.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = flutter_secure_storage.xcframework; sourceTree = "<group>"; };
+		3072F9A22CCA4ACE00D4600D /* device_info.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = device_info.xcframework; sourceTree = "<group>"; };
+		3072F9A32CCA4ACE00D4600D /* syncfusion_flutter_pdfviewer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = syncfusion_flutter_pdfviewer.xcframework; sourceTree = "<group>"; };
+		3072F9A42CCA4ACE00D4600D /* local_auth_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = local_auth_ios.xcframework; sourceTree = "<group>"; };
+		3072F9A52CCA4ACE00D4600D /* flutter_jailbreak_detection.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = flutter_jailbreak_detection.xcframework; sourceTree = "<group>"; };
+		3072F9A62CCA4ACE00D4600D /* flutter_keyboard_visibility.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = flutter_keyboard_visibility.xcframework; sourceTree = "<group>"; };
+		3072F9A72CCA4ACE00D4600D /* webview_flutter_wkwebview.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = webview_flutter_wkwebview.xcframework; sourceTree = "<group>"; };
+		3072F9A82CCA4ACE00D4600D /* share_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = share_plus.xcframework; sourceTree = "<group>"; };
+		3072F9A92CCA4ACE00D4600D /* package_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = package_info_plus.xcframework; sourceTree = "<group>"; };
+		3072F9AA2CCA4ACE00D4600D /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
+		3072F9AB2CCA4ACE00D4600D /* path_provider_foundation.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = path_provider_foundation.xcframework; sourceTree = "<group>"; };
+		3072F9AC2CCA4ACE00D4600D /* device_info_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = device_info_plus.xcframework; sourceTree = "<group>"; };
+		3072F9AD2CCA4ACE00D4600D /* connectivity_plus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = connectivity_plus.xcframework; sourceTree = "<group>"; };
+		3072F9AE2CCA4ACE00D4600D /* IOSSecuritySuite.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = IOSSecuritySuite.xcframework; sourceTree = "<group>"; };
+		3072F9AF2CCA4ACE00D4600D /* permission_handler_apple.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = permission_handler_apple.xcframework; sourceTree = "<group>"; };
+		3072F9B02CCA4ACE00D4600D /* url_launcher_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = url_launcher_ios.xcframework; sourceTree = "<group>"; };
+		3072F9B12CCA4ACE00D4600D /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; path = Flutter.xcframework; sourceTree = "<group>"; };
+		30DE8CA22B2AD1A400F0CEE2 /* ReactNativeApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativeApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		30DE8CA32B2AD1A500F0CEE2 /* SmartCAModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCAModule.swift; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-ReactNativeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeApp.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeApp/Pods-ReactNativeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-ReactNativeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeApp.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeApp/Pods-ReactNativeApp.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-ReactNativeApp-ReactNativeAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeApp-ReactNativeAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeApp-ReactNativeAppTests/Pods-ReactNativeApp-ReactNativeAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-ReactNativeApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactNativeApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-ReactNativeApp-ReactNativeAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeApp-ReactNativeAppTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeApp-ReactNativeAppTests/Pods-ReactNativeApp-ReactNativeAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00E356EB1AD99517003FC87E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7699B88040F8A987B510C191 /* libPods-ReactNativeApp-ReactNativeAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3072F9E62CCA4AE800D4600D /* webview_flutter_wkwebview.xcframework in Frameworks */,
+				3072F9162CCA30A000D4600D /* Alamofire.framework in Frameworks */,
+				3072F9442CCA30A400D4600D /* RxCocoa.framework in Frameworks */,
+				3072F9C62CCA4AE500D4600D /* connectivity_plus.xcframework in Frameworks */,
+				0C80B921A6F3F58F76C31292 /* libPods-ReactNativeApp.a in Frameworks */,
+				3072F93A2CCA30A300D4600D /* ObjectMapper.framework in Frameworks */,
+				3072F9CA2CCA4AE600D4600D /* device_info.xcframework in Frameworks */,
+				3072F9482CCA30A400D4600D /* RxSwift.framework in Frameworks */,
+				3072F9382CCA30A300D4600D /* NVActivityIndicatorView.framework in Frameworks */,
+				3072F9D62CCA4AE700D4600D /* IOSSecuritySuite.xcframework in Frameworks */,
+				3072F92E2CCA30A200D4600D /* ICSdkEKYC.xcframework in Frameworks */,
+				3072F9D42CCA4AE600D4600D /* FlutterPluginRegistrant.xcframework in Frameworks */,
+				3072F9C82CCA4AE500D4600D /* device_info_plus.xcframework in Frameworks */,
+				3072F9E02CCA4AE700D4600D /* share_plus.xcframework in Frameworks */,
+				3072F9DC2CCA4AE700D4600D /* path_provider_foundation.xcframework in Frameworks */,
+				3072F9E22CCA4AE800D4600D /* syncfusion_flutter_pdfviewer.xcframework in Frameworks */,
+				3072F9D22CCA4AE600D4600D /* Flutter.xcframework in Frameworks */,
+				3072F9DA2CCA4AE700D4600D /* package_info_plus.xcframework in Frameworks */,
+				3072F9DE2CCA4AE700D4600D /* permission_handler_apple.xcframework in Frameworks */,
+				3072F9C42CCA4AE500D4600D /* App.xcframework in Frameworks */,
+				3072F9362CCA30A300D4600D /* Moya.framework in Frameworks */,
+				3072F9CC2CCA4AE600D4600D /* flutter_jailbreak_detection.xcframework in Frameworks */,
+				3072F9222CCA30A100D4600D /* eKYCLib.xcframework in Frameworks */,
+				3072F94E2CCA30A400D4600D /* SmartCASDK.framework in Frameworks */,
+				3072F9322CCA30A200D4600D /* JWTDecode.framework in Frameworks */,
+				3072F9CE2CCA4AE600D4600D /* flutter_keyboard_visibility.xcframework in Frameworks */,
+				3072F9D82CCA4AE700D4600D /* local_auth_ios.xcframework in Frameworks */,
+				3072F94C2CCA30A400D4600D /* SignaturePad.framework in Frameworks */,
+				3072F9422CCA30A400D4600D /* RxAlamofire.framework in Frameworks */,
+				3072F9E42CCA4AE800D4600D /* url_launcher_ios.xcframework in Frameworks */,
+				3072F9D02CCA4AE600D4600D /* flutter_secure_storage.xcframework in Frameworks */,
+				3072F9462CCA30A400D4600D /* RxRelay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E356EF1AD99517003FC87E /* ReactNativeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F21AD99517003FC87E /* ReactNativeAppTests.m */,
+				00E356F01AD99517003FC87E /* Supporting Files */,
+			);
+			path = ReactNativeAppTests;
+			sourceTree = "<group>";
+		};
+		00E356F01AD99517003FC87E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E356F11AD99517003FC87E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* ReactNativeApp */ = {
+			isa = PBXGroup;
+			children = (
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
+				13B07FB71A68108700A75B9A /* main.m */,
+			);
+			name = ReactNativeApp;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				5DCACB8F33CDC322A6C60F78 /* libPods-ReactNativeApp.a */,
+				19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeApp-ReactNativeAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3072F8D32CCA307F00D4600D /* SDK_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3072F99F2CCA4ACE00D4600D /* Flutter */,
+				3072F8D42CCA307F00D4600D /* eContract-eKYC */,
+				3072F8E22CCA307F00D4600D /* SmartCASDK.framework */,
+			);
+			path = SDK_iOS;
+			sourceTree = "<group>";
+		};
+		3072F8D42CCA307F00D4600D /* eContract-eKYC */ = {
+			isa = PBXGroup;
+			children = (
+				3072F8D52CCA307F00D4600D /* eKYCLib.xcframework */,
+				3072F8D62CCA307F00D4600D /* RxAlamofire.framework */,
+				3072F8D72CCA307F00D4600D /* NVActivityIndicatorView.framework */,
+				3072F8D82CCA307F00D4600D /* SignaturePad.framework */,
+				3072F8DA2CCA307F00D4600D /* Moya.framework */,
+				3072F8DB2CCA307F00D4600D /* RxRelay.framework */,
+				3072F8DC2CCA307F00D4600D /* Alamofire.framework */,
+				3072F8DD2CCA307F00D4600D /* ObjectMapper.framework */,
+				3072F8DE2CCA307F00D4600D /* RxCocoa.framework */,
+				3072F8DF2CCA307F00D4600D /* JWTDecode.framework */,
+				3072F8E02CCA307F00D4600D /* RxSwift.framework */,
+				3072F8E12CCA307F00D4600D /* ICSdkEKYC.xcframework */,
+			);
+			path = "eContract-eKYC";
+			sourceTree = "<group>";
+		};
+		3072F99F2CCA4ACE00D4600D /* Flutter */ = {
+			isa = PBXGroup;
+			children = (
+				3072F9A02CCA4ACE00D4600D /* App.xcframework */,
+				3072F9A12CCA4ACE00D4600D /* flutter_secure_storage.xcframework */,
+				3072F9A22CCA4ACE00D4600D /* device_info.xcframework */,
+				3072F9A32CCA4ACE00D4600D /* syncfusion_flutter_pdfviewer.xcframework */,
+				3072F9A42CCA4ACE00D4600D /* local_auth_ios.xcframework */,
+				3072F9A52CCA4ACE00D4600D /* flutter_jailbreak_detection.xcframework */,
+				3072F9A62CCA4ACE00D4600D /* flutter_keyboard_visibility.xcframework */,
+				3072F9A72CCA4ACE00D4600D /* webview_flutter_wkwebview.xcframework */,
+				3072F9A82CCA4ACE00D4600D /* share_plus.xcframework */,
+				3072F9A92CCA4ACE00D4600D /* package_info_plus.xcframework */,
+				3072F9AA2CCA4ACE00D4600D /* FlutterPluginRegistrant.xcframework */,
+				3072F9AB2CCA4ACE00D4600D /* path_provider_foundation.xcframework */,
+				3072F9AC2CCA4ACE00D4600D /* device_info_plus.xcframework */,
+				3072F9AD2CCA4ACE00D4600D /* connectivity_plus.xcframework */,
+				3072F9AE2CCA4ACE00D4600D /* IOSSecuritySuite.xcframework */,
+				3072F9AF2CCA4ACE00D4600D /* permission_handler_apple.xcframework */,
+				3072F9B02CCA4ACE00D4600D /* url_launcher_ios.xcframework */,
+				3072F9B12CCA4ACE00D4600D /* Flutter.xcframework */,
+			);
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				3072F8D32CCA307F00D4600D /* SDK_iOS */,
+				300060C92B2AB20500648C25 /* SmartCAModule.m */,
+				30DE8CA32B2AD1A500F0CEE2 /* SmartCAModule.swift */,
+				13B07FAE1A68108700A75B9A /* ReactNativeApp */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				00E356EF1AD99517003FC87E /* ReactNativeAppTests */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				30DE8CA22B2AD1A400F0CEE2 /* ReactNativeApp-Bridging-Header.h */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* ReactNativeApp.app */,
+				00E356EE1AD99517003FC87E /* ReactNativeAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B4392A12AC88292D35C810B /* Pods-ReactNativeApp.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-ReactNativeApp.release.xcconfig */,
+				5B7EB9410499542E8C5724F5 /* Pods-ReactNativeApp-ReactNativeAppTests.debug.xcconfig */,
+				89C6BE57DB24E9ADA2F236DE /* Pods-ReactNativeApp-ReactNativeAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00E356ED1AD99517003FC87E /* ReactNativeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeAppTests" */;
+			buildPhases = (
+				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				00E356EA1AD99517003FC87E /* Sources */,
+				00E356EB1AD99517003FC87E /* Frameworks */,
+				00E356EC1AD99517003FC87E /* Resources */,
+				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
+				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00E356F51AD99517003FC87E /* PBXTargetDependency */,
+			);
+			name = ReactNativeAppTests;
+			productName = ReactNativeAppTests;
+			productReference = 00E356EE1AD99517003FC87E /* ReactNativeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13B07F861A680F5B00A75B9A /* ReactNativeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeApp" */;
+			buildPhases = (
+				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
+				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				30DE8CA12B2ABB4500F0CEE2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactNativeApp;
+			productName = ReactNativeApp;
+			productReference = 13B07F961A680F5B00A75B9A /* ReactNativeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					00E356ED1AD99517003FC87E = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeApp" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* ReactNativeApp */,
+				00E356ED1AD99517003FC87E /* ReactNativeAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00E356EC1AD99517003FC87E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/.xcode.env",
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
+		};
+		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp/Pods-ReactNativeApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp/Pods-ReactNativeApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp/Pods-ReactNativeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeApp-ReactNativeAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp-ReactNativeAppTests/Pods-ReactNativeApp-ReactNativeAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp-ReactNativeAppTests/Pods-ReactNativeApp-ReactNativeAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp-ReactNativeAppTests/Pods-ReactNativeApp-ReactNativeAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp/Pods-ReactNativeApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp/Pods-ReactNativeApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp/Pods-ReactNativeApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp-ReactNativeAppTests/Pods-ReactNativeApp-ReactNativeAppTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp-ReactNativeAppTests/Pods-ReactNativeApp-ReactNativeAppTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeApp-ReactNativeAppTests/Pods-ReactNativeApp-ReactNativeAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00E356EA1AD99517003FC87E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300060CB2B2AB20500648C25 /* SmartCAModule.m in Sources */,
+				00E356F31AD99517003FC87E /* ReactNativeAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30DE8CA42B2AD1A500F0CEE2 /* SmartCAModule.swift in Sources */,
+				300060CA2B2AB20500648C25 /* SmartCAModule.m in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13B07F861A680F5B00A75B9A /* ReactNativeApp */;
+			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00E356F61AD99517003FC87E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-ReactNativeApp-ReactNativeAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ReactNativeAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeApp.app/ReactNativeApp";
+			};
+			name = Debug;
+		};
+		00E356F71AD99517003FC87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-ReactNativeApp-ReactNativeAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = ReactNativeAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeApp.app/ReactNativeApp";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-ReactNativeApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9AK576J4RE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SdkSmartCA",
+					"$(PROJECT_DIR)/SmartCASdk/eContract-eKYC",
+					"$(PROJECT_DIR)/SmartCASdk",
+					"$(PROJECT_DIR)/SDK_iOS/eContract-eKYC",
+					"$(PROJECT_DIR)/SDK_iOS",
+				);
+				INFOPLIST_FILE = ReactNativeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ReactNativeApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-ReactNativeApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9AK576J4RE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SdkSmartCA",
+					"$(PROJECT_DIR)/SmartCASdk/eContract-eKYC",
+					"$(PROJECT_DIR)/SmartCASdk",
+					"$(PROJECT_DIR)/SDK_iOS/eContract-eKYC",
+					"$(PROJECT_DIR)/SDK_iOS",
+				);
+				INFOPLIST_FILE = ReactNativeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = ReactNativeApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativeApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl",
+					"-ld_classic",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
+					"\"$(inherited)\"",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-DFOLLY_NO_CONFIG",
+					"-DFOLLY_MOBILE=1",
+					"-DFOLLY_USE_LIBCPP=1",
+					"-DFOLLY_CFG_NO_COROUTINES=1",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-Wl",
+					"-ld_classic",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				USE_HERMES = true;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00E356F61AD99517003FC87E /* Debug */,
+				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

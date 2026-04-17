@@ -1,0 +1,14 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/apple/Documents/SmartCA_Mobile_V2/egov.ptpm.smartca_mobile/sdk_v2_lite/vnpt_smartca_module/ios_framework/Release/iphoneos/Release-iphoneos/device_info_plus/device_info_plus.framework/device_info_plus'
+relocations:
+  - { offset: 0x39221, size: 0x8, addend: 0x0, symName: _device_info_plusVersionString, symObjAddr: 0x0, symBinAddr: 0x6220, symSize: 0x0 }
+  - { offset: 0x39257, size: 0x8, addend: 0x0, symName: _device_info_plusVersionNumber, symObjAddr: 0x30, symBinAddr: 0x6250, symSize: 0x0 }
+  - { offset: 0x39294, size: 0x8, addend: 0x0, symName: '+[DeviceIdentifiers userKnownDeviceModel:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xED4 }
+  - { offset: 0x392A2, size: 0x8, addend: 0x0, symName: '+[DeviceIdentifiers userKnownDeviceModel:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xED4 }
+  - { offset: 0x3934A, size: 0x8, addend: 0x0, symName: '+[FPPDeviceInfoPlusPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4ED4, symSize: 0xA0 }
+  - { offset: 0x39370, size: 0x8, addend: 0x0, symName: '+[FPPDeviceInfoPlusPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4ED4, symSize: 0xA0 }
+  - { offset: 0x393CF, size: 0x8, addend: 0x0, symName: '-[FPPDeviceInfoPlusPlugin handleMethodCall:result:]', symObjAddr: 0xA0, symBinAddr: 0x4F74, symSize: 0x764 }
+  - { offset: 0x395A6, size: 0x8, addend: 0x0, symName: '-[FPPDeviceInfoPlusPlugin availableMemoryInbMB]', symObjAddr: 0x804, symBinAddr: 0x56D8, symSize: 0x64 }
+  - { offset: 0x396CE, size: 0x8, addend: 0x0, symName: '-[FPPDeviceInfoPlusPlugin isDevicePhysical]', symObjAddr: 0x868, symBinAddr: 0x573C, symSize: 0x8 }
+...
