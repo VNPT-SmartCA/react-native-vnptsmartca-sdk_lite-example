@@ -59,4 +59,4 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-# Hướng dẫn tích hợp SmartCA SDK [Tại đây](./guide.md)
+# Hướng dẫn tích hợp SmartCA SDK [Tại đây](https://demorms.vnptit.vn/help/docs/sdks/sdk_lite/steps/react_native)
