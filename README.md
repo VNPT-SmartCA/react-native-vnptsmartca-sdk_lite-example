@@ -1,3 +1,10 @@
+Lưu ý trước khi chạy cập nhật đúng tham số clientId, clientSecret đã được cấp qua email
+
+Xem hướng dẫn tại đây:
+
+Android
+iOS
+
 React-Native example project use native (android/iOS) SmartCA SDK
 
 - React-Native: 0.73.0
