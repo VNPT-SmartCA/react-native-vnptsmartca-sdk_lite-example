@@ -1,191 +1,123 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React, {useEffect, useState} from 'react';
 import {
+  Alert,
+  Button,
   SafeAreaView,
   ScrollView,
-  StatusBar,
   StyleSheet,
-  useColorScheme,
+  Text,
+  TextInput,
   View,
-  Button,
-  Alert,
   NativeEventEmitter,
   NativeModules,
-  TextInput,
 } from 'react-native';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 
 const {SmartCAModule} = NativeModules;
 
-// const onPress = () => {
-//   SmartCAModule.createCalendarEvent('testName', 'testLocation');
-// };
-
 function App() {
-  const [uid, setUid] = React.useState('');
-  const [transactionId, setTransactionId] = React.useState('');
+  const [customerId, setCustomerId] = useState('');
+  const [transactionId, setTransactionId] = useState('');
 
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  const onPress2 = function () {
-    // CalendarModule.createCalendarEvent('testName', 'testLocation');
-    // CalendarModule.increment();
-    // console.log(CalendarModule);
-
-    if (!uid.trim()) {
-      Alert.alert('Error', 'Vui long nhap So CCCD (uid)');
+  const handleGetAuth = () => {
+    if (!customerId.trim()) {
+      Alert.alert('Loi', 'Vui long nhap so CCCD');
       return;
     }
 
-    SmartCAModule.getAuth(uid);
-
-    // Alert.alert('test', 'message');
+    SmartCAModule.getAuth(customerId.trim());
   };
 
-  const onPress4 = function () {
-    console.log(transactionId);
-    SmartCAModule.getWaitingTransaction(transactionId);
+  const handleGetWaitingTransaction = () => {
+    if (!transactionId.trim()) {
+      Alert.alert('Loi', 'Vui long nhap transaction id');
+      return;
+    }
 
-    // Alert.alert('test', 'message');
+    SmartCAModule.getWaitingTransaction(transactionId.trim());
   };
 
   useEffect(() => {
     const eventEmitter = new NativeEventEmitter(SmartCAModule);
-    let eventListener = eventEmitter.addListener('EventReminder', event => {
-      // console.log(event.eventProperty);
-      let code = event.code;
-      let tokenOrStatusCode = event.token;
-      let certIdOrStatusDesc = event.credentialId;
-      // console.log(code);
-      // console.log(tokenOrStatusCode);
-      // console.log(certIdOrStatusDesc);
+    const eventListener = eventEmitter.addListener('EventReminder', event => {
+      const code = event.code;
+      const title = code === 0 ? 'Success' : 'Error';
+      const token = event.token ?? '';
+      const credentialId = event.credentialId ?? '';
+      const serial = event.serial ? `\nserial: ${event.serial}` : '';
+      const statusCode = event.statusCode ?? token;
+      const statusDesc = event.statusDesc ?? credentialId;
+      const data = event.data ? `\ndata: ${event.data}` : '';
+      const message = event.statusCode
+        ? `statusCode: ${statusCode}\nstatusDesc: ${statusDesc}${data}`
+        : code === 0
+          ? `token: ${token}\ncredentialId: ${credentialId}${serial}`
+          : `statusCode: ${statusCode}\nstatusDesc: ${statusDesc}`;
 
-      let message = `
-    ${code === 0 ? 'token' : 'status code'}: ${tokenOrStatusCode}
-    ${code === 0 ? 'certId' : 'status desc'}: ${certIdOrStatusDesc}
-  `;
-
-      console.log(message);
-
-      Alert.alert(code == 1 ? 'Error' : 'Success', message, [
-        {text: 'OK', onPress: () => console.log('OK Pressed')},
-      ]);
-
-      // Alert.alert('test', tokenOrStatusCode);
+      Alert.alert(title, message);
     });
 
-    let testIOSEvent = eventEmitter.addListener('onIncrement', event => {
-      console.log('onIncrement event', event);
-    });
-
-    // Removes the listener once unmounted
     return () => {
       eventListener.remove();
-      testIOSEvent.remove();
     };
   }, []);
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        {/* <AppBar></AppBar> */}
-        {/* <Header /> */}
-        {/* <Button
-          onPress={onPress}
-          title="Learn More"
-          color="#841584"
-          accessibilityLabel="Learn more about this purple button"
-        /> */}
-
+    <SafeAreaView style={styles.safeArea}>
+      <ScrollView contentContainerStyle={styles.container}>
+        <Text style={styles.title}>VNPT SmartCA SDK Lite Example</Text>
         <TextInput
           style={styles.input}
-          onChangeText={setUid}
-          value={uid}
+          onChangeText={setCustomerId}
+          value={customerId}
           placeholder="Số CCCD (uid)"
         />
-        <View style={styles.button}>
-          <Button
-            onPress={onPress2}
-            title="Get Auth"
-            color="#841584"
-            accessibilityLabel="Learn more about this purple button"
-          />
-        </View>
+        <Button onPress={handleGetAuth} title="Get Auth" color="#0f62fe" />
         <TextInput
           style={styles.input}
           onChangeText={setTransactionId}
           value={transactionId}
           placeholder="Transaction ID"
         />
-        <View style={styles.button}>
+        <View style={styles.buttonSpacing}>
           <Button
-            onPress={onPress4}
+            onPress={handleGetWaitingTransaction}
             title="Get Waiting Transaction"
-            color="#841584"
-            accessibilityLabel="Learn more about this purple button"
+            color="#24a148"
           />
         </View>
-        {/* <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step 1">
-            Edit <Text style={styles.highlight}>""</Text> to change this screen
-            and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View> */}
       </ScrollView>
-      {/* <View>
-        <Dialog.Container
-          visible={visible}
-          verticalButtons={true}
-          onRequestClose={handleCancel}>
-          <Dialog.Title>{code}</Dialog.Title>
-          <ScrollView>
-            <Dialog.Description>{text}</Dialog.Description>
-          </ScrollView>
-          <Dialog.Button label="OK" onPress={handleCancel} />
-        </Dialog.Container>
-      </View> */}
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  input: {
-    height: 40,
-    margin: 12,
-    borderWidth: 1,
-    padding: 10,
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#f4f7fb',
   },
-  button: {
+  container: {
+    padding: 20,
+    gap: 12,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: '700',
+    color: '#111827',
+  },
+  description: {
+    fontSize: 14,
+    lineHeight: 20,
+    color: '#4b5563',
+  },
+  input: {
+    height: 48,
+    borderWidth: 1,
+    borderColor: '#d1d5db',
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    backgroundColor: '#ffffff',
+  },
+  buttonSpacing: {
     marginBottom: 12,
   },
 });

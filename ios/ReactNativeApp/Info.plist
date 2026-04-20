@@ -35,8 +35,6 @@
 	<string>Xác thực EKYC</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>$(PRODUCT_NAME) Authentication with TouchId or FaceID</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

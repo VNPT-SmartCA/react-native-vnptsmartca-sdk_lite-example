@@ -142,7 +142,7 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeApp/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeApp-ReactNativeAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeApp-ReactNativeAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		300060C92B2AB20500648C25 /* SmartCAModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SmartCAModule.m; path = "  RCTCalendarModule.h #import <React/SmartCAModule.m"; sourceTree = "<group>"; };
+		300060C92B2AB20500648C25 /* SmartCAModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmartCAModule.m; sourceTree = "<group>"; };
 		3072F8D52CCA307F00D4600D /* eKYCLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = eKYCLib.xcframework; sourceTree = "<group>"; };
 		3072F8D62CCA307F00D4600D /* RxAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxAlamofire.framework; sourceTree = "<group>"; };
 		3072F8D72CCA307F00D4600D /* NVActivityIndicatorView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NVActivityIndicatorView.framework; sourceTree = "<group>"; };
@@ -613,7 +613,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				300060CB2B2AB20500648C25 /* SmartCAModule.m in Sources */,
 				00E356F31AD99517003FC87E /* ReactNativeAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -800,7 +799,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -880,7 +879,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
