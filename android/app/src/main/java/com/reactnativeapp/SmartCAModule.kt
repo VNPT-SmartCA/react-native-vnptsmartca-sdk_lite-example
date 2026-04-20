@@ -120,8 +120,8 @@ class SmartCAModule(reactContext: ReactApplicationContext) : ReactContextBaseJav
             )
 
             val config = ConfigSDK(
-                clientId = "447a-639051886115104575.apps.smartcaapi.com",
-                clientSecret = "NWQzNDE3ZTc-YjI0OC00NDdh",
+                clientId = "",
+                clientSecret = "",
                 env = SmartCAEnvironment.DEMO_ENV,
                 customParams = customParams,
                 lang = SmartCALanguage.VI,
