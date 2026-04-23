@@ -32,7 +32,7 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>Xác thực EKYC</string>
+	<string>$(PRODUCT_NAME) requires access to your phone’s camera</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>$(PRODUCT_NAME) Authentication with TouchId or FaceID</string>
 	<key>UILaunchStoryboardName</key>
